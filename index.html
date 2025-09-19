@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ak'sara Initiative - Advancing Indonesia Digital Literacy</title>
+    <meta name="description" content="Building Indonesia's digital independence through accessible, locally-developed software solutions">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        main {
+            padding-top: 80px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        .content-section {
+            background: white;
+            margin: 2rem 0;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .project-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+        }
+
+        .project-card h3 {
+            margin-top: auto;
+        }
+
+        .project-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .project-status {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .status-priority {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-research {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-vision {
+            background: #cce5ff;
+            color: #004085;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 15px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .download-section {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .download-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .download-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .download-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="assets/ak'sara.svg" alt="Ak'sara Logo">
+                Ak'sara
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#download">Proposal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Ak'sara Initiative</h1>
+                <p>Advancing Indonesia Digital Literacy through accessible, locally-developed software solutions</p>
+                <a href="#download" class="cta-button">Get Full Proposal</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="about" class="content-section">
+                <h2 class="section-title">Our Mission</h2>
+                <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: #666;">
+                    <strong>Ak'sara</strong> (meaning "good applications are created from source code composed by characters")
+                    is building Indonesia's digital independence through a comprehensive ecosystem of open-source software tools,
+                    reducing dependency on expensive foreign solutions while fostering local technical expertise.
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">3</span>
+                        <span>Core Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">64.2M</span>
+                        <span>Indonesian SMEs</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">Phase 1</span>
+                        <span>Ready to Launch</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">Open</span>
+                        <span>Source Vision</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="content-section">
+                <h2 class="section-title">Core Projects</h2>
+                <div class="projects-grid">
+                    <a href="aksara-nocode-planning.html" target="_blank" class="project-link">
+                        <div class="project-card">
+                            <span class="project-status status-priority">Priority Project</span>
+                            <h3>Aksara IS</h3>
+                            <p><strong>Svelte-based no-code platform</strong></p>
+                            <p>Enable Indonesian businesses to create custom applications without coding expertise. Features drag-and-drop builder, Indonesian language interface, and offline capabilities.</p>
+                            <p style="margin-top: auto;"><strong>Timeline:</strong> 12-18 months to MVP</p>
+                        </div>
+                    </a>
+
+                    <a href="personal-ai-planning.html" target="_blank" class="project-link">
+                        <div class="project-card">
+                            <span class="project-status status-research">Research & Development</span>
+                            <h3>Personal AI Assistant</h3>
+                            <p><strong>Tauri + Local LLM integration</strong></p>
+                            <p>Offline AI assistance in Bahasa Indonesia, reducing dependency on cloud-based foreign services. Complete privacy-focused design with cultural context awareness.</p>
+                            <p style="margin-top: auto;"><strong>Timeline:</strong> 18-24 months</p>
+                        </div>
+                    </a>
+
+                    <a href="merdekanos-planning.html" target="_blank" class="project-link">
+                        <div class="project-card">
+                            <span class="project-status status-vision">Long-term Vision</span>
+                            <h3>MerdekaOS</h3>
+                            <p><strong>Arch Linux-based distribution</strong></p>
+                            <p>Lightweight, Indonesian-optimized operating system for offices and developers. Pre-configured for Indonesian languages and bundled with our software ecosystem.</p>
+                            <p style="margin-top: auto;"><strong>Timeline:</strong> 24-36 months</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="vision" class="content-section">
+                <h2 class="section-title">The Vision Behind Ak'sara</h2>
+
+                <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 2rem; border-radius: 15px; margin-bottom: 2rem;">
+                    <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+                        <img src="assets/ak'sara.png" alt="Ak'sara Initiative" style="width: 120px; height: 120px; object-fit: contain; border-radius: 10px;">
+                        <div style="flex: 1; min-width: 300px;">
+                            <h3 style="color: #667eea; margin-bottom: 1rem; font-size: 1.5rem;">The Mind Behind the Vision</h3>
+                            <p style="color: #555; font-size: 1.1rem; line-height: 1.6;">
+                                As a dedicated developer working to advance Indonesia's digital independence, I've built solid
+                                technical foundations for three transformative projects. While working solo presents challenges,
+                                the commitment to creating locally-relevant solutions drives continuous progress toward
+                                Indonesia's technological sovereignty.
+                            </p>
+                            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee;">
+                                <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                                    <div style="background: linear-gradient(135deg, #667eea, #764ba2); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">
+                                        HA
+                                    </div>
+                                    <div style="flex: 1; min-width: 200px;">
+                                        <p style="color: #333; font-weight: 600; margin: 0; font-size: 1rem;">Heriawan Agung</p>
+                                        <p style="color: #666; font-size: 0.9rem; margin: 0;">Initiative Creator & Lead Developer</p>
+                                        <a href="https://www.linkedin.com/in/heriawan-agung-3b3a4969/" style="color: #667eea; text-decoration: none; font-size: 0.85rem;">
+                                            💼 Connect on LinkedIn
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: rgba(102, 126, 234, 0.1); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #667eea; margin-bottom: 2rem;">
+                    <h4 style="color: #667eea; margin-bottom: 0.5rem;">🤝 Partnership Opportunities</h4>
+                    <p style="color: #666;">
+                        <strong>Looking for collaboration</strong> with Indonesian hardware manufacturers and technology companies
+                        to accelerate development of locally-optimized software solutions. From hardware partnerships to
+                        technical collaboration - let's explore how we can build Indonesia's tech ecosystem together.
+                        <em>(See detailed partnership proposals in planning documents)</em>
+                    </p>
+                </div>
+
+                <h3 style="color: #667eea; margin-bottom: 1.5rem; text-align: center;">Vision & Potential Impact</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div>
+                        <h4 style="color: #667eea; margin-bottom: 1rem;">🇮🇩 Economic Independence</h4>
+                        <p>Working toward reducing Indonesia's dependency on expensive foreign software solutions, contributing to technological sovereignty and local economic growth.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #667eea; margin-bottom: 1rem;">💼 Ecosystem Development</h4>
+                        <p>Building foundation for sustainable Indonesian tech ecosystem development, starting with accessible no-code tools and expanding to comprehensive solutions.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #667eea; margin-bottom: 1rem;">📈 Digital Accessibility</h4>
+                        <p>Democratizing access to business software for Indonesian SMEs through affordable, locally-relevant solutions that understand our language and culture.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="impact" class="content-section" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white;">
+                <h2 class="section-title" style="color: white;">Why Partner With Us Now?</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px;">
+                        <h4 style="margin-bottom: 1rem;">🔧 Proven Technical Foundation</h4>
+                        <p>All three projects have working prototypes and sophisticated architectures. We're not starting from zero - we're ready to scale.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px;">
+                        <h4 style="margin-bottom: 1rem;">🎯 Clear Market Opportunity</h4>
+                        <p>64.2M Indonesian SMEs need affordable digital solutions. First-mover advantage in Indonesian-focused no-code and AI markets.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px;">
+                        <h4 style="margin-bottom: 1rem;">🚀 Immediate ROI Potential</h4>
+                        <p>Hardware partnerships can generate immediate market differentiation and revenue sharing opportunities with proven demand.</p>
+                    </div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.15); padding: 2rem; border-radius: 15px; text-align: center;">
+                    <h3 style="margin-bottom: 1rem;">Ready to Transform Indonesian Technology Together?</h3>
+                    <p style="font-size: 1.1rem; opacity: 0.9;">
+                        From a single Ryzen AI laptop sponsorship to full ecosystem partnerships - let's build Indonesia's digital future step by step.
+                    </p>
+                </div>
+            </section>
+
+            <section id="download" class="download-section">
+                <div class="container">
+                    <h2 style="margin-bottom: 1rem;">Join Our Mission</h2>
+                    <p style="font-size: 1.2rem; opacity: 0.9;">Download our comprehensive proposal to learn more about partnership opportunities and investment potential.</p>
+
+                    <div class="download-buttons">
+                        <a href="proposal.html" class="download-btn" target="_blank">
+                            📄 View Full Proposal
+                        </a>
+                        <a href="pdf/proposal.pdf" class="download-btn">
+                            ⬇️ Download PDF
+                        </a>
+                    </div>
+
+                    <div style="margin-top: 1.5rem;">
+                        <h3 style="margin-bottom: 1rem;">Detailed Project Planning (.pdf)</h3>
+                        <div class="download-buttons">
+                            <a href="pdf/aksara-nocode-planning.pdf" class="download-btn" >
+                                🎯 Aksara IS (No-Code)
+                            </a>
+                            <a href="pdf/personal-ai-planning.pdf" class="download-btn">
+                                🤖 Personal AI Assistant
+                            </a>
+                            <a href="pdf/merdekanos-planning.pdf" class="download-btn">
+                                🖥️ MerdekaOS
+                            </a>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                        <h3>Let's Connect</h3>
+                        <p style="margin-bottom: 2rem;">I'd love to hear from you! Choose the best way to reach out based on your interest:</p>
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                            <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px;">
+                                <strong style="display: block; margin-bottom: 0.5rem;">💰 Investment & Sponsorship</strong>
+                                <p style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 1rem;">
+                                    Interested in funding or sponsoring the initiative? Let's discuss partnership opportunities.
+                                </p>
+                                <a href="mailto:sponsor.aksara@tuta.com" style="color: #fff; text-decoration: none; font-weight: 500;">
+                                    sponsor.aksara@tuta.com
+                                </a>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px;">
+                                <strong style="display: block; margin-bottom: 0.5rem;">👥 Contributors & Developers</strong>
+                                <p style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 1rem;">
+                                    Want to contribute code, ideas, or technical expertise? Join our growing community.
+                                </p>
+                                <a href="mailto:contribute.aksara@tuta.com" style="color: #fff; text-decoration: none; font-weight: 500;">
+                                    contribute.aksara@tuta.com
+                                </a>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px;">
+                                <strong style="display: block; margin-bottom: 0.5rem;">🤝 Business Partnerships</strong>
+                                <p style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 1rem;">
+                                    Exploring business collaborations, integrations, or strategic partnerships?
+                                </p>
+                                <a href="mailto:partner.aksara@tuta.com" style="color: #fff; text-decoration: none; font-weight: 500;">
+                                    partner.aksara@tuta.com
+                                </a>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px;">
+                                <strong style="display: block; margin-bottom: 0.5rem;">📰 Media & Press</strong>
+                                <p style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 1rem;">
+                                    Media inquiries, interviews, or press coverage? I'm happy to share the story.
+                                </p>
+                                <a href="mailto:media.aksara@tuta.com" style="color: #fff; text-decoration: none; font-weight: 500;">
+                                    media.aksara@tuta.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                            <p style="font-size: 0.95rem; opacity: 0.9;">
+                                <em>I personally read and respond to every email. Expect a thoughtful reply within 24-48 hours.</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div style="text-align: center;">
+                <p>&copy; 2024 Ak'sara Initiative. Building Indonesia's Digital Future.</p>
+                <p style="margin: 1rem 0;">Open Source • Community Driven • Made in Indonesia</p>
+
+                <div style="margin: 1.5rem 0; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.8;">Follow our development:</p>
+                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                        <a href="https://github.com/Ak-sara" style="color: #fff; text-decoration: none; font-size: 0.9rem;">
+                            🏢 Organization GitHub
+                        </a>
+                        <a href="https://github.com/linheriawan" style="color: #fff; text-decoration: none; font-size: 0.9rem;">
+                            👤 Founder's GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
