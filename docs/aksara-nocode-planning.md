@@ -5,167 +5,75 @@ title: "Aksara IS: No-Code Platform for Indonesian Businesses"
 description: "Planning and feasibility analysis for Aksara Information System development and commercialization"
 author: "Ak'sara Initiative"
 keywords: "No-Code, SvelteKit, Indonesia, Business Applications, Enterprise"
+header: Aksara IS Planning & Feasibility - Phase 1 ![h:70px](../assets/ak'sara.svg)
+footer: © 2025 Ak'sara Initiative 
 paginate: true
+backgroundImage: url(../assets/background-free.jpg)
 style: |
   section {
-    background: linear-gradient(135deg, #27ae60 0%, #2980b9 100%);
-    color: white;
-    font-family: 'Inter', 'Segoe UI', sans-serif;
-    padding: 2rem;
-    font-size: 14px;
+    padding: 1.3em 2rem 2rem; display: flex; place-content: flex-start;
+    font-size: 2rem; font-family: 'Inter', 'Segoe UI', sans-serif; 
   }
-
-  header {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 100;
-  }
-
+  section::after { color: #2980b9; /* page numbers */ }
+  header { position: absolute; top: 0; right: 0; display: flex; justify-content: space-between; align-items: center; color: #2980b9; }
   footer {
-    position: absolute;
-    bottom: 1rem;
-    left: 2rem;
-    right: 2rem;
-    text-align: center;
-    font-size: 0.7rem;
-    opacity: 0.8;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    padding-top: 0.5rem;
+    position: absolute; bottom: 0; left: 0; right: 0;
+    display: flex; justify-content: space-between; align-items: center; 
+    font-size: 1rem; color: #2980b9; padding: 1em;
   }
-
-  h1 {
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-  }
-
-  h2 {
-    color: #ecf0f1;
-    border-bottom: 2px solid rgba(255,255,255,0.3);
+  ul, ol { font-size: 1.3rem; line-height: 1.2; }
+  strong { color: #27ae60; }
+  h1 { font-size: 4rem; margin: .18rem 0 .2rem 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+  h2 { color: #f39c12; font-size: 3rem; margin: .16rem 0 .18rem 0; 
+    border-bottom: 2px solid rgba(77, 170, 213, 0.3);
     padding-bottom: 0.2rem;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
   }
-
-  h3 {
-    color: #ffffff;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+  h3 { font-size: 1.8rem; margin: .14rem 0 .16rem 0; 
+    strong { font-size: 1.5rem; color: #2980b9; }
   }
-
-  h4 {
-    color: #ecf0f1;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+  h4 { font-size: 1rem; margin: .15rem 0 .14rem; }
+  p { font-size: 2rem; line-height: 1.2; margin: .15rem 0 .12rem; 
+    strong { font-size: 1.6rem; }
   }
-
-  p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    margin-bottom: 0.8rem;
+  .success { background: rgba(46, 204, 113, 0.15); border-left-color: #2ecc71; padding: .3em; margin-bottom: 1.3rem;
+    p { font-size: 1.5rem; }
   }
-
-  ul, ol {
-    font-size: 0.85rem;
-    line-height: 1.3;
+  .warning { background: rgba(243, 156, 18, 0.15); border-left-color: #f39c12; padding: .3em; margin-bottom: 1.3rem;
+    p { font-size: 1.4rem; }
   }
-
-  .highlight {
-    background: rgba(255,255,255,0.15);
-    padding: 1rem;
-    border-radius: 10px;
-    margin: 0.8rem 0;
-    border-left: 4px solid #e67e22;
+  .critical { background: rgba(231, 76, 60, 0.15); border-left-color: #e74c3c; padding: .3em; margin-bottom: 1.3rem;
+     p { font-size: 1.4rem; } 
   }
-
-  .success {
-    background: rgba(46, 204, 113, 0.2);
-    border-left-color: #2ecc71;
-  }
-
-  .warning {
-    background: rgba(243, 156, 18, 0.2);
-    border-left-color: #f39c12;
-  }
-
-  .critical {
-    background: rgba(231, 76, 60, 0.2);
-    border-left-color: #e74c3c;
-  }
-
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.8rem;
-    margin: 1.5rem 0;
-  }
-
-  .stat-item {
-    text-align: center;
-    background: rgba(255,255,255,0.1);
-    padding: 1rem;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-  }
-
-  .stat-number {
-    font-size: 1.8rem;
-    font-weight: bold;
-    display: block;
-    color: #f1c40f;
-  }
-
-  strong {
-    color: #f1c40f;
-  }
-
-  /* Cover page styling */
-  section.cover {
-    background: linear-gradient(135deg, #27ae60 0%, #2980b9 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 4rem 3rem 3rem 3rem;
-    color: #333;
-  }
-
-  section.cover h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-    color: #333;
-  }
-
-  section.cover h2 {
-    font-size: 1.6rem;
-    border: none;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-    color: #333;
-  }
-
-  /* Hide header and footer on cover page */
-  section.cover header,
-  section.cover footer {
-    display: none;
-  }
-
-  /* Architecture code blocks */
+  section>div { display:grid; grid-auto-flow: column; gap: .2em; width: 100%; }
+  .vcenter {max-height: min-content; align-self: anchor-center;}
   .architecture {
     background: rgba(255,255,255,0.1);
-    padding: 0.8rem;
-    border-radius: 8px;
-    font-family: monospace;
-    font-size: 0.75rem;
+    font-size: 0.75rem; padding: 0.8rem; border-radius: 8px; font-family: monospace; 
+  }
+  .highlight {
+    max-width: 97%;
+    background: rgba(255,255,255, 0.15); padding: 1rem; margin: 1rem 0;
+    border-radius: 10px; border-left: 4px solid #f39c12;
+  }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin: 1.5rem 0; }
+  .stat-item {
+    text-align: center;
+    background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 10px;
+    backdrop-filter: blur(10px);
+  }
+  .stat-number { font-size: 1.8rem; font-weight: bold; display: block; color: #27ae60; }
+  /* page styling */
+  section.quote, 
+  section.cover {  display: flex; flex-direction: column; justify-content: center;  align-items: center; }
+  section.cover {
+    background: url(../assets/background.jpeg) !important;
+    text-align: center; padding: 4rem 3rem 3rem 3rem;
+    h1 { font-size: 5rem; margin-bottom: 1rem; margin-top: 2rem; }
+    h2 { font-size: 3rem; border: none; margin-bottom: 2rem; opacity: 0.9; }
+    header, footer { display: none; }
   }
 ---
-
 <!-- _class: cover -->
-![bg](../assets/background.jpeg)
 # Aksara IS
 ## No-Code Platform for Indonesian Businesses
 
@@ -174,41 +82,27 @@ style: |
 
 ---
 
-<div style="margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.15); border-radius: 20px; border: 2px solid rgba(255,255,255,0.2);">
-
-<div style="font-size: 1.2rem; margin-bottom: 1rem;">
-**Empowering 64.2 Million Indonesian SMEs**
-</div>
-
-<div style="font-size: 1rem; font-style: italic; opacity: 0.9;">
-Through Locally-Developed No-Code Solutions
-</div>
-
-<div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
-*A comprehensive strategic analysis for transforming Indonesian business digitalization*
-</div>
-
-</div>
-
----  
-
 ## No-Code Platform for Indonesian Businesses
+<br> 
 
 **Planning & Feasibility Analysis**
-*Phase 1 Priority Project - Ak'sara Initiative*
+
+*Phase 1 Priority Project - Ak'sara Initiative*  
+<br>
+
+**Empowering 64.2 Million Indonesian SMEs** Through Locally-Developed No-Code Solutions
+<br>
+*A comprehensive strategic analysis for transforming Indonesian business digitalization*
 
 ---
-<!-- footer: © 2025 Ak'sara Initiative | Aksara IS Planning & Feasibility Phase 1 ![h:70px](../assets/ak'sara.svg)  -->
 
 ## Executive Summary
 
 <div class="highlight success">
 
-**Vision:** Empower Indonesian businesses to create custom applications without coding expertise
-
-**Current Status:** Advanced SvelteKit-based platform with drag-and-drop form builder
-
-**Market Position:** First Indonesian-focused no-code platform with local language support
+**Vision:** Empower Indonesian businesses to create custom applications without coding expertise. 
+**Current Status:** Advanced SvelteKit-based platform with drag-and-drop form builder. 
+**Market Position:** First Indonesian-focused no-code platform with local language support. 
 
 </div>
 
@@ -230,6 +124,7 @@ Through Locally-Developed No-Code Solutions
 ---
 
 ## Current Technical Foundation
+<div> <div>
 
 ### **Existing Architecture** ✅
 - **SvelteKit with Runes** on Bun runtime
@@ -243,6 +138,7 @@ Through Locally-Developed No-Code Solutions
 - **Data source integration** (REST API, Database, File Storage)
 - **Module and menu management** system
 - **Admin vs End-user layout** separation
+</div> <div> 
 
 ### **Current Architecture**
 <div class="architecture">
@@ -255,12 +151,13 @@ src/lib/
 ├── generated/     # Auto-generated content
 └── runtime/       # Compiled outputs (.json from .yaml)
 ```
-
 </div>
+</div> </div> 
 
 ---
-
 ## Market Analysis
+<div>
+<div>
 
 ### **Global No-Code Market**
 - **Market Size:** $13.2B (2023) → $65B (2030)
@@ -272,6 +169,8 @@ src/lib/
 - **Digital adoption:** <15% use custom business software
 - **Pain Points:** Expensive international solutions, language barriers
 - **Opportunity:** 54M+ businesses with manual/spreadsheet-based processes
+</div> 
+<div>
 
 ### **Competitive Landscape Analysis**
 
@@ -285,6 +184,8 @@ src/lib/
 - **Limited Indonesian no-code solutions**
 - **Most solutions are custom development services**
 - **No major player with Indonesian language priority**
+</div>
+</div>
 
 ---
 
@@ -310,8 +211,7 @@ src/lib/
 
 ---
 
-## Technical Roadmap
-
+## Technical Roadmap  
 ### **Phase 1: Core Platform Completion (Months 1-6)**
 **Current Status:** 70% complete
 
@@ -326,7 +226,8 @@ src/lib/
 - Advanced component library
 - Data validation and business rules
 - Export functionality (JSON, API specs)
-
+---  
+## Technical Roadmap  
 ### **Phase 2: Business Features (Months 7-12)**
 **Objective:** Production-ready business application builder
 
@@ -342,7 +243,7 @@ src/lib/
 - **Popular Indonesian services** (WhatsApp Business, Tokopedia)
 
 ---
-
+## Technical Roadmap  
 ### **Phase 3: Enterprise Features (Months 13-18)**
 **Objective:** Enterprise-grade platform with advanced capabilities
 
@@ -362,20 +263,6 @@ src/lib/
 
 ## Technical Architecture Deep-Dive
 
-### **Current Architecture Strengths**
-```mermaid
-flowchart TD
-    A[User Interface] --> B[Designer System]
-    B --> C[YAML Configuration]
-    C --> D[JSON Compilation]
-    D --> E[Runtime System]
-    E --> F[Generated Applications]
-
-    G[Data Sources] --> H[Schema Management]
-    H --> I[Form Generation]
-    I --> J[CRUD Operations]
-```
-
 ### **Performance Optimizations**
 - **YAML → JSON compilation** for fast runtime loading
 - **Component lazy loading** for large applications
@@ -386,11 +273,17 @@ flowchart TD
 - **Modular architecture** allows independent scaling
 - **Stateless design** for horizontal scaling
 - **CDN-ready** asset compilation
-- **Database-agnostic** data layer
+- **Database-agnostic** data layer  
+
+### **Current Architecture Strengths**
+![image](../assets/arch_is.jpg)
+
 
 ---
 
 ## Business Model
+<div>
+<div>
 
 ### **Revenue Streams**
 
@@ -410,6 +303,8 @@ flowchart TD
 - **Template marketplace:** 30% commission on sales
 - **Component store:** 20% commission on premium components
 - **Integration partnerships:** Revenue sharing with service providers
+</div>
+<div>
 
 ### **Cost Structure**
 
@@ -422,6 +317,8 @@ flowchart TD
 - **Sales and marketing:** $100K/year
 - **Customer support:** $50K/year
 - **Legal and compliance:** $15K/year
+</div>
+</div>
 
 ---
 
@@ -442,6 +339,9 @@ flowchart TD
 - Community feedback integration
 - Technical validation completion
 
+---
+
+## Market Entry Strategy
 ### **Phase 2: SME Market Penetration (Months 7-12)**
 **Target:** Small-medium businesses, consultants, local agencies
 
@@ -456,6 +356,9 @@ flowchart TD
 - 500 paying customers
 - Template marketplace launch
 - Break-even achievement
+---
+
+## Market Entry Strategy
 
 ### **Phase 3: Enterprise Sales (Months 13-18)**
 **Target:** Large Indonesian corporations, government agencies
@@ -579,46 +482,60 @@ flowchart TD
 - **Legal** and business setup: $10K/year
 
 ---
-
 ## Financial Projections
 
 ### **5-Year Revenue Model**
+<div>
+<div>
 
 **Year 1:** $100K
 - 1,000 users, 10% conversion rate
 - Average $100/user annual revenue
+</div><div>
 
 **Year 2:** $1M
 - 10,000 users, 15% conversion rate
 - Average $120/user annual revenue
+</div><div>
 
 **Year 3:** $5M
 - 50,000 users, 20% conversion rate
 - Average $150/user annual revenue + enterprise
+</div><div>
 
 **Year 4:** $15M
 - 150,000 users, 25% conversion rate
 - Average $200/user + professional services
+</div><div>
 
 **Year 5:** $35M
 - 350,000 users, 30% conversion rate
 - Average $250/user + marketplace + enterprise
+</div></div>
 
 ### **Investment Requirements**
+<div>
+<div>
 
 **Seed Round:** $500K (12 months)
 - Complete MVP development
 - Initial team building
 - Market validation
+</div>
+<div>
 
 **Series A:** $2M (24 months)
 - Market expansion
 - Enterprise features
 - Team scaling
+</div>
+<div>
 
 **Break-even:** Month 15
 **Profitability:** Month 18
 **ROI:** 25x over 5 years
+</div>
+</div>
 
 ---
 
@@ -640,34 +557,39 @@ flowchart TD
 3. **Business associations** - member benefits and training
 
 ---
-
 ## Implementation Timeline
 
 ### **Development Phases**
+
+<div><div>
 
 **Q1 2024: Foundation**
 - Complete core platform features
 - Launch beta testing program
 - Build initial template library
 - Establish development processes
+</div><div>
 
 **Q2 2024: Market Entry**
 - Public launch with freemium model
 - Indonesian business template release
 - Marketing campaign initiation
 - Community building programs
+</div><div>
 
 **Q3 2024: Growth**
 - Enterprise features development
 - Partnership establishment
 - Professional services launch
 - International expansion planning
+</div><div>
 
 **Q4 2024: Scale**
 - Advanced features rollout
 - Government pilot programs
 - Series A funding
 - Team expansion
+</div></div>
 
 ### **Key Milestones**
 - **M1:** MVP completion (Month 3)
@@ -677,8 +599,8 @@ flowchart TD
 - **M5:** Market leadership (Month 24)
 
 ---
-
 ## Conclusion
+<div><div>
 
 ### **Strategic Advantages Summary**
 - **Strong technical foundation** with 70% complete advanced platform
@@ -698,9 +620,9 @@ flowchart TD
 - **Clear path to profitability** within 18 months
 - **Multiple exit opportunities** through strategic acquisition
 
-<div class="highlight">
+</div><div class="highlight vcenter">
 <strong>Aksara IS represents the highest-probability success within the Ak'sara Initiative, combining proven technology with clear market demand.</strong>
-</div>
+</div></div>
 
 ---
 
@@ -725,9 +647,15 @@ flowchart TD
 4. **Break-even** achievement
 
 ---
+<!-- class: quote center -->
+### **Contact Information:**  
+<br> 
 
-**Contact Information:**
 - **Product Lead:** [To be assigned]
 - **Technical Lead:** [To be assigned]
 - **Business Development:** [To be assigned]
-- **Email:** aksara@aksara-initiative.org
+- **Email:** 
+sponsor.aksara@tuta.com
+contribute.aksara@tuta.com
+partner.aksara@tuta.com
+relations.aksara@tuta.com

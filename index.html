@@ -137,8 +137,8 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
             margin: 2rem 0;
         }
 
@@ -184,26 +184,14 @@
             margin-bottom: 1rem;
         }
 
-        .status-priority {
-            background: #d4edda;
-            color: #155724;
-        }
-
-        .status-research {
-            background: #fff3cd;
-            color: #856404;
-        }
-
-        .status-vision {
-            background: #cce5ff;
-            color: #004085;
-        }
+        .status-priority { background: #d4edda; color: #155724; }
+        .status-research { background: #fff3cd; color: #856404; }
+        .status-vision { background: #cce5ff; color: #004085; }
 
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
+            gap: 1.5rem; margin: 2rem 0;
         }
 
         .stat-card {
@@ -214,11 +202,7 @@
             border-radius: 15px;
         }
 
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            display: block;
-        }
+        .stat-number { font-size: 2.5rem; font-weight: 700; display: block; }
 
         .download-section {
             background: linear-gradient(135deg, #667eea, #764ba2);
@@ -253,6 +237,45 @@
             transform: translateY(-2px);
         }
 
+        .project-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .project-btn {
+            flex: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+            padding: 0.6rem 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .project-btn-html { background: #667eea; color: white; }
+
+        .project-btn-html:hover {
+            background: #5a6fd8;
+            transform: translateY(-1px);
+            color: white;
+        }
+
+        .project-btn-pdf { background: #ff6b6b; color: white; }
+
+        .project-btn-pdf:hover {
+            background: #ff5252;
+            transform: translateY(-1px);
+            color: white;
+        }
+
         footer {
             background: #333;
             color: white;
@@ -261,18 +284,9 @@
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+            .projects-grid { grid-template-columns: 1fr; }
             .download-buttons {
                 flex-direction: column;
                 align-items: center;
@@ -291,7 +305,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#vision">Vision</a></li>
-                <li><a href="#download">Proposal</a></li>
+                <li><a href="#joins">Joins</a></li>
             </ul>
         </nav>
     </header>
@@ -301,7 +315,7 @@
             <div class="container">
                 <h1>Ak'sara Initiative</h1>
                 <p>Advancing Indonesia Digital Literacy through accessible, locally-developed software solutions</p>
-                <a href="#download" class="cta-button">Get Full Proposal</a>
+                <a href="#projects" class="cta-button">View Project Documentation</a>
             </div>
         </section>
 
@@ -315,10 +329,6 @@
                 </p>
 
                 <div class="stats-grid">
-                    <div class="stat-card">
-                        <span class="stat-number">3</span>
-                        <span>Core Projects</span>
-                    </div>
                     <div class="stat-card">
                         <span class="stat-number">64.2M</span>
                         <span>Indonesian SMEs</span>
@@ -336,43 +346,95 @@
 
             <section id="projects" class="content-section">
                 <h2 class="section-title">Core Projects</h2>
+                <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+                    Complete project documentation with interactive presentations and downloadable proposals
+                </p>
                 <div class="projects-grid">
-                    <a href="aksara-nocode-planning.html" target="_blank" class="project-link">
-                        <div class="project-card">
-                            <span class="project-status status-priority">Priority Project</span>
-                            <h3>Aksara IS</h3>
-                            <p><strong>Svelte-based no-code platform</strong></p>
-                            <p>Enable Indonesian businesses to create custom applications without coding expertise. Features drag-and-drop builder, Indonesian language interface, and offline capabilities.</p>
-                            <p style="margin-top: auto;"><strong>Timeline:</strong> 12-18 months to MVP</p>
+                    <div class="project-card">
+                        <span class="project-status status-priority">Priority Project</span>
+                        <h3>Aksara IS</h3>
+                        <p><strong>Svelte-based no-code platform</strong></p>
+                        <p>Enable Indonesian businesses to create custom applications without coding expertise. Features drag-and-drop builder, Indonesian language interface, and offline capabilities.</p>
+                        <p><strong>Timeline:</strong> 12-18 months to MVP</p>
+                        <div class="project-actions">
+                            <a href="project/aksara-nocode-planning.html" target="_blank" class="project-btn project-btn-html">
+                                📄 View Docs
+                            </a>
+                            <a href="pdf/aksara-nocode-planning.pdf" class="project-btn project-btn-pdf">
+                                ⬇️ Download PDF
+                            </a>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="personal-ai-planning.html" target="_blank" class="project-link">
-                        <div class="project-card">
-                            <span class="project-status status-research">Research & Development</span>
-                            <h3>Personal AI Assistant</h3>
-                            <p><strong>Tauri + Local LLM integration</strong></p>
-                            <p>Offline AI assistance in Bahasa Indonesia, reducing dependency on cloud-based foreign services. Complete privacy-focused design with cultural context awareness.</p>
-                            <p style="margin-top: auto;"><strong>Timeline:</strong> 18-24 months</p>
+                    <div class="project-card">
+                        <span class="project-status status-research">Phase 2 Project</span>
+                        <h3>Aksara Writer</h3>
+                        <p><strong>Modern markdown converter</strong></p>
+                        <p>Indonesian-focused markdown to document converter with VS Code integration. Export to PDF, PPTX, HTML with business templates and Indonesian language support.</p>
+                        <p><strong>Timeline:</strong> 6-9 months to MVP</p>
+                        <div class="project-actions">
+                            <a href="project/aksara-writer-proposal.html" target="_blank" class="project-btn project-btn-html">
+                                📄 View Proposal
+                            </a>
+                            <a href="pdf/aksara-writer-proposal.pdf" class="project-btn project-btn-pdf">
+                                ⬇️ Download PDF
+                            </a>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="merdekanos-planning.html" target="_blank" class="project-link">
-                        <div class="project-card">
-                            <span class="project-status status-vision">Long-term Vision</span>
-                            <h3>MerdekaOS</h3>
-                            <p><strong>Arch Linux-based distribution</strong></p>
-                            <p>Lightweight, Indonesian-optimized operating system for offices and developers. Pre-configured for Indonesian languages and bundled with our software ecosystem.</p>
-                            <p style="margin-top: auto;"><strong>Timeline:</strong> 24-36 months</p>
+                    <div class="project-card">
+                        <span class="project-status status-vision">Phase 3 Project</span>
+                        <h3>MerdekaOS</h3>
+                        <p><strong>Arch Linux-based distribution</strong></p>
+                        <p>Lightweight, Indonesian-optimized operating system for offices and developers. Pre-configured for Indonesian languages and bundled with our software ecosystem.</p>
+                        <p><strong>Timeline:</strong> 12-18 months</p>
+                        <div class="project-actions">
+                            <a href="project/merdeka-os-proposal.html" target="_blank" class="project-btn project-btn-html">
+                                📄 View Proposal
+                            </a>
+                            <a href="pdf/merdeka-os-proposal.pdf" class="project-btn project-btn-pdf">
+                                ⬇️ Download PDF
+                            </a>
                         </div>
-                    </a>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="project-status status-research">Phase 4 Project</span>
+                        <h3>Personal AI Assistant</h3>
+                        <p><strong>Tauri + Local LLM integration</strong></p>
+                        <p>Offline AI assistance in Bahasa Indonesia, reducing dependency on cloud-based foreign services. Complete privacy-focused design with cultural context awareness.</p>
+                        <p><strong>Timeline:</strong> 18-24 months</p>
+                        <div class="project-actions">
+                            <a href="project/personal-ai-proposal.html" target="_blank" class="project-btn project-btn-html">
+                                📄 View Proposal
+                            </a>
+                            <a href="pdf/personal-ai-proposal.pdf" class="project-btn project-btn-pdf">
+                                ⬇️ Download PDF
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section id="vision" class="content-section">
-                <h2 class="section-title">The Vision Behind Ak'sara</h2>
+                <h2 class="section-title">Vision & Potential Impact</h2>
 
-                <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 2rem; border-radius: 15px; margin-bottom: 2rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div>
+                        <h4 style="color: #667eea; margin-bottom: 1rem;">🇮🇩 Economic Independence</h4>
+                        <p>Working toward reducing Indonesia's dependency on expensive foreign software solutions, contributing to technological sovereignty and local economic growth.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #667eea; margin-bottom: 1rem;">💼 Ecosystem Development</h4>
+                        <p>Building foundation for sustainable Indonesian tech ecosystem development, starting with accessible no-code tools and expanding to comprehensive solutions.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #667eea; margin-bottom: 1rem;">📈 Digital Accessibility</h4>
+                        <p>Democratizing access to business software for Indonesian SMEs through affordable, locally-relevant solutions that understand our language and culture.</p>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 2rem; border-radius: 15px; margin-top: 2rem;">
                     <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
                         <img src="assets/ak'sara.png" alt="Ak'sara Initiative" style="width: 120px; height: 120px; object-fit: contain; border-radius: 10px;">
                         <div style="flex: 1; min-width: 300px;">
@@ -399,9 +461,18 @@
                             </div>
                         </div>
                     </div>
+                    <hr style="margin:1em 0;">
+                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                        <a href="https://github.com/Ak-sara" style="text-decoration: none; font-size: 0.9rem;">
+                            🏢 Organization GitHub
+                        </a>
+                        <a href="https://github.com/linheriawan" style="text-decoration: none; font-size: 0.9rem;">
+                            👤 Founder's GitHub
+                        </a>
+                    </div>
                 </div>
 
-                <div style="background: rgba(102, 126, 234, 0.1); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #667eea; margin-bottom: 2rem;">
+                <div style="background: rgba(102, 126, 234, 0.4); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #667eea; margin-top: 2rem;">
                     <h4 style="color: #667eea; margin-bottom: 0.5rem;">🤝 Partnership Opportunities</h4>
                     <p style="color: #666;">
                         <strong>Looking for collaboration</strong> with Indonesian hardware manufacturers and technology companies
@@ -409,22 +480,6 @@
                         technical collaboration - let's explore how we can build Indonesia's tech ecosystem together.
                         <em>(See detailed partnership proposals in planning documents)</em>
                     </p>
-                </div>
-
-                <h3 style="color: #667eea; margin-bottom: 1.5rem; text-align: center;">Vision & Potential Impact</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                    <div>
-                        <h4 style="color: #667eea; margin-bottom: 1rem;">🇮🇩 Economic Independence</h4>
-                        <p>Working toward reducing Indonesia's dependency on expensive foreign software solutions, contributing to technological sovereignty and local economic growth.</p>
-                    </div>
-                    <div>
-                        <h4 style="color: #667eea; margin-bottom: 1rem;">💼 Ecosystem Development</h4>
-                        <p>Building foundation for sustainable Indonesian tech ecosystem development, starting with accessible no-code tools and expanding to comprehensive solutions.</p>
-                    </div>
-                    <div>
-                        <h4 style="color: #667eea; margin-bottom: 1rem;">📈 Digital Accessibility</h4>
-                        <p>Democratizing access to business software for Indonesian SMEs through affordable, locally-relevant solutions that understand our language and culture.</p>
-                    </div>
                 </div>
             </section>
 
@@ -452,41 +507,15 @@
                         From a single Ryzen AI laptop sponsorship to full ecosystem partnerships - let's build Indonesia's digital future step by step.
                     </p>
                 </div>
+
             </section>
 
-            <section id="download" class="download-section">
+            <section id="joins" class="download-section">
                 <div class="container">
                     <h2 style="margin-bottom: 1rem;">Join Our Mission</h2>
-                    <p style="font-size: 1.2rem; opacity: 0.9;">Download our comprehensive proposal to learn more about partnership opportunities and investment potential.</p>
-
-                    <div class="download-buttons">
-                        <a href="proposal.html" class="download-btn" target="_blank">
-                            📄 View Full Proposal
-                        </a>
-                        <a href="pdf/proposal.pdf" class="download-btn">
-                            ⬇️ Download PDF
-                        </a>
-                    </div>
-
-                    <div style="margin-top: 1.5rem;">
-                        <h3 style="margin-bottom: 1rem;">Detailed Project Planning (.pdf)</h3>
-                        <div class="download-buttons">
-                            <a href="pdf/aksara-nocode-planning.pdf" class="download-btn" >
-                                🎯 Aksara IS (No-Code)
-                            </a>
-                            <a href="pdf/personal-ai-planning.pdf" class="download-btn">
-                                🤖 Personal AI Assistant
-                            </a>
-                            <a href="pdf/merdekanos-planning.pdf" class="download-btn">
-                                🖥️ MerdekaOS
-                            </a>
-                        </div>
-                    </div>
-
+                    <p style="font-size: 1.2rem; opacity: 0.9;">Ready to be part of Indonesia's digital transformation? Let's build the future together.</p>
                     <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
-                        <h3>Let's Connect</h3>
                         <p style="margin-bottom: 2rem;">I'd love to hear from you! Choose the best way to reach out based on your interest:</p>
-
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
                             <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 10px;">
                                 <strong style="display: block; margin-bottom: 0.5rem;">💰 Investment & Sponsorship</strong>
@@ -521,7 +550,7 @@
                                     Media inquiries, interviews, or press coverage? I'm happy to share the story.
                                 </p>
                                 <a href="mailto:media.aksara@tuta.com" style="color: #fff; text-decoration: none; font-weight: 500;">
-                                    media.aksara@tuta.com
+                                    relations.aksara@tuta.com
                                 </a>
                             </div>
                         </div>
@@ -542,18 +571,6 @@
             <div style="text-align: center;">
                 <p>&copy; 2024 Ak'sara Initiative. Building Indonesia's Digital Future.</p>
                 <p style="margin: 1rem 0;">Open Source • Community Driven • Made in Indonesia</p>
-
-                <div style="margin: 1.5rem 0; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
-                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.8;">Follow our development:</p>
-                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-                        <a href="https://github.com/Ak-sara" style="color: #fff; text-decoration: none; font-size: 0.9rem;">
-                            🏢 Organization GitHub
-                        </a>
-                        <a href="https://github.com/linheriawan" style="color: #fff; text-decoration: none; font-size: 0.9rem;">
-                            👤 Founder's GitHub
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </footer>
