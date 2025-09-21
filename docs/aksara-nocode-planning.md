@@ -563,28 +563,28 @@ src/lib/
 
 <div><div>
 
-**Q1 2024: Foundation**
+**Q1: Foundation**
 - Complete core platform features
 - Launch beta testing program
 - Build initial template library
 - Establish development processes
 </div><div>
 
-**Q2 2024: Market Entry**
+**Q2: Market Entry**
 - Public launch with freemium model
 - Indonesian business template release
 - Marketing campaign initiation
 - Community building programs
 </div><div>
 
-**Q3 2024: Growth**
+**Q3: Growth**
 - Enterprise features development
 - Partnership establishment
 - Professional services launch
 - International expansion planning
 </div><div>
 
-**Q4 2024: Scale**
+**Q4: Scale**
 - Advanced features rollout
 - Government pilot programs
 - Series A funding

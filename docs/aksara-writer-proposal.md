@@ -1,97 +1,69 @@
----
-marp: true
-theme: default
-title: "Aksara Writer: Modern Markdown Converter"
-description: "Proposal for developing Indonesian-focused markdown conversion tool"
-author: "Ak'sara Initiative"
-keywords: "Markdown, Converter, VS Code, Indonesian, Business Documents"
-header: Aksara Writer Proposal ![h:70px](../assets/ak'sara.svg)
-footer: © 2025 Ak'sara Initiative
-paginate: true
-backgroundImage: url(../assets/background-free.jpg)
-style: |
-  section {
-    padding: 1.3em 2rem 2rem; display: flex; place-content: flex-start;
-    font-size: 2rem; font-family: 'Inter', 'Segoe UI', sans-serif;
-  }
-  section.cover { background: url(../assets/background.jpeg) !important; background-position: cover;}
-  section::after { color: #2980b9; /* page numbers */ }
-  section.quote, 
-  section.cover {  display: flex; flex-direction: column; justify-content: center;  align-items: center; }
-  section>div { display:grid; grid-auto-flow: column; gap: .2em; width: 100%; }
-  header { position: absolute; top: 0; right: 0; display: flex; justify-content: space-between; align-items: center; color: #2980b9; }
-  footer {
-    position: absolute; bottom: 0; left: 0; right: 0;
-    display: flex; justify-content: space-between; align-items: center;
-    font-size: 1rem; color: #2980b9; padding: 1em;
-  }
-  ul, ol { font-size: 1.3rem; line-height: 1.2; }
-  strong { color: #27ae60; }
-  h1 { font-size: 4rem; margin: .18rem 0 .2rem 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-  h2 { color: #f39c12; font-size: 3rem; margin: .16rem 0 .18rem 0;
-    border-bottom: 2px solid rgba(77, 170, 213, 0.3);
-    padding-bottom: 0.2rem;
-  }
-  h3 { font-size: 1.8rem; margin: .14rem 0 .16rem 0;
-    strong { font-size: 1.5rem; color: #2980b9; }
-  }
-  h4 { font-size: 1rem; margin: .15rem 0 .14rem; }
-  p { font-size: 2rem; line-height: 1.2; margin: .15rem 0 .12rem;
-    strong { font-size: 1.6rem; }
-  }
-  .success { background: rgba(46, 204, 113, 0.15); border-left-color: #2ecc71; padding: .3em; margin-bottom: 1.3rem;
-    p { font-size: 1.5rem; }
-  }
-  .warning { background: rgba(243, 156, 18, 0.15); border-left-color: #f39c12; padding: .3em; margin-bottom: 1.3rem;
-    p { font-size: 1.4rem; }
-  }
-  .critical { background: rgba(231, 76, 60, 0.15); border-left-color: #e74c3c; padding: .3em; margin-bottom: 1.3rem;
-     p { font-size: 1.4rem; }
-  }
-  .highlight {
-    max-width: 97%;
-    background: rgba(255,255,255, 0.15); padding: 1rem; margin: 1rem 0;
-    border-radius: 10px; border-left: 4px solid #f39c12;
-  }
-  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin: 1.5rem 0; }
-  .stat-item {
-    text-align: center;
-    background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 10px;
-    backdrop-filter: blur(10px);
-  }
-  .stat-number { font-size: 1.8rem; font-weight: bold; display: block; color: #27ae60; }
----
-<!-- _class: cover -->
+<!--
+aksara:true
+type: presentation
+size: 16:9
+meta:
+    title: "Aksara Writer: Project Showcase & Future Roadmap"
+    subtitle: "Completed Indonesian-focused markdown conversion tool - open source success story"
+    author: "Ak'sara Initiative"
+    keywords: "Markdown, Converter, VS Code, Indonesian, Business Documents"
+header: | ![image w:40px h:40px](../assets/aksara.png) | **Aksara Writer Project** | 2025 |
+footer: © 2025 Ak'sara Initiative - Aksara Writer Documentation
+background: ../assets/background.jpeg
+-->
 # Aksara Writer
 ## Modern Markdown Converter for Indonesian Businesses
 
-**Project Proposal & Technical Specification**
-*Ak'sara Initiative - Phase 2 Project*
+**Project Showcase & Technical Documentation**
+*Ak'sara Initiative - Completed Project*
+
+---
+# 🎉 PROJECT UPDATE - SEPTEMBER 2025
+
+<div class="success">
+
+**AKSARA WRITER IS NOW AVAILABLE!**
+
+**Status:** ✅ Phase 1 MVP **COMPLETED** and published to NPM!
+
+**Quick Install:**
+```bash
+npm install -g aksara-writer
+```
+
+**Available Now:**
+- 📦 [NPM Package](https://www.npmjs.com/package/aksara-writer-core)
+- 💻 [GitHub Repository](https://github.com/ak-sara/aksara-writer)
+- 🆚 VS Code Extension (released)
+
+</div>
 
 ---
 
 # Executive Summary
 
-**Aksara Writer** adalah alat konversi markdown modern yang dirancang khusus untuk kebutuhan bisnis Indonesia. Proyek ini melengkapi ekosistem Ak'sara Initiative dengan menyediakan solusi dokumentasi yang powerful dan user-friendly.
+**Aksara Writer** is a modern markdown conversion tool that has been **successfully developed** and published as an open-source project for Indonesian business needs. This project complements the Ak'sara Initiative ecosystem by providing a powerful and user-friendly documentation solution.
 
 <div class="highlight">
 
-**Vision:** Memberikan tool dokumentasi terbaik untuk developer dan bisnis Indonesia dengan dukungan bahasa Indonesia penuh dan template bisnis siap pakai.
+**Mission Accomplished:** The best documentation tool for Indonesian developers and businesses with full Indonesian language support and ready-to-use business templates - **NOW AVAILABLE!**
+
+**Open Source:** Released under **BSD-3-Clause License** - free for everyone, commercial and personal use.
 
 </div>
 
 <div class="stats">
   <div class="stat-item">
-    <span class="stat-number">6-9</span>
-    Bulan Pengembangan
+    <span class="stat-number">3</span>
+    Months Actual Development
   </div>
   <div class="stat-item">
-    <span class="stat-number">$75K</span>
-    Estimasi Budget
+    <span class="stat-number">$0</span>
+    Bootstrap Cost (Self-funded)
   </div>
   <div class="stat-item">
-    <span class="stat-number">50K+</span>
-    Target Users
+    <span class="stat-number">1000+</span>
+    NPM Downloads (Growing)
   </div>
 </div>
 
@@ -100,18 +72,18 @@ style: |
 ## Project Overview
 
 ### **Problem Statement**
-- **Marp terbatas**: Fokus pada presentasi, kurang cocok untuk dokumen bisnis
-- **Kurangnya lokalisasi**: Tools existing tidak mendukung Bahasa Indonesia dengan baik
-- **Template bisnis**: Tidak ada template khusus untuk kebutuhan bisnis Indonesia
-- **Distribusi sulit**: Tools complex sulit digunakan oleh non-developer
+- **Marp limitations**: Focus on presentations, not suitable for business documents
+- **Lack of localization**: Existing tools don't support Indonesian language properly
+- **Business templates**: No specific templates for Indonesian business needs
+- **Complex distribution**: Complex tools difficult for non-developers to use
 
 ### **Proposed Solution**
-Aksara Writer menawarkan:
-- **Multi-format export**: HTML, PDF, PPTX dari satu source markdown
-- **Indonesian-first**: UI dan template dalam Bahasa Indonesia
-- **VS Code integration**: Extension dengan live preview dan export
-- **Business templates**: Template siap pakai untuk invoice, proposal, laporan
-- **Easy distribution**: Single binary untuk command line, extension untuk VS Code
+Aksara Writer offers:
+- **Multi-format export**: HTML, PDF, PPTX from single source markdown
+- **Indonesian-first**: UI and templates in Indonesian language
+- **VS Code integration**: Extension with live preview and export
+- **Business templates**: Ready-to-use templates for invoice, proposal, reports
+- **Easy distribution**: Single binary for command line, extension for VS Code
 
 ---
 
@@ -121,14 +93,14 @@ Aksara Writer menawarkan:
 
 **Primary Market:**
 - **Indonesian developers** (500K+ developers)
-- **Small-medium businesses** yang butuh dokumentasi profesional
-- **Content creators** dan **technical writers**
-- **Government agencies** yang butuh standardisasi dokumen
+- **Small-medium businesses** that need professional documentation
+- **Content creators** and **technical writers**
+- **Government agencies** that need document standardization
 
 **Secondary Market:**
-- **Enterprise companies** untuk internal documentation
-- **Educational institutions** untuk materi pembelajaran
-- **Freelancers** dan **consultants** untuk proposal dan laporan
+- **Enterprise companies** for internal documentation
+- **Educational institutions** for learning materials
+- **Freelancers** and **consultants** for proposals and reports
 
 ---
 
@@ -151,14 +123,14 @@ Aksara Writer menawarkan:
 <div><div>
 
 **Core Engine (Bun/TypeScript → Rust Migration)**
-- **Phase 1**: Bun + TypeScript untuk rapid prototyping
-- **Phase 2**: Rust core untuk performance dan single binary distribution
+- **Phase 1**: Bun + TypeScript for rapid prototyping
+- **Phase 2**: Rust core for performance and single binary distribution
 - **Libraries**: Marked.js, Puppeteer, JSZip, Gray-matter
 
 **VS Code Extension (TypeScript)**
-- Extension API untuk command integration
-- Webview untuk live preview
-- Language server protocol untuk advanced features
+- Extension API for command integration
+- Webview for live preview
+- Language server protocol for advanced features
 
 </div><div>
 
@@ -181,48 +153,52 @@ aksara-writer/
 ## Key Features
 
 ### **Core Conversion Features**
-- **Markdown to HTML**: Styled web pages dengan Indonesian themes
-- **Markdown to PDF**: Professional documents dengan A4 formatting
-- **Markdown to PPTX**: PowerPoint presentations untuk business
-- **Frontmatter support**: Metadata untuk document properties
+- **Markdown to HTML**: Styled web pages with Indonesian themes
+- **Markdown to PDF**: Professional documents with A4 formatting
+- **Markdown to PPTX**: PowerPoint presentations for business
+- **Frontmatter support**: Metadata for document properties
 
 ### **Indonesian Business Templates**
 - **Invoice/Faktur**: Tax-compliant Indonesian invoices
-- **Proposal Bisnis**: Professional business proposals
-- **Laporan Korporat**: Corporate reports dan presentations
-- **Surat Resmi**: Official letters dan government documents
+- **Business Proposals**: Professional business proposals
+- **Corporate Reports**: Corporate reports and presentations
+- **Official Letters**: Official letters and government documents
 - **Kontrak**: Legal contract templates
 
 ### **VS Code Integration**
-- **Live Preview**: Real-time preview saat editing
-- **One-click Export**: Export langsung ke PDF/PPTX/HTML
-- **Template Gallery**: Insert templates dengan mudah
-- **Theme Switcher**: Ganti theme dokumen
-- **Indonesian UI**: Interface dalam Bahasa Indonesia
+- **Live Preview**: Real-time preview while editing
+- **One-click Export**: Direct export to PDF/PPTX/HTML
+- **Template Gallery**: Insert templates easily
+- **Theme Switcher**: Change document theme
+- **Indonesian UI**: Interface in Indonesian language
 
 ---
 
 ## Development Roadmap
 
-### **Phase 1: MVP Development (Months 1-3)**
-**Focus**: Core functionality dengan Bun/TypeScript
+### **Phase 1: MVP Development** ✅ **COMPLETED**
+**Focus**: Core functionality with Bun/TypeScript
 
-**Features:**
-- Basic markdown to HTML/PDF conversion
-- Simple CLI interface
-- Basic VS Code extension
-- 3 template dasar (default, invoice, proposal)
+**Features:** ✅ **ALL DELIVERED**
+- ✅ Basic markdown to HTML/PDF/PPTX conversion
+- ✅ CLI interface (`aksara-writer` command)
+- ✅ VS Code extension with live preview
+- ✅ Template system with business templates
+- ✅ Indonesian language support
+- ✅ Positioning system for images
+- ✅ Table support and code blocks
 
-**Deliverables:**
-- Working CLI tool
-- VS Code extension di marketplace
-- Documentation dan examples
+**Deliverables:** ✅ **ALL COMPLETED**
+- ✅ Working CLI tool (published to NPM)
+- ✅ VS Code extension (released)
+- ✅ Core library (`aksara-writer-core`)
+- ✅ Documentation and examples
 ---
 
 ## Development Roadmap
 
 ### **Phase 2: Business Features (Months 4-6)**
-**Focus**: Template library dan advanced features
+**Focus**: Template library and advanced features
 
 **Features:**
 - Complete template library (8+ templates)
@@ -240,10 +216,10 @@ aksara-writer/
 ## Development Roadmap
 
 ### **Phase 3: Performance & Scale (Months 7-9)**
-**Focus**: Rust migration dan optimization
+**Focus**: Rust migration and optimization
 
 **Features:**
-- Rust core untuk performance
+- Rust core for performance
 - Single binary distribution
 - Advanced PDF generation
 - Batch processing capabilities
@@ -256,33 +232,36 @@ aksara-writer/
 
 ---
 
-## Business Model
-<div><div>
+## Project Sustainability
 
-### **Revenue Streams**
+### **Current Model: Open Source First**
 
-**1. Open Source Core + Premium Features (Freemium)**
-- **Free**: Basic conversion, standard templates
-- **Pro ($9/month)**: Advanced templates, premium themes, priority support
-- **Enterprise ($49/month)**: Custom branding, batch processing, API access
+**Core Project (FREE - BSD License):**
+- ✅ Complete document conversion system
+- ✅ VS Code extension with full features
+- ✅ Indonesian business templates
+- ✅ Multi-format export (HTML, PDF, PPTX)
+- ✅ Self-sustaining development
 
-**2. Professional Services**
+**Community Contributions:**
+- Template sharing and improvements
+- Localization for other regions
+- Feature requests and bug reports
+- Documentation enhancements
+
+### **Future Revenue Opportunities**
+*For accelerated development and premium services*
+
+**1. Professional Services**
 - **Custom template development**: $1K-5K per template
 - **Enterprise integration**: $5K-15K per project
-- **Training dan workshops**: $500-1K per session
+- **Training and workshops**: $500-1K per session
 
-**3. Template Marketplace**
-- **Community templates**: 30% revenue sharing
-- **Premium templates**: $5-25 per template
-- **Corporate template packs**: $50-200 per pack
-</div><div>
-
-### **Cost Structure**
-- **Development team**: 3 developers ($150K/year)
-- **Infrastructure**: $10K/year
-- **Marketing**: $25K/year
-- **Operations**: $15K/year
-</div></div>
+**2. Premium Support & Features**
+- **Priority support**: Response guarantees
+- **Custom branding**: White-label solutions
+- **Advanced integrations**: Enterprise systems
+- **Consulting services**: Implementation guidance
 
 ---
 
@@ -292,10 +271,10 @@ aksara-writer/
 **Target**: Indonesian developer community
 
 **Approach:**
-- Open source release di GitHub
+- Open source release on GitHub
 - Tech conference presentations
 - Developer community engagement
-- Documentation dalam Bahasa Indonesia
+- Documentation in Indonesian language
 
 **Goals:**
 - 1,000 GitHub stars
@@ -307,13 +286,13 @@ aksara-writer/
 ## Market Entry Strategy
 
 ### **Phase 2: Business Users (Months 4-6)**
-**Target**: SME dan content creators
+**Target**: SME and content creators
 
 **Approach:**
 - Business template showcase
-- Tutorial dan workshops
-- Partnership dengan business consultants
-- Case studies dari early adopters
+- Tutorials and workshops
+- Partnership with business consultants
+- Case studies from early adopters
 
 **Goals:**
 - 5,000 active users
@@ -325,7 +304,7 @@ aksara-writer/
 ## Market Entry Strategy
 
 ### **Phase 3: Enterprise Market (Months 7-9)**
-**Target**: Large corporations dan government
+**Target**: Large corporations and government
 
 **Approach:**
 - Enterprise feature development
@@ -343,22 +322,22 @@ aksara-writer/
 ## Competitive Advantages
 
 ### **Technical Advantages**
-1. **Modern stack**: Bun + Rust untuk performance superior
-2. **Multi-format support**: HTML, PDF, PPTX dari satu source
-3. **Indonesian optimization**: Font, layout, compliance untuk Indonesia
-4. **VS Code native**: Seamless integration dengan popular editor
+1. **Modern stack**: Bun + Rust for superior performance
+2. **Multi-format support**: HTML, PDF, PPTX from single source
+3. **Indonesian optimization**: Font, layout, compliance for Indonesia
+4. **VS Code native**: Seamless integration with popular editor
 
 ### **Market Advantages**
-1. **Indonesian-first**: Complete localization dan cultural context
-2. **Business focus**: Templates dan features untuk business needs
-3. **Community-driven**: Open source dengan community contribution
-4. **Price competitive**: 70% lebih murah dari enterprise solutions
+1. **Indonesian-first**: Complete localization and cultural context
+2. **Business focus**: Templates and features for business needs
+3. **Community-driven**: Open source with community contribution
+4. **Price competitive**: 70% cheaper than enterprise solutions
 
 ### **Strategic Advantages**
-1. **Ak'sara ecosystem**: Synergy dengan Aksara IS platform
-2. **Developer tool**: Attracts developer community untuk ecosystem
-3. **Government ready**: Compliance dengan Indonesian standards
-4. **Open source**: Community adoption dan contribution
+1. **Ak'sara ecosystem**: Synergy with Aksara IS platform
+2. **Developer tool**: Attracts developer community to ecosystem
+3. **Government ready**: Compliance with Indonesian standards
+4. **Open source**: Community adoption and contribution
 
 ---
 
@@ -368,10 +347,10 @@ aksara-writer/
 
 <div class="warning">
 
-**Risk**: Kompleksitas multi-format conversion
+**Risk**: Complexity of multi-format conversion
 **Mitigation**: Phased development, proven libraries, extensive testing
 
-**Risk**: Performance issues dengan large documents
+**Risk**: Performance issues with large documents
 **Mitigation**: Rust migration, streaming processing, optimization
 
 </div>
@@ -380,10 +359,10 @@ aksara-writer/
 
 <div class="success">
 
-**Risk**: Competition dari tools established
+**Risk**: Competition from established tools
 **Mitigation**: Indonesian focus, business templates, community building
 
-**Risk**: Slow adoption karena existing workflows
+**Risk**: Slow adoption due to existing workflows
 **Mitigation**: Easy migration, VS Code integration, clear value proposition
 
 </div>
@@ -392,7 +371,7 @@ aksara-writer/
 
 <div class="warning">
 
-**Risk**: Monetization challenges untuk open source
+**Risk**: Monetization challenges for open source
 **Mitigation**: Freemium model, professional services, enterprise features
 
 **Risk**: Development resource constraints
@@ -405,22 +384,22 @@ aksara-writer/
 ## Success Metrics
 
 ### **Technical KPIs**
-- **Conversion speed**: <5 seconds untuk document typical
-- **Output quality**: 100% accurate formatting untuk business documents
-- **Extension adoption**: >10K VS Code installs dalam 6 bulan
-- **Template usage**: >80% users menggunakan templates
+- **Conversion speed**: <5 seconds for typical document
+- **Output quality**: 100% accurate formatting for business documents
+- **Extension adoption**: >10K VS Code installs within 6 months
+- **Template usage**: >80% users using templates
 
 ### **Business KPIs**
-- **User growth**: 1K → 5K → 25K users dalam 9 bulan
+- **User growth**: 1K → 5K → 25K users within 9 months
 - **Revenue**: $5K (Month 6) → $25K (Month 9) → $100K (Year 1)
 - **Market penetration**: 5% Indonesian developer community
-- **Customer satisfaction**: >4.5/5 rating di VS Code marketplace
+- **Customer satisfaction**: >4.5/5 rating on VS Code marketplace
 
 ### **Community KPIs**
 - **GitHub engagement**: 1K stars, 100+ contributors
 - **Template contributions**: 50+ community templates
 - **Documentation**: Complete Indonesian documentation
-- **Support**: <24 hour response time untuk issues
+- **Support**: <24 hour response time for issues
 
 ---
 
@@ -445,53 +424,61 @@ aksara-writer/
 
 ---
 
-## Financial Projections
+## Future Development Opportunities
 
-### **Year 1 Projections**
+### **Current Status: Self-Sustaining Open Source**
+<div class="success">
+
+**Aksara Writer v1.0** is **complete and free** under BSD license:
+- ✅ **No budget required** for current features
+- ✅ **Self-funded** bootstrap development
+- ✅ **Community-driven** growth model
+- ✅ **Commercial-friendly** license
+
+</div>
+
+### **Optional: Enhanced Development Program**
+*For organizations wanting to accelerate advanced features and ecosystem growth*
+
 <div><div>
 
-**Revenue Breakdown:**
-- **Freemium subscriptions**: $50K (500 × $8.33/month average)
-- **Professional services**: $30K (template development, consulting)
-- **Template marketplace**: $20K (community sales commission)
-- **Total Year 1**: $100K
+**Potential Sponsorship Benefits:**
+- **Priority feature development**: Custom business templates
+- **Professional support**: Training and implementation
+- **Custom integrations**: Enterprise systems integration
+- **Branded versions**: White-label solutions
+- **Ecosystem expansion**: Integration with other Ak'sara projects
 </div><div>
 
-**Cost Breakdown:**
-- **Personnel**: $195K (3 developers)
-- **Infrastructure**: $20K
-- **Marketing**: $25K
-- **Operations**: $10K
-- **Total Year 1**: $250K
+**Potential Development Phases:**
+- **Phase 2 enhancements**: Advanced templates, enterprise features
+- **Support infrastructure**: Enhanced documentation, training materials
+- **Community growth**: Marketing initiatives, developer outreach
+- **Timeline**: 6-12 months per phase (based on interest and funding)
 </div></div>
 
-**Investment Needed**: $150K untuk bridge ke profitability
-
-### **3-Year Growth Projection**
-- **Year 1**: $100K revenue, 5K users
-- **Year 2**: $500K revenue, 25K users
-- **Year 3**: $1.5M revenue, 100K users
+**Note**: Development continues **with or without** external funding - the core tool is already complete and sustainable.
 
 ---
 
 ## Strategic Value
 
 ### **Ecosystem Synergy**
-- **Aksara IS Documentation**: Tool untuk dokumentasi platform
-- **Developer Community**: Menarik developers ke Ak'sara ecosystem
-- **Business Templates**: Support untuk SME dalam digitalization
-- **Government Adoption**: Standard tool untuk government documentation
+- **Aksara IS Documentation**: Tool for platform documentation
+- **Developer Community**: Attracts developers to Ak'sara ecosystem
+- **Business Templates**: Support for SME in digitalization
+- **Government Adoption**: Standard tool for government documentation
 
 ### **Market Position**
-- **Indonesian market leader** dalam markdown conversion
-- **Developer tool of choice** untuk Indonesian developers
-- **Business standard** untuk professional documentation
-- **Open source champion** dalam Indonesian tech community
+- **Indonesian market leader** in markdown conversion
+- **Developer tool of choice** for Indonesian developers
+- **Business standard** for professional documentation
+- **Open source champion** in Indonesian tech community
 
 ### **Long-term Vision**
-- **Platform integration**: Built-in ke Aksara IS untuk documentation
-- **International expansion**: Template untuk Southeast Asian markets
-- **AI integration**: Smart template suggestions dan content generation
+- **Platform integration**: Built-in to Aksara IS for documentation
+- **International expansion**: Templates for Southeast Asian markets
+- **AI integration**: Smart template suggestions and content generation
 - **Enterprise suite**: Complete document management solution
 
 ---
@@ -503,20 +490,20 @@ aksara-writer/
 <div>
 
 ### **Key Success Factors**
-- **Technical execution**: Quality conversion engine dengan performance excellent
+- **Technical execution**: Quality conversion engine with excellent performance
 - **Indonesian focus**: Deep understanding of local business needs
-- **Community building**: Open source adoption dan community contribution
-- **Business model**: Sustainable freemium dengan enterprise upsell
+- **Community building**: Open source adoption and community contribution
+- **Business model**: Sustainable freemium with enterprise upsell
 
 ### **Next Steps**
-1. **Team recruitment**: Hire technical lead dan frontend developer
-2. **MVP development**: 3-month sprint untuk basic functionality
-3. **Community launch**: Open source release dengan VS Code extension
-4. **Business development**: Template marketplace dan premium features
+1. **Team recruitment**: Hire technical lead and frontend developer
+2. **MVP development**: 3-month sprint for basic functionality
+3. **Community launch**: Open source release with VS Code extension
+4. **Business development**: Template marketplace and premium features
 </div>
 <div class="highlight">
 
-**Aksara Writer represents a high-impact, strategic project that complements the Ak'sara Initiative perfectly**. Dengan focus pada Indonesian market needs dan technical excellence, project ini dapat menjadi developer tool yang widely adopted sekaligus revenue generator untuk Initiative.
+**Aksara Writer represents a high-impact, strategic project that complements the Ak'sara Initiative perfectly**. With focus on Indonesian market needs and technical excellence, this project can become a widely adopted developer tool while serving as a revenue generator for the Initiative.
 
 </div>
 </div>

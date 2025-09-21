@@ -187,6 +187,7 @@
         .status-priority { background: #d4edda; color: #155724; }
         .status-research { background: #fff3cd; color: #856404; }
         .status-vision { background: #cce5ff; color: #004085; }
+        .status-stable { background: #d1ecf1; color: #0c5460; font-weight: 600; }
 
         .stats-grid {
             display: grid;
@@ -272,6 +273,20 @@
 
         .project-btn-pdf:hover {
             background: #ff5252;
+            transform: translateY(-1px);
+            color: white;
+        }
+
+        .project-btn-primary { background: #28a745; color: white; }
+        .project-btn-primary:hover {
+            background: #218838;
+            transform: translateY(-1px);
+            color: white;
+        }
+
+        .project-btn-secondary { background: #6c757d; color: white; }
+        .project-btn-secondary:hover {
+            background: #5a6268;
             transform: translateY(-1px);
             color: white;
         }
@@ -372,18 +387,24 @@
                     </div>
 
                     <div class="project-card">
-                        <span class="project-status status-research">Phase 2 Project</span>
+                        <span class="project-status status-stable">✅ Now Available</span>
                         <h3>Aksara Writer</h3>
-                        <p><strong>Modern markdown converter</strong></p>
+                        <p><strong>Modern markdown converter - NOW PUBLISHED!</strong></p>
                         <p>Indonesian-focused markdown to document converter with VS Code integration. Export to PDF, PPTX, HTML with business templates and Indonesian language support.</p>
-                        <p><strong>Timeline:</strong> 6-9 months to MVP</p>
                         <div class="project-actions">
+                            <a href="https://www.npmjs.com/package/aksara-writer-core" target="_blank" class="project-btn project-btn-primary">
+                                📦 NPM Package
+                            </a>
+                            <a href="https://github.com/ak-sara/aksara-writer" target="_blank" class="project-btn project-btn-secondary">
+                                💻 GitHub Repo
+                            </a>
                             <a href="project/aksara-writer-proposal.html" target="_blank" class="project-btn project-btn-html">
                                 📄 View Proposal
                             </a>
-                            <a href="pdf/aksara-writer-proposal.pdf" class="project-btn project-btn-pdf">
-                                ⬇️ Download PDF
-                            </a>
+                        </div>
+                        <div style="margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #28a745;">
+                            <p><strong>🚀 Quick Start:</strong></p>
+                            <code style="background: #e9ecef; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace;">npm install -g aksara-writer</code>
                         </div>
                     </div>
 
