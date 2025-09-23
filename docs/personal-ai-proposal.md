@@ -1,67 +1,17 @@
----
-marp: true
-theme: default
-title: "Personal AI Assistant: Offline-First Indonesian AI"
-description: "Proposal for developing local personal AI assistant"
-author: "Ak'sara Initiative"
-keywords: "AI, Personal Assistant, Offline, Indonesian, Tauri, Privacy"
-header: Personal AI Assistant Proposal ![h:70px](../assets/ak'sara.svg)
+<!--
+aksara:true
+type: presentation
+size: 16:9
+style: ./style.css
+meta:
+    title: "Personal AI Assistant: Offline-First Indonesian AI"
+    subtitle: "Proposal for developing local personal AI assistant"
+    author: "Ak'sara Initiative"
+    keywords: "AI, Personal Assistant, Offline, Indonesian, Tauri, Privacy"
+header: Personal AI Assistant Proposal | ![x:900 y:0 w:40px h:40px](../assets/aksara.png)
 footer: © 2025 Ak'sara Initiative
-paginate: true
-backgroundImage: url(../assets/background-free.jpg)
-style: |
-  section {
-    padding: 1.3em 2rem 2rem; display: flex; place-content: flex-start;
-    font-size: 2rem; font-family: 'Inter', 'Segoe UI', sans-serif;
-  }
-  section::after { color: #2980b9; /* page numbers */ }
-  section.cover { background: url(../assets/background.jpeg) !important; background-position: cover;}
-  section.quote, 
-  section.cover {  display: flex; flex-direction: column; justify-content: center;  align-items: center; }
-  section>div { display:grid; grid-auto-flow: column; gap: .2em; width: 100%; }
-  header { position: absolute; top: 0; right: 0; display: flex; justify-content: space-between; align-items: center; color: #2980b9; }
-  footer {
-    position: absolute; bottom: 0; left: 0; right: 0;
-    display: flex; justify-content: space-between; align-items: center;
-    font-size: 1rem; color: #2980b9; padding: 1em;
-  }
-  ul, ol { font-size: 1.3rem; line-height: 1.2; }
-  strong { color: #27ae60; }
-  h1 { font-size: 4rem; margin: .18rem 0 .2rem 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-  h2 { color: #f39c12; font-size: 3rem; margin: .16rem 0 .18rem 0;
-    border-bottom: 2px solid rgba(77, 170, 213, 0.3);
-    padding-bottom: 0.2rem;
-  }
-  h3 { font-size: 1.8rem; margin: .14rem 0 .16rem 0;
-    strong { font-size: 1.5rem; color: #2980b9; }
-  }
-  h4 { font-size: 1rem; margin: .15rem 0 .14rem; }
-  p { font-size: 2rem; line-height: 1.2; margin: .15rem 0 .12rem;
-    strong { font-size: 1.6rem; }
-  }
-  .success { background: rgba(46, 204, 113, 0.15); border-left-color: #2ecc71; padding: .3em; margin-bottom: 1.3rem;
-    p { font-size: 1.5rem; }
-  }
-  .warning { background: rgba(243, 156, 18, 0.15); border-left-color: #f39c12; padding: .3em; margin-bottom: 1.3rem;
-    p { font-size: 1.4rem; }
-  }
-  .critical { background: rgba(231, 76, 60, 0.15); border-left-color: #e74c3c; padding: .3em; margin-bottom: 1.3rem;
-     p { font-size: 1.4rem; }
-  }
-  .highlight {
-    max-width: 97%;
-    background: rgba(255,255,255, 0.15); padding: 1rem; margin: 1rem 0;
-    border-radius: 10px; border-left: 4px solid #f39c12;
-  }
-  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin: 1.5rem 0; }
-  .stat-item {
-    text-align: center;
-    background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 10px;
-    backdrop-filter: blur(10px);
-  }
-  .stat-number { font-size: 1.8rem; font-weight: bold; display: block; color: #27ae60; }
----
-<!-- _class: cover -->
+background: ../assets/background.jpeg
+-->
 # Personal AI Assistant
 ## Offline-First Indonesian AI for Privacy & Performance
 

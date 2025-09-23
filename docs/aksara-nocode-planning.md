@@ -1,94 +1,28 @@
----
-marp: true
-theme: default
-title: "Aksara IS: No-Code Platform for Indonesian Businesses"
-description: "Planning and feasibility analysis for Aksara Information System development and commercialization"
-author: "Ak'sara Initiative"
-keywords: "No-Code, SvelteKit, Indonesia, Business Applications, Enterprise"
-header: Aksara IS Planning & Feasibility - Phase 1 ![h:70px](../assets/ak'sara.svg)
-footer: © 2025 Ak'sara Initiative 
-paginate: true
-backgroundImage: url(../assets/background-free.jpg)
-style: |
-  section {
-    padding: 1.3em 2rem 2rem; display: flex; place-content: flex-start;
-    font-size: 2rem; font-family: 'Inter', 'Segoe UI', sans-serif; 
-  }
-  section::after { color: #2980b9; /* page numbers */ }
-  header { position: absolute; top: 0; right: 0; display: flex; justify-content: space-between; align-items: center; color: #2980b9; }
-  footer {
-    position: absolute; bottom: 0; left: 0; right: 0;
-    display: flex; justify-content: space-between; align-items: center; 
-    font-size: 1rem; color: #2980b9; padding: 1em;
-  }
-  ul, ol { font-size: 1.3rem; line-height: 1.2; }
-  strong { color: #27ae60; }
-  h1 { font-size: 4rem; margin: .18rem 0 .2rem 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-  h2 { color: #f39c12; font-size: 3rem; margin: .16rem 0 .18rem 0; 
-    border-bottom: 2px solid rgba(77, 170, 213, 0.3);
-    padding-bottom: 0.2rem;
-  }
-  h3 { font-size: 1.8rem; margin: .14rem 0 .16rem 0; 
-    strong { font-size: 1.5rem; color: #2980b9; }
-  }
-  h4 { font-size: 1rem; margin: .15rem 0 .14rem; }
-  p { font-size: 2rem; line-height: 1.2; margin: .15rem 0 .12rem; 
-    strong { font-size: 1.6rem; }
-  }
-  .success { background: rgba(46, 204, 113, 0.15); border-left-color: #2ecc71; padding: .3em; margin-bottom: 1.3rem;
-    p { font-size: 1.5rem; }
-  }
-  .warning { background: rgba(243, 156, 18, 0.15); border-left-color: #f39c12; padding: .3em; margin-bottom: 1.3rem;
-    p { font-size: 1.4rem; }
-  }
-  .critical { background: rgba(231, 76, 60, 0.15); border-left-color: #e74c3c; padding: .3em; margin-bottom: 1.3rem;
-     p { font-size: 1.4rem; } 
-  }
-  section>div { display:grid; grid-auto-flow: column; gap: .2em; width: 100%; }
-  .vcenter {max-height: min-content; align-self: anchor-center;}
-  .architecture {
-    background: rgba(255,255,255,0.1);
-    font-size: 0.75rem; padding: 0.8rem; border-radius: 8px; font-family: monospace; 
-  }
-  .highlight {
-    max-width: 97%;
-    background: rgba(255,255,255, 0.15); padding: 1rem; margin: 1rem 0;
-    border-radius: 10px; border-left: 4px solid #f39c12;
-  }
-  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin: 1.5rem 0; }
-  .stat-item {
-    text-align: center;
-    background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 10px;
-    backdrop-filter: blur(10px);
-  }
-  .stat-number { font-size: 1.8rem; font-weight: bold; display: block; color: #27ae60; }
-  /* page styling */
-  section.quote, 
-  section.cover {  display: flex; flex-direction: column; justify-content: center;  align-items: center; }
-  section.cover {
-    background: url(../assets/background.jpeg) !important;
-    text-align: center; padding: 4rem 3rem 3rem 3rem;
-    h1 { font-size: 5rem; margin-bottom: 1rem; margin-top: 2rem; }
-    h2 { font-size: 3rem; border: none; margin-bottom: 2rem; opacity: 0.9; }
-    header, footer { display: none; }
-  }
----
-<!-- _class: cover -->
+<!--
+aksara:true
+type: presentation
+size: 16:9
+style: ./style.css
+meta:
+    title: "Aksara IS: No-Code Platform for Indonesian Businesses"
+    subtitle: "Planning and feasibility analysis for Aksara Information System development and commercialization"
+    author: "Ak'sara Initiative"
+    keywords: "No-Code, SvelteKit, Indonesia, Business Applications, Enterprise"
+header: | Aksara IS Planning & Feasibility | ![x:900 y:0 w:40px h:40px](../assets/aksara.png) |
+footer: © 2025 Ak'sara Initiative
+background: ../assets/background.jpeg
+-->
+
 # Aksara IS
 ## No-Code Platform for Indonesian Businesses
 
 **Strategic Planning & Feasibility Analysis**
-*Phase 1 Priority Project - Ak'sara Initiative*
+* Priority Project - Ak'sara Initiative*
 
 ---
 
 ## No-Code Platform for Indonesian Businesses
 <br> 
-
-**Planning & Feasibility Analysis**
-
-*Phase 1 Priority Project - Ak'sara Initiative*  
-<br>
 
 **Empowering 64.2 Million Indonesian SMEs** Through Locally-Developed No-Code Solutions
 <br>
@@ -647,7 +581,7 @@ src/lib/
 4. **Break-even** achievement
 
 ---
-<!-- class: quote center -->
+
 ### **Contact Information:**  
 <br> 
 
