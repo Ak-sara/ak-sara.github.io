@@ -13,8 +13,8 @@ aksara-writer convert personal-ai-proposal.md --format html --output ../project/
 aksara-writer convert merdeka-os-proposal.md --format pdf --output ../pdf/merdeka-os-proposal.pdf
 aksara-writer convert merdeka-os-proposal.md --format html --output ../project/merdeka-os-proposal.html
 
-aksara-writer convert merdeka-os-proposal.md --format pdf --output ../pdf/merdeka-os-proposal.pdf
-aksara-writer convert merdeka-os-proposal.md --format html --output ../project/merdeka-os-proposal.html
+aksara-writer convert aksara-nocode-proposal.md --format pdf --output ../pdf/aksara-nocode-proposal.pdf
+aksara-writer convert aksara-nocode-proposal.md --format html --output ../project/aksara-nocode-proposal.html
 
 echo "Build complete!"
 echo "Files generated:"
