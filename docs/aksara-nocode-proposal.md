@@ -8,7 +8,7 @@ meta:
     subtitle: "Planning and feasibility analysis for Aksara Information System development and commercialization"
     author: "Ak'sara Initiative"
     keywords: "No-Code, SvelteKit, Indonesia, Business Applications, Enterprise"
-header: | Aksara IS Planning & Feasibility | _ | ![x:900 y:0 w:40px h:40px](../assets/aksara.png) |
+header: | Aksara IS Planning & Feasibility  | ![x:900 y:0 w:40px h:40px](../assets/aksara.png) |
 footer: © 2025 Ak'sara Initiative
 background: ../assets/background.jpeg
 -->
