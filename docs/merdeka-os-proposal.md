@@ -49,6 +49,7 @@ background: ../assets/background.jpeg
 ---
 
 ## Strategic Context
+<div><div>
 
 ### **National Technology Independence**
 - **Dependency Reduction**: Mengurangi ketergantungan pada Windows dan macOS
@@ -61,11 +62,19 @@ background: ../assets/background.jpeg
 - **Linux Adoption**: <2% market share, huge growth potential
 - **Price Sensitivity**: Indonesian users need cost-effective solutions
 - **Technical Skills**: Growing developer community needs good tools
+</div><div>
 
 ### **Ak'sara Ecosystem Integration**
 - **Bundled Software**: Pre-installed Aksara IS dan Aksara Writer
 - **Development Platform**: Optimized untuk Indonesian developers
 - **Business Ready**: Templates dan tools untuk SME digitalization
+
+### **Key Benefits**
+- **Zero License Cost**: Completely free alternative to proprietary OS
+- **Performance Optimized**: Lightweight for older hardware
+- **Indonesian Language**: Full localization and support
+- **Developer Friendly**: Pre-configured development environment
+</div></div>
 
 ---
 

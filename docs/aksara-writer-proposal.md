@@ -70,12 +70,14 @@ npm install -g aksara-writer
 ---
 
 ## Project Overview
+<div><div>
 
 ### **Problem Statement**
 - **Marp limitations**: Focus on presentations, not suitable for business documents
 - **Lack of localization**: Existing tools don't support Indonesian language properly
 - **Business templates**: No specific templates for Indonesian business needs
 - **Complex distribution**: Complex tools difficult for non-developers to use
+</div><div>
 
 ### **Proposed Solution**
 Aksara Writer offers:
@@ -84,23 +86,25 @@ Aksara Writer offers:
 - **VS Code integration**: Extension with live preview and export
 - **Business templates**: Ready-to-use templates for invoice, proposal, reports
 - **Easy distribution**: Single binary for command line, extension for VS Code
+</div></div>
 
 ---
 
 ## Market Opportunity
+<div><div>
 
-### **Target Audience**
-
-**Primary Market:**
+### **Primary Market**
 - **Indonesian developers** (500K+ developers)
 - **Small-medium businesses** that need professional documentation
 - **Content creators** and **technical writers**
 - **Government agencies** that need document standardization
+</div><div>
 
-**Secondary Market:**
+### **Secondary Market**
 - **Enterprise companies** for internal documentation
 - **Educational institutions** for learning materials
 - **Freelancers** and **consultants** for proposals and reports
+</div></div>
 
 ---
 

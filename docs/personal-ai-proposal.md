@@ -48,6 +48,7 @@ background: ../assets/background.jpeg
 ---
 
 ## Strategic Context & Market Need
+<div><div>
 
 ### **Privacy Crisis in AI**
 - **Data sovereignty**: Indonesian user data processed di foreign servers
@@ -60,12 +61,20 @@ background: ../assets/background.jpeg
 - **Cultural context**: Tidak paham adat, budaya, business practices Indonesia
 - **Local knowledge**: Limited understanding tentang geography, history, regulasi
 - **Economic impact**: Indonesian payments untuk foreign AI services
+</div><div>
 
 ### **Technical Opportunity**
 - **Local processing power**: Modern laptops capable untuk run AI models
 - **Model improvements**: Smaller, efficient models dengan quality comparable
 - **Open source momentum**: Community-driven AI development growing
 - **Edge computing**: Trend toward local processing untuk privacy
+
+### **Market Demand**
+- **Privacy-conscious users**: Growing awareness tentang data privacy
+- **Professional users**: Lawyers, doctors, consultants yang need confidentiality
+- **Students & researchers**: Academic work dengan sensitive data
+- **Small businesses**: Cost-effective AI tanpa subscription fees
+</div></div>
 
 ---
 

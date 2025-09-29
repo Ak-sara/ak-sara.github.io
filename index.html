@@ -331,7 +331,7 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" style="background-image: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)), url('assets/background-free.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
             <div class="container">
                 <h1>Ak'sara Initiative</h1>
                 <p>Advancing Indonesia Digital Literacy through accessible, locally-developed software solutions</p>
@@ -363,10 +363,16 @@
                     </div>
                 </div>
 
-                <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: #666;">
+                <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto 3rem auto; color: #666;">
                 <strong>Ak'sara Initiative</strong>  is meant to building Indonesia's digital independence through a comprehensive ecosystem of open-source software tools,
                     reducing dependency on expensive foreign solutions while fostering local technical expertise.
                 </p>
+
+                <div style="text-align: center; margin: 3rem 0;">
+                    <h3 style="color: #667eea; margin-bottom: 1.5rem;">Technical Foundation & Architecture</h3>
+                    <img src="assets/arch_is.jpg" alt="Aksara IS Architecture" style="max-width: 100%; width: 600px; height: auto; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); border: 1px solid rgba(255,255,255,0.2);">
+                    <p style="margin-top: 1rem; color: #888; font-size: 0.9rem; font-style: italic;">Advanced SvelteKit architecture powering the Aksara IS no-code platform</p>
+                </div>
             </section>
 
             <section id="projects" class="content-section">
@@ -377,39 +383,35 @@
                 <div class="projects-grid">
                     <div class="project-card">
                         <div class="project-card-content">
-                            <span class="project-status status-priority">Priority Project</span>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span class="project-status status-priority">Priority Project</span>
+                                <img src="https://img.shields.io/badge/🇮🇩-Proudly%20Indonesian-red?style=flat-square" alt="Proudly Indonesian" style="height: 20px;">
+                            </div>
                             <h3>Aksara IS</h3>
                             <p><strong>Svelte-based no-code platform</strong></p>
                             <p>Enable Indonesian businesses to create custom applications without coding expertise. Features drag-and-drop builder, Indonesian language interface, and offline capabilities.</p>
                             <p><strong>Timeline:</strong> 12-18 months to MVP</p>
                         </div>
                         <div class="project-actions">
-                            <a href="project/aksara-nocode-proposal.html" target="_blank" class="project-btn project-btn-html">
-                                📄 View Docs
-                            </a>
-                            <a href="pdf/aksara-nocode-proposal.pdf" class="project-btn project-btn-pdf">
-                                ⬇️ Download PDF
-                            </a>
+                            <img src="https://img.shields.io/badge/📄-View%20Docs-blue?style=for-the-badge&logo=html5&logoColor=white" alt="View Docs" onclick="window.open('project/aksara-nocode-proposal.html', '_blank')" style="cursor: pointer; margin-right: 0.5rem;">
+                            <img src="https://img.shields.io/badge/⬇️-Download%20PDF-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download PDF" onclick="window.open('pdf/aksara-nocode-proposal.pdf', '_blank')" style="cursor: pointer;">
                         </div>
                     </div>
 
                     <div class="project-card">
                         <div class="project-card-content">
-                            <span class="project-status status-stable">✅ Now Available</span>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span class="project-status status-stable">✅ Now Available</span>
+                                <img src="https://img.shields.io/badge/🇮🇩-Proudly%20Indonesian-red?style=flat-square" alt="Proudly Indonesian" style="height: 20px;">
+                            </div>
                             <h3>Aksara Writer</h3>
                             <p><strong>Modern markdown converter - NOW PUBLISHED!</strong></p>
                             <p>Indonesian-focused markdown to document converter with VS Code integration. Features 4 professional themes, template insertion, and business templates. Export to PDF, PPTX, HTML.</p>
                         </div>
                         <div class="project-actions">
-                            <a href="https://www.npmjs.com/package/aksara-writer-core" target="_blank" class="project-btn project-btn-primary">
-                                📦 NPM Package
-                            </a>
-                            <a href="https://github.com/ak-sara/aksara-writer" target="_blank" class="project-btn project-btn-secondary">
-                                💻 GitHub Repo
-                            </a>
-                            <a href="project/aksara-writer-proposal.html" target="_blank" class="project-btn project-btn-html">
-                                📄 View Proposal
-                            </a>
+                            <img src="https://img.shields.io/badge/📦-NPM%20Package-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="NPM Package" onclick="window.open('https://www.npmjs.com/package/aksara-writer-core', '_blank')" style="cursor: pointer; margin-right: 0.5rem;">
+                            <img src="https://img.shields.io/badge/💻-GitHub%20Repo-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo" onclick="window.open('https://github.com/ak-sara/aksara-writer', '_blank')" style="cursor: pointer; margin-right: 0.5rem;">
+                            <img src="https://img.shields.io/badge/📄-View%20Proposal-blue?style=for-the-badge&logo=html5&logoColor=white" alt="View Proposal" onclick="window.open('project/aksara-writer-proposal.html', '_blank')" style="cursor: pointer;">
                         </div>
                         <div style="margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #28a745;">
                             <p><strong>🚀 Quick Start:</strong></p>
@@ -420,37 +422,38 @@
 
                     <div class="project-card">
                         <div class="project-card-content">
-                            <span class="project-status status-vision">Phase 3 Project</span>
-                            <h3>MerdekaOS</h3>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span class="project-status status-vision">Phase 3 Project</span>
+                                <img src="https://img.shields.io/badge/🇮🇩-Proudly%20Indonesian-red?style=flat-square" alt="Proudly Indonesian" style="height: 20px;">
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <img src="assets/Mos.svg" alt="MerdekaOS Logo" style="width: 48px; height: 48px; object-fit: contain;">
+                                <h3 style="margin: 0;">MerdekaOS</h3>
+                            </div>
                             <p><strong>Arch Linux-based distribution</strong></p>
                             <p>Lightweight, Indonesian-optimized operating system for offices and developers. Pre-configured for Indonesian languages and bundled with our software ecosystem.</p>
                             <p><strong>Timeline:</strong> 12-18 months</p>
                         </div>
                         <div class="project-actions">
-                            <a href="project/merdeka-os-proposal.html" target="_blank" class="project-btn project-btn-html">
-                                📄 View Proposal
-                            </a>
-                            <a href="pdf/merdeka-os-proposal.pdf" class="project-btn project-btn-pdf">
-                                ⬇️ Download PDF
-                            </a>
+                            <img src="https://img.shields.io/badge/📄-View%20Proposal-blue?style=for-the-badge&logo=html5&logoColor=white" alt="View Proposal" onclick="window.open('project/merdeka-os-proposal.html', '_blank')" style="cursor: pointer; margin-right: 0.5rem;">
+                            <img src="https://img.shields.io/badge/⬇️-Download%20PDF-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download PDF" onclick="window.open('pdf/merdeka-os-proposal.pdf', '_blank')" style="cursor: pointer;">
                         </div>
                     </div>
 
                     <div class="project-card">
                         <div class="project-card-content">
-                            <span class="project-status status-research">Phase 4 Project</span>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span class="project-status status-research">Phase 4 Project</span>
+                                <img src="https://img.shields.io/badge/🇮🇩-Proudly%20Indonesian-red?style=flat-square" alt="Proudly Indonesian" style="height: 20px;">
+                            </div>
                             <h3>Personal AI Assistant</h3>
                             <p><strong>Tauri + Local LLM integration</strong></p>
                             <p>Offline AI assistance in Bahasa Indonesia, reducing dependency on cloud-based foreign services. Complete privacy-focused design with cultural context awareness.</p>
                             <p><strong>Timeline:</strong> 18-24 months</p>
                         </div>
                         <div class="project-actions">
-                            <a href="project/personal-ai-proposal.html" target="_blank" class="project-btn project-btn-html">
-                                📄 View Proposal
-                            </a>
-                            <a href="pdf/personal-ai-proposal.pdf" class="project-btn project-btn-pdf">
-                                ⬇️ Download PDF
-                            </a>
+                            <img src="https://img.shields.io/badge/📄-View%20Proposal-blue?style=for-the-badge&logo=html5&logoColor=white" alt="View Proposal" onclick="window.open('project/personal-ai-proposal.html', '_blank')" style="cursor: pointer; margin-right: 0.5rem;">
+                            <img src="https://img.shields.io/badge/⬇️-Download%20PDF-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download PDF" onclick="window.open('pdf/personal-ai-proposal.pdf', '_blank')" style="cursor: pointer;">
                         </div>
                     </div>
                 </div>

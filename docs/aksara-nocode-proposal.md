@@ -8,19 +8,21 @@ meta:
     subtitle: "Planning and feasibility analysis for Aksara Information System development and commercialization"
     author: "Ak'sara Initiative"
     keywords: "No-Code, SvelteKit, Indonesia, Business Applications, Enterprise"
-header: | Aksara IS Planning & Feasibility  | ![x:900 y:0 w:40px h:40px](../assets/aksara.png) |
+header: | Aksara IS Planning & Feasibility  | ![lg r:10px y:0 w:50px](../assets/aksara.png) |
 footer: © 2025 Ak'sara Initiative
 background: ../assets/background.jpeg
 -->
-
+---
+<!-- class:cover -->
 # Aksara IS
 ## No-Code Platform for Indonesian Businesses
 
 **Strategic Planning & Feasibility Analysis**
 * Priority Project - Ak'sara Initiative*
+![fg r:60px t:50% w:100px](../assets/aksara.png)
 
 ---
-
+<!-- class:quote -->
 ## No-Code Platform for Indonesian Businesses
 <br> 
 
@@ -103,8 +105,8 @@ src/lib/
 - **Digital adoption:** <15% use custom business software
 - **Pain Points:** Expensive international solutions, language barriers
 - **Opportunity:** 54M+ businesses with manual/spreadsheet-based processes
-</div> 
-<div>
+
+</div> <div>
 
 ### **Competitive Landscape Analysis**
 
@@ -124,6 +126,7 @@ src/lib/
 ---
 
 ## Unique Value Proposition
+<div><div>
 
 ### **Indonesian-First Approach**
 - **Native Bahasa Indonesia** interface and documentation
@@ -136,15 +139,16 @@ src/lib/
 - **Offline-capable** applications
 - **Lightweight deployment** (no vendor lock-in)
 - **Open architecture** (export to standard formats)
+</div><div>
 
 ### **Business Model Innovation**
 - **Affordable pricing** (10x cheaper than international solutions)
 - **Local payment methods** (bank transfer, e-wallet)
 - **Community-driven** template marketplace
 - **Professional services** in Indonesian language
+</div></div>
 
 ---
-
 ## Technical Roadmap  
 ### **Phase 1: Core Platform Completion (Months 1-6)**
 **Current Status:** 70% complete
@@ -160,7 +164,8 @@ src/lib/
 - Advanced component library
 - Data validation and business rules
 - Export functionality (JSON, API specs)
----  
+
+---
 ## Technical Roadmap  
 ### **Phase 2: Business Features (Months 7-12)**
 **Objective:** Production-ready business application builder
@@ -197,6 +202,8 @@ src/lib/
 
 ## Technical Architecture Deep-Dive
 
+<div><div>
+
 ### **Performance Optimizations**
 - **YAML → JSON compilation** for fast runtime loading
 - **Component lazy loading** for large applications
@@ -208,10 +215,12 @@ src/lib/
 - **Stateless design** for horizontal scaling
 - **CDN-ready** asset compilation
 - **Database-agnostic** data layer  
+</div><div>
 
 ### **Current Architecture Strengths**
 ![image](../assets/arch_is.jpg)
-
+</div>
+</div>
 
 ---
 
@@ -261,57 +270,69 @@ src/lib/
 ### **Phase 1: Developer & Early Adopter Community (Months 1-6)**
 **Target:** Indonesian developers, small agencies, tech-savvy SME owners
 
+<div><div>
+
 **Approach:**
 - **Open beta** with developer community
 - **Tech conference** demonstrations
 - **GitHub** and developer forum engagement
 - **Influencer partnerships** with Indonesian tech leaders
+</div><div>
 
 **Goals:**
 - 1,000 beta users
 - 100 published applications
 - Community feedback integration
 - Technical validation completion
+</div></div>
 
 ---
 
 ## Market Entry Strategy
 ### **Phase 2: SME Market Penetration (Months 7-12)**
 **Target:** Small-medium businesses, consultants, local agencies
+<div><div>
 
 **Approach:**
 - **Business template** library launch
 - **Indonesian business** use case marketing
 - **Partnership** with business consultants
 - **Local success stories** and case studies
+</div><div>
 
 **Goals:**
 - 5,000 active users
 - 500 paying customers
 - Template marketplace launch
 - Break-even achievement
+</div></div>
+
 ---
 
 ## Market Entry Strategy
 
 ### **Phase 3: Enterprise Sales (Months 13-18)**
 **Target:** Large Indonesian corporations, government agencies
+<div><div>
 
 **Approach:**
 - **Enterprise feature** rollout
 - **Professional sales** team establishment
 - **Government procurement** participation
 - **System integrator** partnerships
+</div><div>
 
 **Goals:**
 - 50 enterprise customers
 - Government pilot programs
 - $1M annual revenue
 - Market leadership position
+</div></div>
 
 ---
 
 ## Competitive Advantages
+<div><div>
 
 ### **Technology Advantages**
 1. **Modern architecture** (SvelteKit + Bun) = superior performance
@@ -324,12 +345,14 @@ src/lib/
 2. **Local business context** - templates and workflows
 3. **Affordable pricing** - 80% cheaper than international alternatives
 4. **Community-driven** - Indonesian developer ecosystem
+</div><div>
 
 ### **Business Advantages**
 1. **First-mover advantage** in Indonesian no-code market
 2. **Strong technical foundation** already established
 3. **Clear monetization** strategy with multiple revenue streams
 4. **Scalable architecture** for rapid growth
+</div></div>
 
 ---
 
@@ -374,6 +397,7 @@ src/lib/
 ---
 
 ## Success Metrics & KPIs
+<div><div>
 
 ### **Technical KPIs**
 - **Platform uptime:** >99.9%
@@ -386,13 +410,14 @@ src/lib/
 - **Application creation rate:** 100/month → 1,000/month → 5,000/month
 - **User retention:** >70% monthly, >40% annual
 - **Template usage:** >80% of users start with templates
+</div><div>
 
 ### **Business KPIs**
 - **Revenue:** $10K (Month 6) → $100K (Month 12) → $1M (Month 18)
 - **Customer acquisition cost:** <$50 per user
 - **Lifetime value:** >$500 per user
 - **Conversion rate:** >5% free to paid
-
+</div></div>
 ---
 
 ## Resource Requirements
@@ -561,6 +586,7 @@ src/lib/
 ---
 
 ## Next Steps
+<div><div>
 
 ### **Immediate Priorities (30 days)**
 1. **Complete unified page creator** integration
@@ -573,23 +599,27 @@ src/lib/
 2. **Template marketplace** MVP release
 3. **Strategic partnerships** establishment
 4. **Seed funding** completion
+</div><div>
 
 ### **Medium-term Objectives (180 days)**
 1. **Commercial launch** with paid plans
 2. **1,000 active users** milestone
 3. **Enterprise features** development
 4. **Break-even** achievement
+</div></div>
 
 ---
-
+<!-- class:quote -->
 ### **Contact Information:**  
 <br> 
 
 - **Product Lead:** [To be assigned]
 - **Technical Lead:** [To be assigned]
 - **Business Development:** [To be assigned]
-- **Email:** 
-sponsor.aksara@tuta.com
-contribute.aksara@tuta.com
-partner.aksara@tuta.com
+
+<br> 
+### **Email:** 
+sponsor.aksara@tuta.com  
+contribute.aksara@tuta.com  
+partner.aksara@tuta.com  
 relations.aksara@tuta.com
