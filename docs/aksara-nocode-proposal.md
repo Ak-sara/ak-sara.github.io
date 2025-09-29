@@ -149,8 +149,11 @@ src/lib/
 </div></div>
 
 ---
+<!-- class:smallText -->
 ## Technical Roadmap  
 ### **Phase 1: Core Platform Completion (Months 1-6)**
+<div><div>
+
 **Current Status:** 70% complete
 
 **Remaining Work:**
@@ -158,16 +161,21 @@ src/lib/
 - **Core library consolidation** (file operations, schema management)
 - **Database integration** completion
 - **User authentication** and workspace management
+</div><div>
 
 **Key Features to Complete:**
 - One-click "Create CRUD Page" workflow
 - Advanced component library
 - Data validation and business rules
 - Export functionality (JSON, API specs)
+</div></div>
 
 ---
+<!-- class:smallText -->
 ## Technical Roadmap  
 ### **Phase 2: Business Features (Months 7-12)**
+<div><div>
+
 **Objective:** Production-ready business application builder
 
 **New Features:**
@@ -175,15 +183,20 @@ src/lib/
 - **Reporting and analytics** builder
 - **Workflow automation** (approvals, notifications)
 - **Multi-user collaboration** and permissions
+</div><div>
 
 **Integration Features:**
 - **Payment gateway** integration (Indonesian banks)
 - **Government API** integration (e-faktur, NIB)
 - **Popular Indonesian services** (WhatsApp Business, Tokopedia)
+</div></div>
 
 ---
+<!-- class:smallText -->
 ## Technical Roadmap  
 ### **Phase 3: Enterprise Features (Months 13-18)**
+<div><div>
+
 **Objective:** Enterprise-grade platform with advanced capabilities
 
 **Enterprise Features:**
@@ -191,15 +204,17 @@ src/lib/
 - **Custom branding** and white-labeling
 - **API management** and webhooks
 - **Performance monitoring** and scaling
+</div><div>
 
 **Platform Features:**
 - **Mobile app builder** (Progressive Web Apps)
 - **Advanced integrations** (ERP systems, external APIs)
 - **Custom component** development framework
 - **Multi-tenant** architecture for SaaS deployment
+</div></div>
 
 ---
-
+<!-- class:small-text -->
 ## Technical Architecture Deep-Dive
 
 <div><div>
@@ -223,7 +238,7 @@ src/lib/
 </div>
 
 ---
-
+<!-- class:smallText -->
 ## Business Model
 <div>
 <div>
@@ -264,7 +279,7 @@ src/lib/
 </div>
 
 ---
-
+<!-- class:smallText -->
 ## Market Entry Strategy
 
 ### **Phase 1: Developer & Early Adopter Community (Months 1-6)**
@@ -287,7 +302,7 @@ src/lib/
 </div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Market Entry Strategy
 ### **Phase 2: SME Market Penetration (Months 7-12)**
 **Target:** Small-medium businesses, consultants, local agencies
@@ -308,7 +323,7 @@ src/lib/
 </div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Market Entry Strategy
 
 ### **Phase 3: Enterprise Sales (Months 13-18)**
@@ -330,7 +345,7 @@ src/lib/
 </div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Competitive Advantages
 <div><div>
 
@@ -355,7 +370,7 @@ src/lib/
 </div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Risk Analysis
 
 ### **Technical Risks** 🟡
@@ -419,7 +434,7 @@ src/lib/
 - **Conversion rate:** >5% free to paid
 </div></div>
 ---
-
+<!-- class:smallText -->
 ## Resource Requirements
 
 ### **Development Team (5 people)**
@@ -441,6 +456,7 @@ src/lib/
 - **Legal** and business setup: $10K/year
 
 ---
+<!-- class:smallText -->
 ## Financial Projections
 
 ### **5-Year Revenue Model**
@@ -516,6 +532,7 @@ src/lib/
 3. **Business associations** - member benefits and training
 
 ---
+<!-- class:smallText -->
 ## Implementation Timeline
 
 ### **Development Phases**

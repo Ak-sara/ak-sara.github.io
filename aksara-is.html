@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksara IS - Svelte-based No-Code Platform | Ak'sara Initiative</title>
+    <meta name="description" content="Aksara IS - Advanced no-code platform enabling Indonesian businesses to create custom applications without coding expertise">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        main {
+            padding-top: 80px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            color: white;
+        }
+
+        .project-status {
+            display: inline-block;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+        .content-section {
+            background: white;
+            margin: 2rem 0;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tech-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 15px;
+        }
+
+        .tech-item i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #dc3545;
+            color: white;
+            box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: #c82333;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(220, 53, 69, 0.4);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+            .features-grid { grid-template-columns: 1fr; }
+            .action-buttons { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="project-status">Priority Project</div>
+                <h1>Aksara IS</h1>
+                <p>Advanced Svelte-based no-code platform enabling Indonesian businesses to create custom applications without coding expertise</p>
+                <div class="action-buttons">
+                    <a href="project/aksara-nocode-proposal.html" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-file-alt"></i> View Full Proposal
+                    </a>
+                    <a href="pdf/aksara-nocode-proposal.pdf" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-file-pdf"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="content-section">
+                <h2 class="section-title">Project Overview</h2>
+                <p style="font-size: 1.1rem; text-align: center; max-width: 800px; margin: 0 auto 2rem auto; color: #666;">
+                    Aksara IS is a revolutionary no-code platform designed specifically for Indonesian businesses. Built on modern SvelteKit architecture with advanced runes system, it empowers users to create sophisticated applications through an intuitive drag-and-drop interface.
+                </p>
+
+                <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                    <h3 style="color: #667eea; margin-bottom: 1rem; text-align: center;">Development Timeline</h3>
+                    <p style="text-align: center; font-size: 1.1rem; color: #555;">
+                        <strong>Target:</strong> 12-18 months to MVP<br>
+                        <strong>Current Status:</strong> Architecture design and prototype development
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3><i class="fas fa-mouse-pointer"></i> Drag & Drop Builder</h3>
+                        <p>Intuitive visual interface allowing users to build applications by simply dragging and dropping components. No coding knowledge required.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-language"></i> Indonesian-First Design</h3>
+                        <p>Built specifically for Indonesian businesses with full Bahasa Indonesia support, local compliance features, and cultural context awareness.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-wifi-slash"></i> Offline Capabilities</h3>
+                        <p>Progressive Web App technology enables offline functionality, crucial for Indonesia's varying internet connectivity conditions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-database"></i> Smart Data Management</h3>
+                        <p>Integrated data sources supporting MySQL, REST APIs, and local file storage with intelligent data modeling capabilities.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-mobile-alt"></i> Responsive Design</h3>
+                        <p>Applications automatically adapt to different screen sizes and devices, ensuring optimal user experience across platforms.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-shield-alt"></i> Enterprise Security</h3>
+                        <p>Built-in security features including user authentication, role-based access control, and data encryption for business-grade applications.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Technology Stack</h2>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <i class="fab fa-js-square"></i>
+                        <h3>SvelteKit</h3>
+                        <p>Modern framework with runes for reactive applications</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-database"></i>
+                        <h3>MySQL Integration</h3>
+                        <p>Robust database connectivity and management</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>TailwindCSS</h3>
+                        <p>Utility-first CSS framework for rapid UI development</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Bun Runtime</h3>
+                        <p>Fast JavaScript runtime for optimal performance</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Target Market</h2>
+                <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 2rem; border-radius: 15px;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                        <div style="text-align: center;">
+                            <h3 style="color: #667eea; margin-bottom: 1rem;">64.2M Indonesian SMEs</h3>
+                            <p>Small and medium enterprises needing affordable digital solutions</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <h3 style="color: #667eea; margin-bottom: 1rem;">Local Government</h3>
+                            <p>Municipal and regional offices requiring custom administrative systems</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <h3 style="color: #667eea; margin-bottom: 1rem;">Educational Institutions</h3>
+                            <p>Schools and universities needing student management systems</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+</body>
+</html>

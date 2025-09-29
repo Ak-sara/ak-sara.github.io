@@ -775,7 +775,7 @@ blockquote::before {
 }
 .page-number { color: #2980b9; /* page numbers */ }
 footer { width:100%; }
-.cover { background: url(../assets/background-free.jpg)no-repeat center center / cover!important; }
+.cover { background: url(../assets/background-free.jpg) no-repeat center center / cover!important; }
 .quote {  display: flex; flex-direction: column; justify-content: center;  align-items: center; }
 
 .section-content>div { display:grid; grid-auto-flow: column; gap: .4em; width: 100%; }
@@ -826,6 +826,32 @@ li {
     backdrop-filter: blur(10px);
 }
 .stat-number { font-weight: bold; display: block; color: #27ae60; }
+code p{ margin:0;}
+/* Smaller font class for dense technical content */
+.smallText .section-content {
+    font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
+}
+.smallText h1 {
+    font-size: clamp(1.6rem, 5vh, 2.5rem) !important;
+}
+.smallText h2 {
+    font-size: clamp(1.3rem, 3.8vh, 2rem) !important;
+}
+.smallText h3 {
+    font-size: clamp(1.1rem, 3.1vh, 1.5rem) !important;
+}
+.smallText p {
+    font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.7rem !important;
+}
+.smallText li {
+    font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
+    line-height: 1.3 !important;
+}
+.smallText strong {
+    font-size: inherit !important;
+}
 
     </style>
 </head>
@@ -1055,7 +1081,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="7">
+        <section class="document-section smallText" data-section="7">
           
           
       <header class="document-header">
@@ -1065,17 +1091,20 @@ li {
           <div class="section-content">
             <h2>Technical Roadmap  </h2>
 <h3><strong>Phase 1: Core Platform Completion (Months 1-6)</strong></h3>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Current Status:</strong> 70% complete</p>
 <p style="position: relative; z-index: 2;"><strong>Remaining Work:</strong></p>
 <ul><li><strong>Unified page creator</strong> (integrate module + form designer)</li>
 <li><strong>Core library consolidation</strong> (file operations, schema management)</li>
 <li><strong>Database integration</strong> completion</li>
 <li><strong>User authentication</strong> and workspace management</li>
-</ul><strong>Key Features to Complete:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Key Features to Complete:</strong></p>
 <ul><li>One-click "Create CRUD Page" workflow</li>
 <li>Advanced component library</li>
 <li>Data validation and business rules</li>
-<li>Export functionality (JSON, API specs)</li></ul>
+<li>Export functionality (JSON, API specs)</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1086,7 +1115,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="8">
+        <section class="document-section smallText" data-section="8">
           
           
       <header class="document-header">
@@ -1096,16 +1125,19 @@ li {
           <div class="section-content">
             <h2>Technical Roadmap  </h2>
 <h3><strong>Phase 2: Business Features (Months 7-12)</strong></h3>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Objective:</strong> Production-ready business application builder</p>
 <p style="position: relative; z-index: 2;"><strong>New Features:</strong></p>
 <ul><li><strong>Indonesian business templates</strong> (invoicing, inventory, CRM)</li>
 <li><strong>Reporting and analytics</strong> builder</li>
 <li><strong>Workflow automation</strong> (approvals, notifications)</li>
 <li><strong>Multi-user collaboration</strong> and permissions</li>
-</ul><strong>Integration Features:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Integration Features:</strong></p>
 <ul><li><strong>Payment gateway</strong> integration (Indonesian banks)</li>
 <li><strong>Government API</strong> integration (e-faktur, NIB)</li>
-<li><strong>Popular Indonesian services</strong> (WhatsApp Business, Tokopedia)</li></ul>
+<li><strong>Popular Indonesian services</strong> (WhatsApp Business, Tokopedia)</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1116,7 +1148,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="9">
+        <section class="document-section smallText" data-section="9">
           
           
       <header class="document-header">
@@ -1126,17 +1158,20 @@ li {
           <div class="section-content">
             <h2>Technical Roadmap  </h2>
 <h3><strong>Phase 3: Enterprise Features (Months 13-18)</strong></h3>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Objective:</strong> Enterprise-grade platform with advanced capabilities</p>
 <p style="position: relative; z-index: 2;"><strong>Enterprise Features:</strong></p>
 <ul><li><strong>Advanced security</strong> (SSO, LDAP, audit logs)</li>
 <li><strong>Custom branding</strong> and white-labeling</li>
 <li><strong>API management</strong> and webhooks</li>
 <li><strong>Performance monitoring</strong> and scaling</li>
-</ul><strong>Platform Features:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Platform Features:</strong></p>
 <ul><li><strong>Mobile app builder</strong> (Progressive Web Apps)</li>
 <li><strong>Advanced integrations</strong> (ERP systems, external APIs)</li>
 <li><strong>Custom component</strong> development framework</li>
-<li><strong>Multi-tenant</strong> architecture for SaaS deployment</li></ul>
+<li><strong>Multi-tenant</strong> architecture for SaaS deployment</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1155,7 +1190,8 @@ li {
       </header>
     
           <div class="section-content">
-            <h2>Technical Architecture Deep-Dive</h2>
+            <p style="position: relative; z-index: 2;"><!-- class:small-text --></p>
+<h2>Technical Architecture Deep-Dive</h2>
 <div><div>
 <h3><strong>Performance Optimizations</strong></h3>
 <ul><li><strong>YAML → JSON compilation</strong> for fast runtime loading</li>
@@ -1182,7 +1218,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="11">
+        <section class="document-section smallText" data-section="11">
           
           
       <header class="document-header">
@@ -1231,7 +1267,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="12">
+        <section class="document-section smallText" data-section="12">
           
           
       <header class="document-header">
@@ -1265,7 +1301,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="13">
+        <section class="document-section smallText" data-section="13">
           
           
       <header class="document-header">
@@ -1299,7 +1335,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="14">
+        <section class="document-section smallText" data-section="14">
           
           
       <header class="document-header">
@@ -1333,7 +1369,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="15">
+        <section class="document-section smallText" data-section="15">
           
           
       <header class="document-header">
@@ -1370,7 +1406,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="16">
+        <section class="document-section smallText" data-section="16">
           
           
       <header class="document-header">
@@ -1447,7 +1483,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="18">
+        <section class="document-section smallText" data-section="18">
           
           
       <header class="document-header">
@@ -1481,7 +1517,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="19">
+        <section class="document-section smallText" data-section="19">
           
           
       <header class="document-header">
@@ -1574,7 +1610,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="21">
+        <section class="document-section smallText" data-section="21">
           
           
       <header class="document-header">

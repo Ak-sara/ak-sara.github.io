@@ -775,7 +775,7 @@ blockquote::before {
 }
 .page-number { color: #2980b9; /* page numbers */ }
 footer { width:100%; }
-.cover { background: url(../assets/background-free.jpg)no-repeat center center / cover!important; }
+.cover { background: url(../assets/background-free.jpg) no-repeat center center / cover!important; }
 .quote {  display: flex; flex-direction: column; justify-content: center;  align-items: center; }
 
 .section-content>div { display:grid; grid-auto-flow: column; gap: .4em; width: 100%; }
@@ -826,6 +826,32 @@ li {
     backdrop-filter: blur(10px);
 }
 .stat-number { font-weight: bold; display: block; color: #27ae60; }
+code p{ margin:0;}
+/* Smaller font class for dense technical content */
+.smallText .section-content {
+    font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
+}
+.smallText h1 {
+    font-size: clamp(1.6rem, 5vh, 2.5rem) !important;
+}
+.smallText h2 {
+    font-size: clamp(1.3rem, 3.8vh, 2rem) !important;
+}
+.smallText h3 {
+    font-size: clamp(1.1rem, 3.1vh, 1.5rem) !important;
+}
+.smallText p {
+    font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.7rem !important;
+}
+.smallText li {
+    font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
+    line-height: 1.3 !important;
+}
+.smallText strong {
+    font-size: inherit !important;
+}
 
     </style>
 </head>
@@ -957,7 +983,8 @@ li {
       </header>
     
           <div class="section-content">
-            <h2>Technical Specifications</h2>
+            <p style="position: relative; z-index: 2;"><!-- class:small-text --></p>
+<h2>Technical Specifications</h2>
 <div><div>
 <h3><strong>Base System Architecture</strong></h3>
 <p style="position: relative; z-index: 2;"><strong>Foundation: Arch Linux</strong></p>
@@ -1092,7 +1119,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="8">
+        <section class="document-section smallText" data-section="8">
           
           
       <header class="document-header">
@@ -1102,6 +1129,7 @@ li {
           <div class="section-content">
             <h2>Development Roadmap</h2>
 <h3><strong>Phase 1: Core System (Months 1-6)</strong></h3>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Focus</strong>: Stable base system dengan Indonesian optimizations</p>
 <p style="position: relative; z-index: 2;"><strong>Deliverables:</strong></p>
 <ul><li>Arch-based foundation dengan custom repositories</li>
@@ -1109,10 +1137,12 @@ li {
 <li>Hardware compatibility untuk major brands</li>
 <li>Basic installation system</li>
 <li>Alpha release untuk testing</li>
-</ul><strong>Team Requirements:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Team Requirements:</strong></p>
 <ul><li>2 system engineers</li>
 <li>1 UI/UX designer</li>
-<li>1 QA engineer</li></ul>
+<li>1 QA engineer</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1123,7 +1153,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="9">
+        <section class="document-section smallText" data-section="9">
           
           
       <header class="document-header">
@@ -1133,6 +1163,7 @@ li {
           <div class="section-content">
             <h2>Development Roadmap</h2>
 <h3><strong>Phase 2: Application Integration (Months 7-12)</strong></h3>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Focus</strong>: Pre-installed applications dan user experience</p>
 <p style="position: relative; z-index: 2;"><strong>Deliverables:</strong></p>
 <ul><li>Complete software suite integration</li>
@@ -1140,10 +1171,12 @@ li {
 <li>Indonesian language packs dan input methods</li>
 <li>Driver packages untuk common hardware</li>
 <li>Beta release dengan community testing</li>
-</ul><strong>Team Requirements:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Team Requirements:</strong></p>
 <ul><li>1 additional application developer</li>
 <li>1 localization specialist</li>
-<li>1 documentation writer</li></ul>
+<li>1 documentation writer</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1154,7 +1187,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="10">
+        <section class="document-section smallText" data-section="10">
           
           
       <header class="document-header">
@@ -1164,6 +1197,7 @@ li {
           <div class="section-content">
             <h2>Development Roadmap</h2>
 <h3><strong>Phase 3: Distribution & Support (Months 13-18)</strong></h3>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Focus</strong>: Public release dan ecosystem building</p>
 <p style="position: relative; z-index: 2;"><strong>Deliverables:</strong></p>
 <ul><li>Stable 1.0 release</li>
@@ -1171,10 +1205,12 @@ li {
 <li>Community support infrastructure</li>
 <li>Documentation dan training materials</li>
 <li>Update dan maintenance systems</li>
-</ul><strong>Team Requirements:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Team Requirements:</strong></p>
 <ul><li>1 community manager</li>
 <li>1 business development</li>
-<li>1 support engineer</li></ul>
+<li>1 support engineer</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1185,7 +1221,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="11">
+        <section class="document-section smallText" data-section="11">
           
           
       <header class="document-header">
@@ -1231,7 +1267,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="12">
+        <section class="document-section smallText" data-section="12">
           
           
       <header class="document-header">
@@ -1273,7 +1309,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="13">
+        <section class="document-section smallText" data-section="13">
           
           
       <header class="document-header">
@@ -1304,7 +1340,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="14">
+        <section class="document-section smallText" data-section="14">
           
           
       <header class="document-header">
@@ -1335,7 +1371,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="15">
+        <section class="document-section smallText" data-section="15">
           
           
       <header class="document-header">
@@ -1366,7 +1402,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="16">
+        <section class="document-section smallText" data-section="16">
           
           
       <header class="document-header">
@@ -1444,7 +1480,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="18">
+        <section class="document-section smallText" data-section="18">
           
           
       <header class="document-header">

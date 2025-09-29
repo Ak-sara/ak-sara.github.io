@@ -12,6 +12,7 @@ header: Personal AI Assistant Proposal | ![x:900 y:0 w:40px h:40px](../assets/ak
 footer: © 2025 Ak'sara Initiative
 background: ../assets/background.jpeg
 -->
+---
 # Personal AI Assistant
 ## Offline-First Indonesian AI for Privacy & Performance
 
@@ -46,7 +47,7 @@ background: ../assets/background.jpeg
 </div>
 
 ---
-
+<!-- class:smallText -->
 ## Strategic Context & Market Need
 <div><div>
 
@@ -134,10 +135,11 @@ Personal AI Assistant Components:
 ```
 
 ---
-
+<!-- class:smallText -->
 ## Key Features & Capabilities
 
 ### **Core AI Functions**
+<div><div>
 
 **Conversational AI:**
 - **Natural Bahasa Indonesia**: Fluent conversation dalam berbagai register
@@ -150,18 +152,21 @@ Personal AI Assistant Components:
 - **Indonesian documents**: Understand government forms, business letters, contracts
 - **Multi-language**: Process English documents dengan Indonesian explanations
 - **Privacy-first**: Documents never leave user's device
+</div><div>
 
 **Business Assistant:**
 - **Email drafting**: Professional Indonesian business correspondence
 - **Meeting prep**: Agenda creation, talking points, follow-ups
 - **Document generation**: Using Aksara Writer integration untuk reports, proposals
 - **Task management**: Smart reminders, priority suggestions
+</div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Key Features & Capabilities
 
 ### **Indonesian-Specific Features**
+<div><div>
 
 **Government & Legal Support:**
 - **Form assistance**: Help dengan tax forms, permit applications
@@ -174,12 +179,14 @@ Personal AI Assistant Components:
 - **Business customs**: Appropriate greetings, meeting etiquette, gift-giving
 - **Religious considerations**: Respectful responses untuk religious topics
 - **Language registers**: Formal, informal, professional language use
+</div><div>
 
 **Local Knowledge:**
 - **Geography**: Detailed knowledge tentang Indonesian cities, provinces
 - **Transportation**: Public transport, travel routes, schedules
 - **Food culture**: Recipes, dietary restrictions, regional specialties
 - **Current events**: Understanding Indonesian news dan political context
+</div></div>
 
 ---
 
@@ -187,7 +194,7 @@ Personal AI Assistant Components:
 
 ### **Offline-First Architecture**
 
-<div class="success">
+<div><div class="success">
 
 **Complete Local Processing:**
 - AI models run entirely pada user's device
@@ -195,7 +202,7 @@ Personal AI Assistant Components:
 - Internet hanya untuk optional model updates
 - Full functionality without network connection
 
-</div>
+</div><div>
 
 **Data Protection:**
 - **Encrypted storage**: All user data encrypted at rest
@@ -208,13 +215,14 @@ Personal AI Assistant Components:
 - **Local deployment**: No dependency pada external services
 - **Verifiable privacy**: Users can confirm offline operation
 - **Community oversight**: Open development process
-
+</div></div>
 ---
 
 ## Development Roadmap
 
 ### **Phase 1: Core Foundation (Months 1-6)**
 **Focus**: Basic AI assistant dengan Indonesian language support
+<div><div>
 
 **Deliverables:**
 - Tauri application framework
@@ -223,18 +231,22 @@ Personal AI Assistant Components:
 - Local document processing
 - Alpha release untuk testing
 
+</div><div>
+
 **Team Requirements:**
 - 2 Rust developers
 - 1 AI/ML engineer
 - 1 Frontend developer
 - 1 Indonesian linguist
 
+</div></div>
 ---
 
 ## Development Roadmap
 
 ### **Phase 2: Advanced Features (Months 7-12)**
 **Focus**: Business functions dan cultural intelligence
+<div><div>
 
 **Deliverables:**
 - Document analysis capabilities
@@ -242,12 +254,14 @@ Personal AI Assistant Components:
 - Voice input/output
 - Aksara Writer integration
 - Beta release dengan user testing
+</div><div>
 
 **Team Requirements:**
 - 1 additional AI engineer
 - 1 speech processing specialist
 - 1 cultural consultant
 - 1 UX designer
+</div></div>
 
 ---
 
@@ -255,6 +269,7 @@ Personal AI Assistant Components:
 
 ### **Phase 3: Platform Integration (Months 13-18)**
 **Focus**: Ecosystem integration dan optimization
+<div><div>
 
 **Deliverables:**
 - MerdekaOS optimization
@@ -262,18 +277,20 @@ Personal AI Assistant Components:
 - Advanced personalization
 - Performance optimization
 - Public release candidate
+</div><div>
 
 **Team Requirements:**
 - 1 systems integration engineer
 - 1 performance optimization specialist
 - 1 QA engineer
-
+</div></div>
 ---
 
 ## Development Roadmap
 
 ### **Phase 4: Market Launch (Months 19-24)**
 **Focus**: Production release dan user adoption
+<div><div>
 
 **Deliverables:**
 - Stable 1.0 release
@@ -281,43 +298,50 @@ Personal AI Assistant Components:
 - User documentation
 - Community support infrastructure
 - Marketing campaigns
+</div><div>
 
 **Team Requirements:**
 - 1 product manager
 - 1 community manager
 - 1 technical writer
 - 1 marketing specialist
-
+</div></div>
 ---
 
 ## Business Model & Distribution
 
-<div><div>
+
 
 ### **Distribution Channels**
+<div><div>
 
 **Direct Distribution:**
 - Official website download
 - Auto-update mechanism
 - Community forums dan support
+</div><div>
 
 **OEM Partnerships:**
 - Pre-installation pada MerdekaOS
 - Bundled dengan Indonesian laptops
 - Government procurement contracts
+</div><div>
 
 **Enterprise Sales:**
 - Corporate licenses
 - Custom implementations
 - Training dan consulting services
-</div><div>
+</div></div>
 
 ### **Freemium Strategy**
+<div><div>
+
 **Free Tier:**
 - Basic AI assistant functionality
 - Standard Indonesian language model
 - Local document processing (up to 50 documents)
 - Community support
+</div><div>
 
 **Pro Tier ($9.99/month):**
 - Advanced AI models (larger, more capable)
@@ -325,6 +349,7 @@ Personal AI Assistant Components:
 - Voice input/output
 - Priority feature updates
 - Email support
+</div><div>
 
 **Enterprise Tier ($99/month):**
 - Custom model fine-tuning
@@ -348,22 +373,25 @@ Personal AI Assistant Components:
 | **Personal AI** | **Offline** | **Privacy + Easy** | **New solution** |
 
 ---
-
+<!-- class:smallText -->
 ## Market Analysis & Competition
 
 ### **Target Market Segments**
+<div><div>
 
 **Primary Users:**
 - **Privacy-conscious professionals**: Lawyers, doctors, consultants
 - **Government workers**: Civil servants handling sensitive documents
 - **Business owners**: SME owners needing business assistance
 - **Students**: University students studying atau working
+</div><div>
 
 **Secondary Users:**
 - **Developers**: Using for code assistance dan documentation
 - **Content creators**: Writers, bloggers, social media managers
 - **Researchers**: Academic researchers dengan sensitive data
 - **Remote workers**: People needing productivity assistance
+</div></div>
 
 **Market Size:**
 - **Indonesian professionals**: 50M+ potential users
@@ -372,7 +400,7 @@ Personal AI Assistant Components:
 - **Government market**: 2M civil servants
 
 ---
-
+<!-- class:smallText -->
 ## Technical Implementation Details
 
 <div><div>
@@ -408,7 +436,7 @@ Personal AI Assistant Components:
 </div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Risk Analysis & Mitigation
 
 ### **Technical Risks** 🟡
@@ -485,8 +513,9 @@ Personal AI Assistant Components:
 </div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Resource Requirements
+<div><div>
 
 ### **Development Team**
 - **AI/ML Lead**: Model training, Indonesian NLP ($120K/year)
@@ -500,15 +529,16 @@ Personal AI Assistant Components:
 - **Development hardware**: Testing devices ($20K one-time)
 - **AI training data**: Indonesian corpus licensing ($30K/year)
 - **Cloud services**: Development dan distribution ($25K/year)
+</div><div>
 
 ### **Specialized Costs**
 - **Security audits**: External security reviews ($40K/year)
 - **Legal compliance**: Privacy law consultation ($20K/year)
 - **Cultural consulting**: Indonesian cultural experts ($25K/year)
 - **Performance testing**: Hardware compatibility ($15K/year)
-
+</div></div>
 ---
-
+<!-- class:smallText -->
 ## Strategic Impact & Long-term Vision
 <div><div>
 
@@ -570,16 +600,19 @@ Personal AI Assistant Components:
 - Platform licensing
 </div></div>
 
+<div><div>
+
 ### **Investment Requirements**
 - **Year 1-2**: $2M (team, infrastructure, development)
 - **Year 3**: $5M (scaling, marketing, enterprise)
 - **Year 4-5**: $10M (international, platform development)
+</div><div>
 
 **Break-even**: Month 30
 **ROI**: 10x over 5 years
-
+</div></div>
 ---
-
+<!-- class:smallText -->
 ## Conclusion
 
 ### **Strategic Recommendation**
@@ -621,14 +654,16 @@ Personal AI Assistant Components:
 </div></div>
 
 ---
-<!-- class: quote center -->
+<!-- class: quote -->
 **Contact Information:**
 <br>
 
 - **Project Lead**: [To be assigned]
 - **AI Research Lead**: [To be assigned]
 - **Technical Architect**: [To be assigned]
-- **Email:** 
+
+**Email:** 
+<br>
 sponsor.aksara@tuta.com
 contribute.aksara@tuta.com
 partner.aksara@tuta.com

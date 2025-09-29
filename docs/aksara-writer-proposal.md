@@ -68,7 +68,7 @@ npm install -g aksara-writer
 </div>
 
 ---
-
+<!-- class:small-text -->
 ## Project Overview
 <div><div>
 
@@ -120,7 +120,7 @@ Aksara Writer offers:
 | **Aksara Writer** | Indonesian + business focus | New tool | **Opportunity** |
 
 ---
-
+<!-- class:smallText -->
 ## Technical Architecture
 
 ### **Technology Stack**
@@ -177,7 +177,7 @@ aksara-writer/
 - **Indonesian UI**: Interface in Indonesian language
 
 ---
-
+<!-- class:smallText -->
 ## Development Roadmap
 
 ### **Phase 1: MVP Development** ✅ **COMPLETED**
@@ -198,7 +198,7 @@ aksara-writer/
 - ✅ Core library (`aksara-writer-core`)
 - ✅ Documentation and examples
 ---
-
+<!-- class:smallText -->
 ## Development Roadmap
 
 ### **Phase 2: Business Features (Months 4-6)**
@@ -235,10 +235,11 @@ aksara-writer/
 - Enterprise partnerships
 
 ---
-
+<!-- class:smallText -->
 ## Project Sustainability
 
 ### **Current Model: Open Source First**
+<div><div>
 
 **Core Project (FREE - BSD License):**
 - ✅ Complete document conversion system
@@ -252,6 +253,7 @@ aksara-writer/
 - Localization for other regions
 - Feature requests and bug reports
 - Documentation enhancements
+</div><div>
 
 ### **Future Revenue Opportunities**
 *For accelerated development and premium services*
@@ -266,9 +268,10 @@ aksara-writer/
 - **Custom branding**: White-label solutions
 - **Advanced integrations**: Enterprise systems
 - **Consulting services**: Implementation guidance
+</div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Market Entry Strategy
 
 ### **Phase 1: Developer Community (Months 1-3)**
@@ -322,7 +325,7 @@ aksara-writer/
 - $100K annual revenue
 
 ---
-
+<!-- class:smallText -->
 ## Competitive Advantages
 
 ### **Technical Advantages**
@@ -344,7 +347,7 @@ aksara-writer/
 4. **Open source**: Community adoption and contribution
 
 ---
-
+<!-- class:smallText -->
 ## Risk Analysis
 
 ### **Technical Risks** 🟡
@@ -406,7 +409,7 @@ aksara-writer/
 - **Support**: <24 hour response time for issues
 
 ---
-
+<!-- class:smallText -->
 ## Resource Requirements
 
 ### **Development Team**

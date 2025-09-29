@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal AI Assistant - Tauri + Local LLM | Ak'sara Initiative</title>
+    <meta name="description" content="Personal AI Assistant - Offline AI assistance in Bahasa Indonesia with complete privacy-focused design and cultural context awareness">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        main {
+            padding-top: 80px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            color: white;
+        }
+
+        .project-status {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffc107, #fd7e14);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+        .content-section {
+            background: white;
+            margin: 2rem 0;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .privacy-highlight {
+            background: linear-gradient(135deg, rgba(40, 167, 69, 0.1), rgba(32, 201, 151, 0.1));
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            border-left: 4px solid #28a745;
+            text-align: center;
+        }
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tech-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 15px;
+        }
+
+        .tech-item i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #dc3545;
+            color: white;
+            box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: #c82333;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(220, 53, 69, 0.4);
+        }
+
+        .timeline-section {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .use-case-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #667eea;
+        }
+
+        .use-case-item i {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .comparison-table {
+            background: #f8f9fa;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th {
+            background: #667eea;
+            color: white;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: rgba(102, 126, 234, 0.05);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+            .features-grid { grid-template-columns: 1fr; }
+            .action-buttons { flex-direction: column; align-items: center; }
+            .comparison-table { overflow-x: auto; }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="project-status">Phase 4 Project</div>
+                <h1>Personal AI Assistant</h1>
+                <p>Offline AI assistance in Bahasa Indonesia with complete privacy-focused design and cultural context awareness. Reducing dependency on cloud-based foreign services.</p>
+                <div class="action-buttons">
+                    <a href="project/personal-ai-proposal.html" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-file-alt"></i> View Full Proposal
+                    </a>
+                    <a href="pdf/personal-ai-proposal.pdf" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-file-pdf"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="content-section">
+                <h2 class="section-title">Project Overview</h2>
+                <p style="font-size: 1.1rem; text-align: center; max-width: 800px; margin: 0 auto 2rem auto; color: #666;">
+                    The Personal AI Assistant is a revolutionary desktop application that brings advanced AI capabilities directly to Indonesian users' computers. Built with Tauri and integrated with local LLM models, it provides intelligent assistance while keeping all data completely private and offline.
+                </p>
+
+                <div class="privacy-highlight">
+                    <h3 style="color: #28a745; margin-bottom: 1rem;">
+                        <i class="fas fa-shield-alt"></i> Privacy-First Design
+                    </h3>
+                    <p style="font-size: 1.1rem;">
+                        <strong>100% Offline Operation</strong> - No data ever leaves your computer. All AI processing happens locally, ensuring complete privacy and independence from foreign cloud services.
+                    </p>
+                </div>
+
+                <div class="timeline-section">
+                    <h3 style="color: #667eea; margin-bottom: 1rem; text-align: center;">Development Timeline</h3>
+                    <p style="text-align: center; font-size: 1.1rem; color: #555;">
+                        <strong>Target:</strong> 18-24 months to stable release<br>
+                        <strong>Current Status:</strong> Research and architecture design phase<br>
+                        <strong>Dependencies:</strong> Follows completion of Aksara IS and MerdekaOS projects
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3><i class="fas fa-brain"></i> Local AI Processing</h3>
+                        <p>Advanced language models running entirely on your device with no internet dependency for core functionality.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-language"></i> Bahasa Indonesia Native</h3>
+                        <p>Specifically trained and optimized for Indonesian language, culture, and context understanding.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-microphone"></i> Voice Interaction</h3>
+                        <p>Natural speech recognition and synthesis for hands-free operation in Indonesian language.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-file-alt"></i> Document Processing</h3>
+                        <p>Intelligent document analysis, summarization, and content generation for business and personal use.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-code"></i> Development Assistant</h3>
+                        <p>Code completion, explanation, and debugging assistance for popular programming languages.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Educational Support</h3>
+                        <p>Tutoring and learning assistance tailored to Indonesian curriculum and educational standards.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Technology Stack</h2>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Tauri Framework</h3>
+                        <p>Rust-based framework for secure, lightweight desktop applications</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-brain"></i>
+                        <h3>Local LLM</h3>
+                        <p>Optimized language models for Indonesian context and offline operation</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-microphone"></i>
+                        <h3>Speech Processing</h3>
+                        <p>Local speech recognition and synthesis engines</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Privacy & Security</h3>
+                        <p>End-to-end encryption and secure local data storage</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Use Cases</h2>
+                <div class="use-cases-grid">
+                    <div class="use-case-item">
+                        <i class="fas fa-building"></i>
+                        <h3>Business Operations</h3>
+                        <p>Document drafting, email composition, business correspondence, and report generation in Indonesian business context.</p>
+                    </div>
+                    <div class="use-case-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education & Learning</h3>
+                        <p>Homework assistance, research help, language learning, and educational content creation for Indonesian students.</p>
+                    </div>
+                    <div class="use-case-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Software Development</h3>
+                        <p>Code completion, debugging, documentation generation, and programming education for Indonesian developers.</p>
+                    </div>
+                    <div class="use-case-item">
+                        <i class="fas fa-home"></i>
+                        <h3>Personal Productivity</h3>
+                        <p>Personal writing, creative projects, planning assistance, and daily task management with cultural awareness.</p>
+                    </div>
+                    <div class="use-case-item">
+                        <i class="fas fa-balance-scale"></i>
+                        <h3>Legal & Government</h3>
+                        <p>Legal document analysis, regulation interpretation, and government form assistance following Indonesian law.</p>
+                    </div>
+                    <div class="use-case-item">
+                        <i class="fas fa-heart"></i>
+                        <h3>Healthcare Support</h3>
+                        <p>Medical information lookup, symptom analysis, and health education in Indonesian medical context.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Privacy Advantages</h2>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Personal AI Assistant</th>
+                                <th>Cloud-based AI Services</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Data Privacy</strong></td>
+                                <td>✅ 100% local, never leaves device</td>
+                                <td>❌ Data sent to foreign servers</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Internet Dependency</strong></td>
+                                <td>✅ Works completely offline</td>
+                                <td>❌ Requires constant internet connection</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Response Speed</strong></td>
+                                <td>✅ Instant local processing</td>
+                                <td>❌ Network latency delays</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cultural Context</strong></td>
+                                <td>✅ Trained on Indonesian culture</td>
+                                <td>❌ Western-centric responses</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cost</strong></td>
+                                <td>✅ One-time purchase</td>
+                                <td>❌ Ongoing subscription fees</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Government Compliance</strong></td>
+                                <td>✅ Indonesian data sovereignty</td>
+                                <td>❌ Foreign jurisdiction concerns</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Target Market</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: #667eea; margin-bottom: 1rem;">🏛️ Government Agencies</h3>
+                        <p>Departments requiring secure, private AI assistance for document processing and decision support without foreign cloud dependencies.</p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: #667eea; margin-bottom: 1rem;">🏢 Private Businesses</h3>
+                        <p>Companies handling sensitive data requiring AI assistance while maintaining complete confidentiality and regulatory compliance.</p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: #667eea; margin-bottom: 1rem;">🎓 Educational Institutions</h3>
+                        <p>Schools and universities needing AI-powered educational tools with student data privacy and Indonesian curriculum alignment.</p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 2rem; border-radius: 15px;">
+                        <h3 style="color: #667eea; margin-bottom: 1rem;">👨‍💻 Individual Professionals</h3>
+                        <p>Lawyers, doctors, consultants, and other professionals requiring AI assistance while maintaining client confidentiality.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Strategic Importance</h2>
+                <div style="background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(253, 126, 20, 0.1)); padding: 2rem; border-radius: 15px; border-left: 4px solid #ffc107;">
+                    <h3 style="color: #ffc107; margin-bottom: 1.5rem; text-align: center;">Digital Sovereignty & National Security</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                        <div>
+                            <h4 style="color: #667eea; margin-bottom: 0.5rem;">🇮🇩 Data Sovereignty</h4>
+                            <p>Keeps Indonesian data within Indonesian borders, supporting national digital independence policies.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #667eea; margin-bottom: 0.5rem;">🛡️ Security Independence</h4>
+                            <p>Reduces reliance on foreign AI services, minimizing potential security vulnerabilities and data breaches.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #667eea; margin-bottom: 0.5rem;">💼 Economic Benefits</h4>
+                            <p>Supports local AI development capabilities and reduces foreign currency outflow from AI service subscriptions.</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #667eea; margin-bottom: 0.5rem;">🎯 Cultural Preservation</h4>
+                            <p>Maintains Indonesian cultural context and values in AI responses, supporting national identity preservation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+</body>
+</html>

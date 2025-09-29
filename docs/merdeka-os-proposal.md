@@ -77,7 +77,7 @@ background: ../assets/background.jpeg
 </div></div>
 
 ---
-
+<!-- class:small-text -->
 ## Technical Specifications
 
 <div><div>
@@ -184,10 +184,12 @@ background: ../assets/background.jpeg
 | **MerdekaOS** | Indonesian focus | Local optimization | **New entrant** |
 
 ---
-
+<!-- class:smallText -->
 ## Development Roadmap
 
 ### **Phase 1: Core System (Months 1-6)**
+<div><div>
+
 **Focus**: Stable base system dengan Indonesian optimizations
 
 **Deliverables:**
@@ -196,17 +198,21 @@ background: ../assets/background.jpeg
 - Hardware compatibility untuk major brands
 - Basic installation system
 - Alpha release untuk testing
+</div><div>
 
 **Team Requirements:**
 - 2 system engineers
 - 1 UI/UX designer
 - 1 QA engineer
+</div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Development Roadmap
 
 ### **Phase 2: Application Integration (Months 7-12)**
+<div><div>
+
 **Focus**: Pre-installed applications dan user experience
 
 **Deliverables:**
@@ -215,17 +221,21 @@ background: ../assets/background.jpeg
 - Indonesian language packs dan input methods
 - Driver packages untuk common hardware
 - Beta release dengan community testing
+</div><div>
 
 **Team Requirements:**
 - 1 additional application developer
 - 1 localization specialist
 - 1 documentation writer
+</div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Development Roadmap
 
 ### **Phase 3: Distribution & Support (Months 13-18)**
+<div><div>
+
 **Focus**: Public release dan ecosystem building
 
 **Deliverables:**
@@ -234,14 +244,16 @@ background: ../assets/background.jpeg
 - Community support infrastructure
 - Documentation dan training materials
 - Update dan maintenance systems
+</div><div>
 
 **Team Requirements:**
 - 1 community manager
 - 1 business development
 - 1 support engineer
+</div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Business Model & Partnerships
 <div><div>
 
@@ -279,7 +291,7 @@ background: ../assets/background.jpeg
 </div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Technical Implementation
 <div><div>
 
@@ -313,7 +325,7 @@ MerdekaOS Components:
 </div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Market Entry Strategy
 
 ### **Phase 1: Developer Community (Months 1-6)**
@@ -332,7 +344,7 @@ MerdekaOS Components:
 - Hardware compatibility database
 
 ---
-
+<!-- class:smallText -->
 ## Market Entry Strategy
 
 ### **Phase 2: Educational Adoption (Months 7-12)**
@@ -351,7 +363,7 @@ MerdekaOS Components:
 - Teaching material development
 
 ---
-
+<!-- class:smallText -->
 ## Market Entry Strategy
 
 ### **Phase 3: Commercial Launch (Months 13-18)**
@@ -370,7 +382,7 @@ MerdekaOS Components:
 - Revenue generation
 
 ---
-
+<!-- class:smallText -->
 ## Risk Analysis & Mitigation
 
 ### **Technical Risks** 🟡
@@ -438,7 +450,7 @@ MerdekaOS Components:
 - **Ecosystem growth**: 100+ third-party applications
 
 ---
-
+<!-- class:smallText -->
 ## Resource Requirements
 
 ### **Development Team**

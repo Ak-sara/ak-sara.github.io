@@ -1,6 +1,24 @@
-# Aksara Writer - AI Assistant Guide
+# Aksara Writer LLM Documentation
 
-Aksara Writer is a document generation toolkit designed specifically for Indonesian businesses, providing markdown-to-document conversion with built-in Indonesian language support and business templates.
+This directory contains documentation files optimized for Large Language Models (LLMs) to help them understand and work with Aksara Writer.
+
+## Available Documentation Files
+
+### Root Documentation
+- `/llms-full.txt` - Complete documentation (8000+ tokens) - This current file
+- `/llms-medium.txt` - Compressed documentation (4000+ tokens) - Coming soon
+- `/llms-small.txt` - Highly compressed documentation (2000+ tokens) - Coming soon
+
+### Package-Specific Documentation
+- `/aksara-writer-core/llms.txt` - Core conversion engine documentation - Coming soon
+- `/aksara-writer-cli/llms.txt` - Command-line interface documentation - Coming soon
+- `/aksara-writer-vscode/llms.txt` - VS Code extension documentation - Coming soon
+
+---
+
+# Aksara Writer - Complete Documentation for LLMs
+
+Aksara Writer is a modern markdown-to-document converter designed specifically for Indonesian businesses, providing professional document generation with built-in Indonesian language support and business templates.
 
 ## Core Concepts
 

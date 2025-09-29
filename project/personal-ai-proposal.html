@@ -775,7 +775,7 @@ blockquote::before {
 }
 .page-number { color: #2980b9; /* page numbers */ }
 footer { width:100%; }
-.cover { background: url(../assets/background-free.jpg)no-repeat center center / cover!important; }
+.cover { background: url(../assets/background-free.jpg) no-repeat center center / cover!important; }
 .quote {  display: flex; flex-direction: column; justify-content: center;  align-items: center; }
 
 .section-content>div { display:grid; grid-auto-flow: column; gap: .4em; width: 100%; }
@@ -826,6 +826,32 @@ li {
     backdrop-filter: blur(10px);
 }
 .stat-number { font-weight: bold; display: block; color: #27ae60; }
+code p{ margin:0;}
+/* Smaller font class for dense technical content */
+.smallText .section-content {
+    font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
+}
+.smallText h1 {
+    font-size: clamp(1.6rem, 5vh, 2.5rem) !important;
+}
+.smallText h2 {
+    font-size: clamp(1.3rem, 3.8vh, 2rem) !important;
+}
+.smallText h3 {
+    font-size: clamp(1.1rem, 3.1vh, 1.5rem) !important;
+}
+.smallText p {
+    font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.7rem !important;
+}
+.smallText li {
+    font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
+    line-height: 1.3 !important;
+}
+.smallText strong {
+    font-size: inherit !important;
+}
 
     </style>
 </head>
@@ -908,7 +934,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="3">
+        <section class="document-section smallText" data-section="3">
           
           
       <header class="document-header">
@@ -1030,7 +1056,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="6">
+        <section class="document-section smallText" data-section="6">
           
           
       <header class="document-header">
@@ -1040,6 +1066,7 @@ li {
           <div class="section-content">
             <h2>Key Features & Capabilities</h2>
 <h3><strong>Core AI Functions</strong></h3>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Conversational AI:</strong></p>
 <ul><li><strong>Natural Bahasa Indonesia</strong>: Fluent conversation dalam berbagai register</li>
 <li><strong>Cultural context</strong>: Understanding Indonesian social norms dan business etiquette</li>
@@ -1050,11 +1077,13 @@ li {
 <li><strong>Indonesian documents</strong>: Understand government forms, business letters, contracts</li>
 <li><strong>Multi-language</strong>: Process English documents dengan Indonesian explanations</li>
 <li><strong>Privacy-first</strong>: Documents never leave user's device</li>
-</ul><strong>Business Assistant:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Business Assistant:</strong></p>
 <ul><li><strong>Email drafting</strong>: Professional Indonesian business correspondence</li>
 <li><strong>Meeting prep</strong>: Agenda creation, talking points, follow-ups</li>
 <li><strong>Document generation</strong>: Using Aksara Writer integration untuk reports, proposals</li>
-<li><strong>Task management</strong>: Smart reminders, priority suggestions</li></ul>
+<li><strong>Task management</strong>: Smart reminders, priority suggestions</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1065,7 +1094,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="7">
+        <section class="document-section smallText" data-section="7">
           
           
       <header class="document-header">
@@ -1075,6 +1104,7 @@ li {
           <div class="section-content">
             <h2>Key Features & Capabilities</h2>
 <h3><strong>Indonesian-Specific Features</strong></h3>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Government & Legal Support:</strong></p>
 <ul><li><strong>Form assistance</strong>: Help dengan tax forms, permit applications</li>
 <li><strong>Regulation lookup</strong>: Understanding Indonesian laws dan regulations</li>
@@ -1085,11 +1115,13 @@ li {
 <li><strong>Business customs</strong>: Appropriate greetings, meeting etiquette, gift-giving</li>
 <li><strong>Religious considerations</strong>: Respectful responses untuk religious topics</li>
 <li><strong>Language registers</strong>: Formal, informal, professional language use</li>
-</ul><strong>Local Knowledge:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Local Knowledge:</strong></p>
 <ul><li><strong>Geography</strong>: Detailed knowledge tentang Indonesian cities, provinces</li>
 <li><strong>Transportation</strong>: Public transport, travel routes, schedules</li>
 <li><strong>Food culture</strong>: Recipes, dietary restrictions, regional specialties</li>
-<li><strong>Current events</strong>: Understanding Indonesian news dan political context</li></ul>
+<li><strong>Current events</strong>: Understanding Indonesian news dan political context</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1110,13 +1142,13 @@ li {
           <div class="section-content">
             <h2>Privacy & Security Features</h2>
 <h3><strong>Offline-First Architecture</strong></h3>
-<div class="success">
+<div><div class="success">
 <p style="position: relative; z-index: 2;"><strong>Complete Local Processing:</strong></p>
 <ul><li>AI models run entirely pada user's device</li>
 <li>No data transmission ke external servers</li>
 <li>Internet hanya untuk optional model updates</li>
 <li>Full functionality without network connection</li>
-</ul></div>
+</ul></div><div>
 <p style="position: relative; z-index: 2;"><strong>Data Protection:</strong></p>
 <ul><li><strong>Encrypted storage</strong>: All user data encrypted at rest</li>
 <li><strong>Memory protection</strong>: Secure handling dalam RAM</li>
@@ -1126,7 +1158,8 @@ li {
 <ul><li><strong>Open source</strong>: Full code audit capability</li>
 <li><strong>Local deployment</strong>: No dependency pada external services</li>
 <li><strong>Verifiable privacy</strong>: Users can confirm offline operation</li>
-<li><strong>Community oversight</strong>: Open development process</li></ul>
+<li><strong>Community oversight</strong>: Open development process</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1148,17 +1181,20 @@ li {
             <h2>Development Roadmap</h2>
 <h3><strong>Phase 1: Core Foundation (Months 1-6)</strong></h3>
 <p style="position: relative; z-index: 2;"><strong>Focus</strong>: Basic AI assistant dengan Indonesian language support</p>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Deliverables:</strong></p>
 <ul><li>Tauri application framework</li>
 <li>Indonesian-tuned LLM integration</li>
 <li>Basic chat interface</li>
 <li>Local document processing</li>
 <li>Alpha release untuk testing</li>
-</ul><strong>Team Requirements:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Team Requirements:</strong></p>
 <ul><li>2 Rust developers</li>
 <li>1 AI/ML engineer</li>
 <li>1 Frontend developer</li>
-<li>1 Indonesian linguist</li></ul>
+<li>1 Indonesian linguist</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1180,17 +1216,20 @@ li {
             <h2>Development Roadmap</h2>
 <h3><strong>Phase 2: Advanced Features (Months 7-12)</strong></h3>
 <p style="position: relative; z-index: 2;"><strong>Focus</strong>: Business functions dan cultural intelligence</p>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Deliverables:</strong></p>
 <ul><li>Document analysis capabilities</li>
 <li>Business assistant features</li>
 <li>Voice input/output</li>
 <li>Aksara Writer integration</li>
 <li>Beta release dengan user testing</li>
-</ul><strong>Team Requirements:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Team Requirements:</strong></p>
 <ul><li>1 additional AI engineer</li>
 <li>1 speech processing specialist</li>
 <li>1 cultural consultant</li>
-<li>1 UX designer</li></ul>
+<li>1 UX designer</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1212,16 +1251,19 @@ li {
             <h2>Development Roadmap</h2>
 <h3><strong>Phase 3: Platform Integration (Months 13-18)</strong></h3>
 <p style="position: relative; z-index: 2;"><strong>Focus</strong>: Ecosystem integration dan optimization</p>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Deliverables:</strong></p>
 <ul><li>MerdekaOS optimization</li>
 <li>Aksara IS integration</li>
 <li>Advanced personalization</li>
 <li>Performance optimization</li>
 <li>Public release candidate</li>
-</ul><strong>Team Requirements:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Team Requirements:</strong></p>
 <ul><li>1 systems integration engineer</li>
 <li>1 performance optimization specialist</li>
-<li>1 QA engineer</li></ul>
+<li>1 QA engineer</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1243,17 +1285,20 @@ li {
             <h2>Development Roadmap</h2>
 <h3><strong>Phase 4: Market Launch (Months 19-24)</strong></h3>
 <p style="position: relative; z-index: 2;"><strong>Focus</strong>: Production release dan user adoption</p>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Deliverables:</strong></p>
 <ul><li>Stable 1.0 release</li>
 <li>Distribution partnerships</li>
 <li>User documentation</li>
 <li>Community support infrastructure</li>
 <li>Marketing campaigns</li>
-</ul><strong>Team Requirements:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Team Requirements:</strong></p>
 <ul><li>1 product manager</li>
 <li>1 community manager</li>
 <li>1 technical writer</li>
-<li>1 marketing specialist</li></ul>
+<li>1 marketing specialist</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1273,34 +1318,39 @@ li {
     
           <div class="section-content">
             <h2>Business Model & Distribution</h2>
-<div><div>
 <h3><strong>Distribution Channels</strong></h3>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Direct Distribution:</strong></p>
 <ul><li>Official website download</li>
 <li>Auto-update mechanism</li>
 <li>Community forums dan support</li>
-</ul><strong>OEM Partnerships:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>OEM Partnerships:</strong></p>
 <ul><li>Pre-installation pada MerdekaOS</li>
 <li>Bundled dengan Indonesian laptops</li>
 <li>Government procurement contracts</li>
-</ul><strong>Enterprise Sales:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Enterprise Sales:</strong></p>
 <ul><li>Corporate licenses</li>
 <li>Custom implementations</li>
 <li>Training dan consulting services</li>
-</ul></div><div>
+</ul></div></div>
 <h3><strong>Freemium Strategy</strong></h3>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Free Tier:</strong></p>
 <ul><li>Basic AI assistant functionality</li>
 <li>Standard Indonesian language model</li>
 <li>Local document processing (up to 50 documents)</li>
 <li>Community support</li>
-</ul><strong>Pro Tier ($9.99/month):</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Pro Tier ($9.99/month):</strong></p>
 <ul><li>Advanced AI models (larger, more capable)</li>
 <li>Unlimited document processing</li>
 <li>Voice input/output</li>
 <li>Priority feature updates</li>
 <li>Email support</li>
-</ul><strong>Enterprise Tier ($99/month):</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Enterprise Tier ($99/month):</strong></p>
 <ul><li>Custom model fine-tuning</li>
 <li>Advanced security features</li>
 <li>Integration APIs</li>
@@ -1338,7 +1388,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="15">
+        <section class="document-section smallText" data-section="15">
           
           
       <header class="document-header">
@@ -1348,17 +1398,20 @@ li {
           <div class="section-content">
             <h2>Market Analysis & Competition</h2>
 <h3><strong>Target Market Segments</strong></h3>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Primary Users:</strong></p>
 <ul><li><strong>Privacy-conscious professionals</strong>: Lawyers, doctors, consultants</li>
 <li><strong>Government workers</strong>: Civil servants handling sensitive documents</li>
 <li><strong>Business owners</strong>: SME owners needing business assistance</li>
 <li><strong>Students</strong>: University students studying atau working</li>
-</ul><strong>Secondary Users:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Secondary Users:</strong></p>
 <ul><li><strong>Developers</strong>: Using for code assistance dan documentation</li>
 <li><strong>Content creators</strong>: Writers, bloggers, social media managers</li>
 <li><strong>Researchers</strong>: Academic researchers dengan sensitive data</li>
 <li><strong>Remote workers</strong>: People needing productivity assistance</li>
-</ul><strong>Market Size:</strong>
+</ul></div></div>
+<p style="position: relative; z-index: 2;"><strong>Market Size:</strong></p>
 <ul><li><strong>Indonesian professionals</strong>: 50M+ potential users</li>
 <li><strong>Privacy-conscious segment</strong>: 10M early adopters</li>
 <li><strong>Business users</strong>: 5M SME owners dan employees</li>
@@ -1373,7 +1426,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="16">
+        <section class="document-section smallText" data-section="16">
           
           
       <header class="document-header">
@@ -1417,7 +1470,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="17">
+        <section class="document-section smallText" data-section="17">
           
           
       <header class="document-header">
@@ -1503,7 +1556,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="19">
+        <section class="document-section smallText" data-section="19">
           
           
       <header class="document-header">
@@ -1512,6 +1565,7 @@ li {
     
           <div class="section-content">
             <h2>Resource Requirements</h2>
+<div><div>
 <h3><strong>Development Team</strong></h3>
 <ul><li><strong>AI/ML Lead</strong>: Model training, Indonesian NLP ($120K/year)</li>
 <li><strong>Rust Engineers (2)</strong>: Backend development, optimization ($90K/year each)</li>
@@ -1523,11 +1577,13 @@ li {
 <li><strong>Development hardware</strong>: Testing devices ($20K one-time)</li>
 <li><strong>AI training data</strong>: Indonesian corpus licensing ($30K/year)</li>
 <li><strong>Cloud services</strong>: Development dan distribution ($25K/year)</li>
-</ul><h3><strong>Specialized Costs</strong></h3>
+</ul></div><div>
+<h3><strong>Specialized Costs</strong></h3>
 <ul><li><strong>Security audits</strong>: External security reviews ($40K/year)</li>
 <li><strong>Legal compliance</strong>: Privacy law consultation ($20K/year)</li>
 <li><strong>Cultural consulting</strong>: Indonesian cultural experts ($25K/year)</li>
-<li><strong>Performance testing</strong>: Hardware compatibility ($15K/year)</li></ul>
+<li><strong>Performance testing</strong>: Hardware compatibility ($15K/year)</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1538,7 +1594,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="20">
+        <section class="document-section smallText" data-section="20">
           
           
       <header class="document-header">
@@ -1611,12 +1667,15 @@ li {
 <ul><li>20M users, 10% premium conversion</li>
 <li>Platform licensing</li>
 </ul></div></div>
+<div><div>
 <h3><strong>Investment Requirements</strong></h3>
 <ul><li><strong>Year 1-2</strong>: $2M (team, infrastructure, development)</li>
 <li><strong>Year 3</strong>: $5M (scaling, marketing, enterprise)</li>
 <li><strong>Year 4-5</strong>: $10M (international, platform development)</li>
-</ul><strong>Break-even</strong>: Month 30
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Break-even</strong>: Month 30</p>
 <p style="position: relative; z-index: 2;"><strong>ROI</strong>: 10x over 5 years</p>
+</div></div>
           </div>
           
       <footer class="document-footer">
@@ -1627,7 +1686,7 @@ li {
         </section>
       
 
-        <section class="document-section" data-section="22">
+        <section class="document-section smallText" data-section="22">
           
           
       <header class="document-header">
@@ -1675,7 +1734,7 @@ li {
         </section>
       
 
-        <section class="document-section quote center" data-section="23">
+        <section class="document-section quote" data-section="23">
           
           
       <header class="document-header">
@@ -1688,8 +1747,9 @@ li {
 <ul><li><strong>Project Lead</strong>: [To be assigned]</li>
 <li><strong>AI Research Lead</strong>: [To be assigned]</li>
 <li><strong>Technical Architect</strong>: [To be assigned]</li>
-<li><strong>Email:</strong> </li>
-</ul>sponsor.aksara@tuta.com
+</ul><strong>Email:</strong>
+<br>
+<p style="position: relative; z-index: 2;">sponsor.aksara@tuta.com</p>
 <p style="position: relative; z-index: 2;">contribute.aksara@tuta.com</p>
 <p style="position: relative; z-index: 2;">partner.aksara@tuta.com</p>
 <p style="position: relative; z-index: 2;">relations.aksara@tuta.com</p>

@@ -26,7 +26,7 @@
 }
 .page-number { color: #2980b9; /* page numbers */ }
 footer { width:100%; }
-.cover { background: url(../assets/background-free.jpg)no-repeat center center / cover!important; }
+.cover { background: url(../assets/background-free.jpg) no-repeat center center / cover!important; }
 .quote {  display: flex; flex-direction: column; justify-content: center;  align-items: center; }
 
 .section-content>div { display:grid; grid-auto-flow: column; gap: .4em; width: 100%; }
@@ -77,3 +77,29 @@ li {
     backdrop-filter: blur(10px);
 }
 .stat-number { font-weight: bold; display: block; color: #27ae60; }
+code p{ margin:0;}
+/* Smaller font class for dense technical content */
+.smallText .section-content {
+    font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
+}
+.smallText h1 {
+    font-size: clamp(1.6rem, 5vh, 2.5rem) !important;
+}
+.smallText h2 {
+    font-size: clamp(1.3rem, 3.8vh, 2rem) !important;
+}
+.smallText h3 {
+    font-size: clamp(1.1rem, 3.1vh, 1.5rem) !important;
+}
+.smallText p {
+    font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.7rem !important;
+}
+.smallText li {
+    font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
+    line-height: 1.3 !important;
+}
+.smallText strong {
+    font-size: inherit !important;
+}
