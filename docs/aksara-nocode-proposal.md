@@ -77,18 +77,16 @@ background: ../assets/background.jpeg
 </div> <div> 
 
 ### **Current Architecture**
-<div class="architecture">
 
 ```
 src/lib/
 ├── core/          # Always loaded foundation
 ├── defaults/      # System templates (readonly)
 ├── workspace/     # User configurations (editable)
-├── generated/     # Auto-generated content
+├── generated/     # Auto-generated content  
 └── runtime/       # Compiled outputs (.json from .yaml)
 ```
-</div>
-</div> </div> 
+</div></div> 
 
 ---
 ## Market Analysis
