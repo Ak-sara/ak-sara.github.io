@@ -12,7 +12,7 @@ header: Personal AI Assistant Proposal | ![x:900 y:0 w:40px h:40px](../assets/ak
 footer: © 2025 Ak'sara Initiative
 background: ../assets/background.jpeg
 -->
----
+<!-- class:cover -->
 # Personal AI Assistant
 ## Offline-First Indonesian AI for Privacy & Performance
 
@@ -194,7 +194,7 @@ Personal AI Assistant Components:
 
 ### **Offline-First Architecture**
 
-<div><div class="success">
+<div><div>
 
 **Complete Local Processing:**
 - AI models run entirely pada user's device
@@ -216,6 +216,7 @@ Personal AI Assistant Components:
 - **Verifiable privacy**: Users can confirm offline operation
 - **Community oversight**: Open development process
 </div></div>
+
 ---
 
 ## Development Roadmap
@@ -238,8 +239,8 @@ Personal AI Assistant Components:
 - 1 AI/ML engineer
 - 1 Frontend developer
 - 1 Indonesian linguist
-
 </div></div>
+
 ---
 
 ## Development Roadmap
@@ -306,11 +307,10 @@ Personal AI Assistant Components:
 - 1 technical writer
 - 1 marketing specialist
 </div></div>
+
 ---
-
+<!-- class:smallText -->
 ## Business Model & Distribution
-
-
 
 ### **Distribution Channels**
 <div><div>
@@ -600,9 +600,9 @@ Personal AI Assistant Components:
 - Platform licensing
 </div></div>
 
+### **Investment Requirements**
 <div><div>
 
-### **Investment Requirements**
 - **Year 1-2**: $2M (team, infrastructure, development)
 - **Year 3**: $5M (scaling, marketing, enterprise)
 - **Year 4-5**: $10M (international, platform development)

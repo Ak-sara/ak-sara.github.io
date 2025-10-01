@@ -11,6 +11,8 @@ header: | ![image w:40px h:40px](../assets/aksara.png) | 2025 |
 footer: © 2025 Ak'sara Initiative - Aksara Writer
 background: ../assets/background.jpeg
 -->
+
+<!-- class:cover -->
 # Aksara Writer
 ## Modern Markdown Converter for Indonesian Businesses
 
@@ -213,17 +215,17 @@ aksara-writer/
 <div><div>
 
 **Features:**
-- Complete template library (8+ templates)
-- Advanced theme system
-- PPTX export functionality
-- Live preview server
+- ✅ Complete template library (8+ templates)
+- ✅ Advanced theme system
+- ✅ PPTX export functionality
+- ✅ Live preview <-> editor sync
 - Indonesian localization
 </div><div>
 
 **Deliverables:**
-- Feature-complete tool
+- ✅ Feature-complete tool
 - Template marketplace
-- User documentation
+- ✅ User documentation
 </div></div>
 
 ---
@@ -462,13 +464,13 @@ aksara-writer/
 </div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Future Development Opportunities
 
 ### **Current Status: Self-Sustaining Open Source**
 <div class="success">
 
-**Aksara Writer v1.0** is **complete and free** under BSD license:
+**Aksara Writer v1.0** is **complete and free** under BSD license:  
 - ✅ **No budget required** for current features
 - ✅ **Self-funded** bootstrap development
 - ✅ **Community-driven** growth model
@@ -485,7 +487,6 @@ aksara-writer/
 - **Priority feature development**: Custom business templates
 - **Professional support**: Training and implementation
 - **Custom integrations**: Enterprise systems integration
-- **Branded versions**: White-label solutions
 - **Ecosystem expansion**: Integration with other Ak'sara projects
 </div><div>
 
@@ -535,17 +536,19 @@ aksara-writer/
 - **Indonesian focus**: Deep understanding of local business needs
 - **Community building**: Open source adoption and community contribution
 - **Business model**: Sustainable freemium with enterprise upsell
+</div><div>
 
 ### **Next Steps**
 1. **Team recruitment**: Hire technical lead and frontend developer
 2. **MVP development**: 3-month sprint for basic functionality
 3. **Community launch**: Open source release with VS Code extension
 4. **Business development**: Template marketplace and premium features
-</div> <div class="highlight">
+</div></div>
+<div class="highlight">
 
 **Aksara Writer represents a high-impact, strategic project that complements the Ak'sara Initiative perfectly**. With focus on Indonesian market needs and technical excellence, this project can become a widely adopted developer tool while serving as a revenue generator for the Initiative.
 
-</div> </div>
+</div>
 
 ---
 

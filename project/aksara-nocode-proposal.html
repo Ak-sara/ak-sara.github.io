@@ -779,6 +779,10 @@ footer { width:100%; }
 .quote {  display: flex; flex-direction: column; justify-content: center;  align-items: center; }
 
 .section-content>div { display:grid; grid-auto-flow: column; gap: .4em; width: 100%; }
+.section-content code{ background:none; 
+    p{ display:inline; }
+}
+
 strong { color: #27ae60; }
 h1,h2,h3,h4,h5,h6{margin-top: .2rem!important;}
 h1 {
@@ -826,7 +830,6 @@ li {
     backdrop-filter: blur(10px);
 }
 .stat-number { font-weight: bold; display: block; color: #27ae60; }
-code p{ margin:0;}
 /* Smaller font class for dense technical content */
 .smallText .section-content {
     font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
@@ -982,15 +985,13 @@ code p{ margin:0;}
 <li><strong>Admin vs End-user layout</strong> separation</li>
 </ul></div> <div>
 <h3><strong>Current Architecture</strong></h3>
-<div class="architecture">
 <pre><code class="">src/lib/
 <p style="position: relative; z-index: 2;">├── core/          # Always loaded foundation</p>
 <p style="position: relative; z-index: 2;">├── defaults/      # System templates (readonly)</p>
 <p style="position: relative; z-index: 2;">├── workspace/     # User configurations (editable)</p>
 <p style="position: relative; z-index: 2;">├── generated/     # Auto-generated content</p>
 <p style="position: relative; z-index: 2;">└── runtime/       # Compiled outputs (.json from .yaml)</code></pre></p>
-</div>
-</div> </div>
+</div></div>
           </div>
           
       <footer class="document-footer">
@@ -1091,8 +1092,8 @@ code p{ margin:0;}
           <div class="section-content">
             <h2>Technical Roadmap  </h2>
 <h3><strong>Phase 1: Core Platform Completion (Months 1-6)</strong></h3>
-<div><div>
 <p style="position: relative; z-index: 2;"><strong>Current Status:</strong> 70% complete</p>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Remaining Work:</strong></p>
 <ul><li><strong>Unified page creator</strong> (integrate module + form designer)</li>
 <li><strong>Core library consolidation</strong> (file operations, schema management)</li>
@@ -1125,8 +1126,8 @@ code p{ margin:0;}
           <div class="section-content">
             <h2>Technical Roadmap  </h2>
 <h3><strong>Phase 2: Business Features (Months 7-12)</strong></h3>
-<div><div>
 <p style="position: relative; z-index: 2;"><strong>Objective:</strong> Production-ready business application builder</p>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>New Features:</strong></p>
 <ul><li><strong>Indonesian business templates</strong> (invoicing, inventory, CRM)</li>
 <li><strong>Reporting and analytics</strong> builder</li>
@@ -1158,8 +1159,8 @@ code p{ margin:0;}
           <div class="section-content">
             <h2>Technical Roadmap  </h2>
 <h3><strong>Phase 3: Enterprise Features (Months 13-18)</strong></h3>
-<div><div>
 <p style="position: relative; z-index: 2;"><strong>Objective:</strong> Enterprise-grade platform with advanced capabilities</p>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Enterprise Features:</strong></p>
 <ul><li><strong>Advanced security</strong> (SSO, LDAP, audit logs)</li>
 <li><strong>Custom branding</strong> and white-labeling</li>
@@ -1227,8 +1228,7 @@ code p{ margin:0;}
     
           <div class="section-content">
             <h2>Business Model</h2>
-<div>
-<div>
+<div><div>
 <h3><strong>Revenue Streams</strong></h3>
 <p style="position: relative; z-index: 2;"><strong>1. SaaS Subscriptions (Primary - 70% revenue)</strong></p>
 <ul><li><strong>Starter:</strong> Free (1 app, 2 users, basic features)</li>
@@ -1244,8 +1244,7 @@ code p{ margin:0;}
 <ul><li><strong>Template marketplace:</strong> 30% commission on sales</li>
 <li><strong>Component store:</strong> 20% commission on premium components</li>
 <li><strong>Integration partnerships:</strong> Revenue sharing with service providers</li>
-</ul></div>
-<div>
+</ul></div> <div>
 <h3><strong>Cost Structure</strong></h3>
 <p style="position: relative; z-index: 2;"><strong>Development (60% of costs):</strong></p>
 <ul><li><strong>Core team</strong> (5 developers): $300K/year</li>
@@ -1255,8 +1254,7 @@ code p{ margin:0;}
 <ul><li><strong>Sales and marketing:</strong> $100K/year</li>
 <li><strong>Customer support:</strong> $50K/year</li>
 <li><strong>Legal and compliance:</strong> $15K/year</li>
-</ul></div>
-</div>
+</ul></div> </div>
           </div>
           
       <footer class="document-footer">
@@ -1492,6 +1490,7 @@ code p{ margin:0;}
     
           <div class="section-content">
             <h2>Resource Requirements</h2>
+<div><div>
 <h3><strong>Development Team (5 people)</strong></h3>
 <ul><li><strong>Technical Lead</strong> - $85K/year (architecture, core development)</li>
 <li><strong>Frontend Developer</strong> - $70K/year (SvelteKit, designer UI)</li>
@@ -1502,11 +1501,13 @@ code p{ margin:0;}
 <ul><li><strong>Product Manager</strong> - $80K/year (roadmap, user research)</li>
 <li><strong>Marketing Manager</strong> - $60K/year (growth, content)</li>
 <li><strong>Customer Success</strong> - $45K/year (support, onboarding)</li>
-</ul><h3><strong>Infrastructure & Operations</strong></h3>
+</ul></div><div>
+<h3><strong>Infrastructure & Operations</strong></h3>
 <ul><li><strong>Cloud infrastructure</strong> (AWS/GCP): $25K/year</li>
 <li><strong>Development tools</strong> and services: $15K/year</li>
 <li><strong>Marketing</strong> and user acquisition: $50K/year</li>
-<li><strong>Legal</strong> and business setup: $10K/year</li></ul>
+<li><strong>Legal</strong> and business setup: $10K/year</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1550,25 +1551,21 @@ code p{ margin:0;}
 <li>Average $250/user + marketplace + enterprise</li>
 </ul></div></div>
 <h3><strong>Investment Requirements</strong></h3>
-<div>
-<div>
+<div> <div>
 <p style="position: relative; z-index: 2;"><strong>Seed Round:</strong> $500K (12 months)</p>
 <ul><li>Complete MVP development</li>
 <li>Initial team building</li>
 <li>Market validation</li>
-</ul></div>
-<div>
+</ul></div> <div>
 <p style="position: relative; z-index: 2;"><strong>Series A:</strong> $2M (24 months)</p>
 <ul><li>Market expansion</li>
 <li>Enterprise features</li>
 <li>Team scaling</li>
-</ul></div>
-<div>
+</ul></div> <div>
 <p style="position: relative; z-index: 2;"><strong>Break-even:</strong> Month 15</p>
 <p style="position: relative; z-index: 2;"><strong>Profitability:</strong> Month 18</p>
 <p style="position: relative; z-index: 2;"><strong>ROI:</strong> 25x over 5 years</p>
-</div>
-</div>
+</div> </div>
           </div>
           
       <footer class="document-footer">
@@ -1588,6 +1585,7 @@ code p{ margin:0;}
     
           <div class="section-content">
             <h2>Strategic Partnerships</h2>
+<div> <div>
 <h3><strong>Technology Partners</strong></h3>
 <ul><li><strong>Cloud providers</strong> (AWS, Google Cloud) - credits and support</li>
 <li><strong>Payment gateways</strong> (Midtrans, Xendit) - integration partnerships</li>
@@ -1596,10 +1594,12 @@ code p{ margin:0;}
 <ul><li><strong>Business consultants</strong> - template development and user acquisition</li>
 <li><strong>System integrators</strong> - enterprise sales and implementation</li>
 <li><strong>Educational institutions</strong> - training programs and certification</li>
-</ul><h3><strong>Distribution Partners</strong></h3>
+</ul></div> <div>
+<h3><strong>Distribution Partners</strong></h3>
 <ul><li><strong>Indonesian ISVs</strong> - white-label partnerships</li>
 <li><strong>Hosting providers</strong> - bundle offerings</li>
-<li><strong>Business associations</strong> - member benefits and training</li></ul>
+<li><strong>Business associations</strong> - member benefits and training</li>
+</ul></div> </div>
           </div>
           
       <footer class="document-footer">
@@ -1661,7 +1661,7 @@ code p{ margin:0;}
         </section>
       
 
-        <section class="document-section" data-section="22">
+        <section class="document-section smallText" data-section="22">
           
           
       <header class="document-header">
@@ -1681,14 +1681,16 @@ code p{ margin:0;}
 <li><strong>Effective market entry</strong> with Indonesian-specific features</li>
 <li><strong>Strong partnerships</strong> for distribution and growth</li>
 <li><strong>Quality execution</strong> of user experience and support</li>
-</ul><h3><strong>Investment Attractiveness</strong></h3>
+</ul></div><div>
+<h3><strong>Investment Attractiveness</strong></h3>
 <ul><li><strong>Large addressable market</strong> (64M+ Indonesian SMEs)</li>
 <li><strong>Proven technology foundation</strong> reduces execution risk</li>
 <li><strong>Clear path to profitability</strong> within 18 months</li>
 <li><strong>Multiple exit opportunities</strong> through strategic acquisition</li>
-</ul></div><div class="highlight vcenter">
+</ul></div></div>
+<div class="highlight vcenter">
 <p style="position: relative; z-index: 2;"><strong>Aksara IS represents the highest-probability success within the Ak'sara Initiative, combining proven technology with clear market demand.</strong></p>
-</div></div>
+</div>
           </div>
           
       <footer class="document-footer">

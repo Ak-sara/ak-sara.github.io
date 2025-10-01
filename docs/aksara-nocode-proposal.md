@@ -12,7 +12,7 @@ header: | Aksara IS Planning & Feasibility  | ![lg r:10px y:0 w:50px](../assets/
 footer: © 2025 Ak'sara Initiative
 background: ../assets/background.jpeg
 -->
----
+
 <!-- class:cover -->
 # Aksara IS
 ## No-Code Platform for Indonesian Businesses
@@ -150,9 +150,10 @@ src/lib/
 <!-- class:smallText -->
 ## Technical Roadmap  
 ### **Phase 1: Core Platform Completion (Months 1-6)**
-<div><div>
 
 **Current Status:** 70% complete
+
+<div><div>
 
 **Remaining Work:**
 - **Unified page creator** (integrate module + form designer)
@@ -172,9 +173,9 @@ src/lib/
 <!-- class:smallText -->
 ## Technical Roadmap  
 ### **Phase 2: Business Features (Months 7-12)**
-<div><div>
 
 **Objective:** Production-ready business application builder
+<div><div>
 
 **New Features:**
 - **Indonesian business templates** (invoicing, inventory, CRM)
@@ -193,9 +194,9 @@ src/lib/
 <!-- class:smallText -->
 ## Technical Roadmap  
 ### **Phase 3: Enterprise Features (Months 13-18)**
-<div><div>
 
 **Objective:** Enterprise-grade platform with advanced capabilities
+<div><div>
 
 **Enterprise Features:**
 - **Advanced security** (SSO, LDAP, audit logs)
@@ -238,8 +239,7 @@ src/lib/
 ---
 <!-- class:smallText -->
 ## Business Model
-<div>
-<div>
+<div><div>
 
 ### **Revenue Streams**
 
@@ -259,8 +259,7 @@ src/lib/
 - **Template marketplace:** 30% commission on sales
 - **Component store:** 20% commission on premium components
 - **Integration partnerships:** Revenue sharing with service providers
-</div>
-<div>
+</div> <div>
 
 ### **Cost Structure**
 
@@ -273,8 +272,7 @@ src/lib/
 - **Sales and marketing:** $100K/year
 - **Customer support:** $50K/year
 - **Legal and compliance:** $15K/year
-</div>
-</div>
+</div> </div>
 
 ---
 <!-- class:smallText -->
@@ -434,6 +432,7 @@ src/lib/
 ---
 <!-- class:smallText -->
 ## Resource Requirements
+<div><div>
 
 ### **Development Team (5 people)**
 - **Technical Lead** - $85K/year (architecture, core development)
@@ -446,12 +445,14 @@ src/lib/
 - **Product Manager** - $80K/year (roadmap, user research)
 - **Marketing Manager** - $60K/year (growth, content)
 - **Customer Success** - $45K/year (support, onboarding)
+</div><div>
 
 ### **Infrastructure & Operations**
 - **Cloud infrastructure** (AWS/GCP): $25K/year
 - **Development tools** and services: $15K/year
 - **Marketing** and user acquisition: $50K/year
 - **Legal** and business setup: $10K/year
+</div></div>
 
 ---
 <!-- class:smallText -->
@@ -487,32 +488,29 @@ src/lib/
 </div></div>
 
 ### **Investment Requirements**
-<div>
-<div>
+<div> <div>
 
 **Seed Round:** $500K (12 months)
 - Complete MVP development
 - Initial team building
 - Market validation
-</div>
-<div>
+</div> <div>
 
 **Series A:** $2M (24 months)
 - Market expansion
 - Enterprise features
 - Team scaling
-</div>
-<div>
+</div> <div>
 
 **Break-even:** Month 15
 **Profitability:** Month 18
 **ROI:** 25x over 5 years
-</div>
-</div>
+</div> </div>
 
 ---
 
 ## Strategic Partnerships
+<div> <div>
 
 ### **Technology Partners**
 1. **Cloud providers** (AWS, Google Cloud) - credits and support
@@ -523,11 +521,13 @@ src/lib/
 1. **Business consultants** - template development and user acquisition
 2. **System integrators** - enterprise sales and implementation
 3. **Educational institutions** - training programs and certification
+</div> <div>
 
 ### **Distribution Partners**
 1. **Indonesian ISVs** - white-label partnerships
 2. **Hosting providers** - bundle offerings
 3. **Business associations** - member benefits and training
+</div> </div>
 
 ---
 <!-- class:smallText -->
@@ -573,6 +573,7 @@ src/lib/
 - **M5:** Market leadership (Month 24)
 
 ---
+<!-- class:smallText -->
 ## Conclusion
 <div><div>
 
@@ -587,16 +588,17 @@ src/lib/
 - **Effective market entry** with Indonesian-specific features
 - **Strong partnerships** for distribution and growth
 - **Quality execution** of user experience and support
+</div><div>
 
 ### **Investment Attractiveness**
 - **Large addressable market** (64M+ Indonesian SMEs)
 - **Proven technology foundation** reduces execution risk
 - **Clear path to profitability** within 18 months
 - **Multiple exit opportunities** through strategic acquisition
-
-</div><div class="highlight vcenter">
-<strong>Aksara IS represents the highest-probability success within the Ak'sara Initiative, combining proven technology with clear market demand.</strong>
 </div></div>
+<div class="highlight vcenter">
+<strong>Aksara IS represents the highest-probability success within the Ak'sara Initiative, combining proven technology with clear market demand.</strong>
+</div>
 
 ---
 
