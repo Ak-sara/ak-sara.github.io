@@ -779,6 +779,10 @@ footer { width:100%; }
 .quote {  display: flex; flex-direction: column; justify-content: center;  align-items: center; }
 
 .section-content>div { display:grid; grid-auto-flow: column; gap: .4em; width: 100%; }
+.section-content code{ background:none; 
+    p{ display:inline; }
+}
+
 strong { color: #27ae60; }
 h1,h2,h3,h4,h5,h6{margin-top: .2rem!important;}
 h1 {
@@ -826,7 +830,6 @@ li {
     backdrop-filter: blur(10px);
 }
 .stat-number { font-weight: bold; display: block; color: #27ae60; }
-code p{ margin:0;}
 /* Smaller font class for dense technical content */
 .smallText .section-content {
     font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
@@ -875,7 +878,7 @@ code p{ margin:0;}
     
       <div class="aksara-document" data-size="16:9">
         
-        <section class="document-section" data-section="1">
+        <section class="document-section cover" data-section="1">
           
           
       <header class="document-header">
@@ -934,7 +937,7 @@ code p{ margin:0;}
         </section>
       
 
-        <section class="document-section" data-section="3">
+        <section class="document-section smallText" data-section="3">
           
           
       <header class="document-header">
@@ -1019,7 +1022,7 @@ code p{ margin:0;}
         </section>
       
 
-        <section class="document-section" data-section="5">
+        <section class="document-section smallText" data-section="5">
           
           
       <header class="document-header">
@@ -1028,31 +1031,35 @@ code p{ margin:0;}
     
           <div class="section-content">
             <h2>Key Features</h2>
-<div><div>
 <h3><strong>User Experience Enhancements</strong></h3>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Installation Experience:</strong></p>
 <ul><li><strong>Graphical installer</strong>: User-friendly setup wizard</li>
 <li><strong>Hardware detection</strong>: Automatic driver installation</li>
 <li><strong>Partition management</strong>: Safe dual-boot setup dengan Windows</li>
 <li><strong>User setup</strong>: Indonesian keyboard, timezone, language</li>
-</ul><strong>Desktop Experience:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Desktop Experience:</strong></p>
 <ul><li><strong>Indonesian theme</strong>: Batik-inspired visual design</li>
 <li><strong>Local applications</strong>: Banking, e-commerce, government apps</li>
 <li><strong>Font optimization</strong>: Beautiful Indonesian text rendering</li>
 <li><strong>Input methods</strong>: Support untuk various Indonesian input</li>
-</ul></div><div>
+</ul></div></div>
 <h3><strong>Pre-installed Software Suite</strong></h3>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Productivity Applications:</strong></p>
 <ul><li><strong>LibreOffice</strong>: Fully localized dengan Indonesian templates</li>
 <li><strong>Aksara Writer</strong>: Markdown converter untuk business documents</li>
 <li><strong>Web browsers</strong>: Firefox dengan Indonesian bookmarks dan settings</li>
 <li><strong>Media tools</strong>: VLC, GIMP untuk multimedia needs</li>
-</ul><strong>Development Tools:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Development Tools:</strong></p>
 <ul><li><strong>VS Code</strong>: Pre-configured dengan Indonesian extensions</li>
 <li><strong>Node.js/Bun</strong>: Modern JavaScript development</li>
 <li><strong>Python</strong>: Data science dan web development</li>
 <li><strong>Git</strong>: Version control dengan Indonesian documentation</li>
-</ul><strong>Business Applications:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Business Applications:</strong></p>
 <ul><li><strong>Aksara IS</strong>: No-code platform pre-installed</li>
 <li><strong>Accounting software</strong>: Local Indonesian accounting standards</li>
 <li><strong>PDF tools</strong>: Invoice generation, document management</li>
@@ -1129,8 +1136,8 @@ code p{ margin:0;}
           <div class="section-content">
             <h2>Development Roadmap</h2>
 <h3><strong>Phase 1: Core System (Months 1-6)</strong></h3>
-<div><div>
 <p style="position: relative; z-index: 2;"><strong>Focus</strong>: Stable base system dengan Indonesian optimizations</p>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Deliverables:</strong></p>
 <ul><li>Arch-based foundation dengan custom repositories</li>
 <li>Indonesian-themed desktop environment</li>
@@ -1163,8 +1170,8 @@ code p{ margin:0;}
           <div class="section-content">
             <h2>Development Roadmap</h2>
 <h3><strong>Phase 2: Application Integration (Months 7-12)</strong></h3>
-<div><div>
 <p style="position: relative; z-index: 2;"><strong>Focus</strong>: Pre-installed applications dan user experience</p>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Deliverables:</strong></p>
 <ul><li>Complete software suite integration</li>
 <li>Aksara IS dan Aksara Writer pre-installation</li>
@@ -1197,8 +1204,8 @@ code p{ margin:0;}
           <div class="section-content">
             <h2>Development Roadmap</h2>
 <h3><strong>Phase 3: Distribution & Support (Months 13-18)</strong></h3>
-<div><div>
 <p style="position: relative; z-index: 2;"><strong>Focus</strong>: Public release dan ecosystem building</p>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Deliverables:</strong></p>
 <ul><li>Stable 1.0 release</li>
 <li>OEM partnerships dengan laptop manufacturers</li>
@@ -1309,7 +1316,7 @@ code p{ margin:0;}
         </section>
       
 
-        <section class="document-section smallText" data-section="13">
+        <section class="document-section" data-section="13">
           
           
       <header class="document-header">
@@ -1320,16 +1327,19 @@ code p{ margin:0;}
             <h2>Market Entry Strategy</h2>
 <h3><strong>Phase 1: Developer Community (Months 1-6)</strong></h3>
 <p style="position: relative; z-index: 2;"><strong>Target</strong>: Indonesian Linux enthusiasts dan developers</p>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Approach:</strong></p>
 <ul><li>Open source development di GitHub</li>
 <li>Tech conference presentations</li>
 <li>Developer community engagement</li>
 <li>Technical blogs dan tutorials</li>
-</ul><strong>Goals:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Goals:</strong></p>
 <ul><li>1,000 alpha testers</li>
 <li>100 community contributors</li>
 <li>Technical validation</li>
-<li>Hardware compatibility database</li></ul>
+<li>Hardware compatibility database</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1340,7 +1350,7 @@ code p{ margin:0;}
         </section>
       
 
-        <section class="document-section smallText" data-section="14">
+        <section class="document-section" data-section="14">
           
           
       <header class="document-header">
@@ -1351,16 +1361,19 @@ code p{ margin:0;}
             <h2>Market Entry Strategy</h2>
 <h3><strong>Phase 2: Educational Adoption (Months 7-12)</strong></h3>
 <p style="position: relative; z-index: 2;"><strong>Target</strong>: Universities dan technical schools</p>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Approach:</strong></p>
 <ul><li>Educational partnerships</li>
 <li>Student developer programs</li>
 <li>Campus deployment pilots</li>
 <li>Computer science curriculum integration</li>
-</ul><strong>Goals:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Goals:</strong></p>
 <ul><li>10 university partnerships</li>
 <li>5,000 student users</li>
 <li>Educational use cases validation</li>
-<li>Teaching material development</li></ul>
+<li>Teaching material development</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1371,7 +1384,7 @@ code p{ margin:0;}
         </section>
       
 
-        <section class="document-section smallText" data-section="15">
+        <section class="document-section" data-section="15">
           
           
       <header class="document-header">
@@ -1382,16 +1395,19 @@ code p{ margin:0;}
             <h2>Market Entry Strategy</h2>
 <h3><strong>Phase 3: Commercial Launch (Months 13-18)</strong></h3>
 <p style="position: relative; z-index: 2;"><strong>Target</strong>: OEM partnerships dan general users</p>
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Approach:</strong></p>
 <ul><li>Manufacturer negotiations</li>
 <li>Retail channel development</li>
 <li>Marketing campaigns</li>
 <li>Government procurement participation</li>
-</ul><strong>Goals:</strong>
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Goals:</strong></p>
 <ul><li>2 OEM partnerships</li>
 <li>50,000 users</li>
 <li>Government pilot programs</li>
-<li>Revenue generation</li></ul>
+<li>Revenue generation</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1455,6 +1471,7 @@ code p{ margin:0;}
     
           <div class="section-content">
             <h2>Success Metrics & KPIs</h2>
+<div><div>
 <h3><strong>Technical KPIs</strong></h3>
 <ul><li><strong>Boot time</strong>: <20 seconds pada typical hardware</li>
 <li><strong>RAM usage</strong>: <1GB idle consumption</li>
@@ -1465,11 +1482,13 @@ code p{ margin:0;}
 <li><strong>OEM partnerships</strong>: 2 major manufacturers by Month 18</li>
 <li><strong>Educational adoption</strong>: 25 institutions by Month 18</li>
 <li><strong>Community</strong>: 500 active contributors, 50 package maintainers</li>
-</ul><h3><strong>Business KPIs</strong></h3>
+</ul></div><div>
+<h3><strong>Business KPIs</strong></h3>
 <ul><li><strong>Revenue</strong>: $50K (Year 1) → $500K (Year 2) → $2M (Year 3)</li>
 <li><strong>Market share</strong>: 0.1% Indonesian desktop market by Year 2</li>
 <li><strong>Support metrics</strong>: <24 hour response time, >90% satisfaction</li>
-<li><strong>Ecosystem growth</strong>: 100+ third-party applications</li></ul>
+<li><strong>Ecosystem growth</strong>: 100+ third-party applications</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1480,7 +1499,7 @@ code p{ margin:0;}
         </section>
       
 
-        <section class="document-section smallText" data-section="18">
+        <section class="document-section" data-section="18">
           
           
       <header class="document-header">
@@ -1489,6 +1508,7 @@ code p{ margin:0;}
     
           <div class="section-content">
             <h2>Resource Requirements</h2>
+<div><div>
 <h3><strong>Development Team</strong></h3>
 <ul><li><strong>System Architect</strong>: Linux kernel + Arch expertise ($90K/year)</li>
 <li><strong>Desktop Developer</strong>: GNOME customization ($70K/year)</li>
@@ -1500,11 +1520,13 @@ code p{ margin:0;}
 <li><strong>Package mirrors</strong>: $30K/year (multiple Indonesian locations)</li>
 <li><strong>Testing hardware</strong>: $15K one-time (various laptop models)</li>
 <li><strong>Development tools</strong>: $10K/year</li>
-</ul><h3><strong>Business Operations</strong></h3>
+</ul></div><div>
+<h3><strong>Business Operations</strong></h3>
 <ul><li><strong>Community management</strong>: $40K/year</li>
 <li><strong>Documentation</strong>: $25K/year</li>
 <li><strong>Marketing</strong>: $50K/year</li>
-<li><strong>Legal compliance</strong>: $15K/year</li></ul>
+<li><strong>Legal compliance</strong>: $15K/year</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1515,7 +1537,7 @@ code p{ margin:0;}
         </section>
       
 
-        <section class="document-section" data-section="19">
+        <section class="document-section smallText" data-section="19">
           
           
       <header class="document-header">
@@ -1524,6 +1546,7 @@ code p{ margin:0;}
     
           <div class="section-content">
             <h2>Strategic Impact</h2>
+<div><div>
 <h3><strong>National Technology Goals</strong></h3>
 <ul><li><strong>Digital sovereignty</strong>: Reduced dependency pada foreign OS</li>
 <li><strong>Local innovation</strong>: Platform untuk Indonesian software development</li>
@@ -1534,11 +1557,13 @@ code p{ margin:0;}
 <li><strong>Developer adoption</strong>: Attracts developers ke Ak'sara tools</li>
 <li><strong>Government relations</strong>: Demonstrates commitment ke national tech independence</li>
 <li><strong>Brand recognition</strong>: Establishes Ak'sara sebagai serious tech initiative</li>
-</ul><h3><strong>Long-term Vision</strong></h3>
+</ul></div><div>
+<h3><strong>Long-term Vision</strong></h3>
 <ul><li><strong>Mobile OS</strong>: Extension ke Android-based mobile OS</li>
 <li><strong>IoT platform</strong>: Embedded systems untuk smart devices</li>
 <li><strong>Cloud integration</strong>: Seamless integration dengan Indonesian cloud services</li>
-<li><strong>AI acceleration</strong>: Optimized platform untuk local AI development</li></ul>
+<li><strong>AI acceleration</strong>: Optimized platform untuk local AI development</li>
+</ul></div></div>
           </div>
           
       <footer class="document-footer">
@@ -1575,11 +1600,14 @@ code p{ margin:0;}
 <li>Enterprise services: $500K</li>
 </ul></div></div>
 <h3><strong>Investment Requirements</strong></h3>
+<div><div>
 <ul><li><strong>Year 1</strong>: $400K (team + infrastructure)</li>
 <li><strong>Year 2</strong>: $600K (scaling + marketing)</li>
 <li><strong>Year 3</strong>: $800K (expansion + enterprise features)</li>
-</ul><strong>Break-even</strong>: Month 24
+</ul></div><div>
+<p style="position: relative; z-index: 2;"><strong>Break-even</strong>: Month 24</p>
 <p style="position: relative; z-index: 2;"><strong>ROI</strong>: 3x over 5 years</p>
+</div></div>
           </div>
           
       <footer class="document-footer">
@@ -1590,7 +1618,7 @@ code p{ margin:0;}
         </section>
       
 
-        <section class="document-section" data-section="21">
+        <section class="document-section smallText" data-section="21">
           
           
       <header class="document-header">
@@ -1640,13 +1668,14 @@ code p{ margin:0;}
       </header>
     
           <div class="section-content">
-            <br>
-<p style="position: relative; z-index: 2;"><strong>Contact Information:</strong></p>
+            <p style="position: relative; z-index: 2;"><strong>Contact Information:</strong></p>
+<br>
 <ul><li><strong>Project Lead</strong>: [To be assigned]</li>
 <li><strong>Technical Architect</strong>: [To be assigned]</li>
 <li><strong>Business Development</strong>: [To be assigned]</li>
-<li><strong>Email:</strong> </li>
-</ul>sponsor.aksara@tuta.com
+</ul><strong>Email:</strong>
+<br>
+<p style="position: relative; z-index: 2;">sponsor.aksara@tuta.com</p>
 <p style="position: relative; z-index: 2;">contribute.aksara@tuta.com</p>
 <p style="position: relative; z-index: 2;">partner.aksara@tuta.com</p>
 <p style="position: relative; z-index: 2;">relations.aksara@tuta.com</p>

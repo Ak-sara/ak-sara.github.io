@@ -13,6 +13,7 @@ footer: © 2025 Ak'sara Initiative
 background: ../assets/background.jpeg
 -->
 
+<!-- class:cover -->
 # MerdekaOS
 ## Arch-based Linux Distribution for Indonesian Users
 
@@ -47,7 +48,7 @@ background: ../assets/background.jpeg
 </div>
 
 ---
-
+<!-- class:smallText -->
 ## Strategic Context
 <div><div>
 
@@ -112,38 +113,42 @@ background: ../assets/background.jpeg
 </div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Key Features
-<div><div>
 
 ### **User Experience Enhancements**
+<div><div>
 
 **Installation Experience:**
 - **Graphical installer**: User-friendly setup wizard
 - **Hardware detection**: Automatic driver installation
 - **Partition management**: Safe dual-boot setup dengan Windows
 - **User setup**: Indonesian keyboard, timezone, language
+</div><div>
 
 **Desktop Experience:**
 - **Indonesian theme**: Batik-inspired visual design
 - **Local applications**: Banking, e-commerce, government apps
 - **Font optimization**: Beautiful Indonesian text rendering
 - **Input methods**: Support untuk various Indonesian input
-</div><div>
+</div></div>
 
 ### **Pre-installed Software Suite**
+<div><div>
 
 **Productivity Applications:**
 - **LibreOffice**: Fully localized dengan Indonesian templates
 - **Aksara Writer**: Markdown converter untuk business documents
 - **Web browsers**: Firefox dengan Indonesian bookmarks dan settings
 - **Media tools**: VLC, GIMP untuk multimedia needs
+</div><div>
 
 **Development Tools:**
 - **VS Code**: Pre-configured dengan Indonesian extensions
 - **Node.js/Bun**: Modern JavaScript development
 - **Python**: Data science dan web development
 - **Git**: Version control dengan Indonesian documentation
+</div><div>
 
 **Business Applications:**
 - **Aksara IS**: No-code platform pre-installed
@@ -188,9 +193,9 @@ background: ../assets/background.jpeg
 ## Development Roadmap
 
 ### **Phase 1: Core System (Months 1-6)**
-<div><div>
 
 **Focus**: Stable base system dengan Indonesian optimizations
+<div><div>
 
 **Deliverables:**
 - Arch-based foundation dengan custom repositories
@@ -211,9 +216,8 @@ background: ../assets/background.jpeg
 ## Development Roadmap
 
 ### **Phase 2: Application Integration (Months 7-12)**
-<div><div>
-
 **Focus**: Pre-installed applications dan user experience
+<div><div>
 
 **Deliverables:**
 - Complete software suite integration
@@ -234,9 +238,8 @@ background: ../assets/background.jpeg
 ## Development Roadmap
 
 ### **Phase 3: Distribution & Support (Months 13-18)**
-<div><div>
-
 **Focus**: Public release dan ecosystem building
+<div><div>
 
 **Deliverables:**
 - Stable 1.0 release
@@ -325,61 +328,70 @@ MerdekaOS Components:
 </div></div>
 
 ---
-<!-- class:smallText -->
+
 ## Market Entry Strategy
 
 ### **Phase 1: Developer Community (Months 1-6)**
 **Target**: Indonesian Linux enthusiasts dan developers
+<div><div>
 
 **Approach:**
 - Open source development di GitHub
 - Tech conference presentations
 - Developer community engagement
 - Technical blogs dan tutorials
+</div><div>
 
 **Goals:**
 - 1,000 alpha testers
 - 100 community contributors
 - Technical validation
 - Hardware compatibility database
+</div></div>
 
 ---
-<!-- class:smallText -->
+
 ## Market Entry Strategy
 
 ### **Phase 2: Educational Adoption (Months 7-12)**
 **Target**: Universities dan technical schools
+<div><div>
 
 **Approach:**
 - Educational partnerships
 - Student developer programs
 - Campus deployment pilots
 - Computer science curriculum integration
+</div><div>
 
 **Goals:**
 - 10 university partnerships
 - 5,000 student users
 - Educational use cases validation
 - Teaching material development
+</div></div>
 
 ---
-<!-- class:smallText -->
+
 ## Market Entry Strategy
 
 ### **Phase 3: Commercial Launch (Months 13-18)**
 **Target**: OEM partnerships dan general users
+<div><div>
 
 **Approach:**
 - Manufacturer negotiations
 - Retail channel development
 - Marketing campaigns
 - Government procurement participation
+</div><div>
 
 **Goals:**
 - 2 OEM partnerships
 - 50,000 users
 - Government pilot programs
 - Revenue generation
+</div></div>
 
 ---
 <!-- class:smallText -->
@@ -430,6 +442,7 @@ MerdekaOS Components:
 ---
 
 ## Success Metrics & KPIs
+<div><div>
 
 ### **Technical KPIs**
 - **Boot time**: <20 seconds pada typical hardware
@@ -442,16 +455,19 @@ MerdekaOS Components:
 - **OEM partnerships**: 2 major manufacturers by Month 18
 - **Educational adoption**: 25 institutions by Month 18
 - **Community**: 500 active contributors, 50 package maintainers
+</div><div>
 
 ### **Business KPIs**
 - **Revenue**: $50K (Year 1) → $500K (Year 2) → $2M (Year 3)
 - **Market share**: 0.1% Indonesian desktop market by Year 2
 - **Support metrics**: <24 hour response time, >90% satisfaction
 - **Ecosystem growth**: 100+ third-party applications
+</div></div>
 
 ---
-<!-- class:smallText -->
+
 ## Resource Requirements
+<div><div>
 
 ### **Development Team**
 - **System Architect**: Linux kernel + Arch expertise ($90K/year)
@@ -465,16 +481,19 @@ MerdekaOS Components:
 - **Package mirrors**: $30K/year (multiple Indonesian locations)
 - **Testing hardware**: $15K one-time (various laptop models)
 - **Development tools**: $10K/year
+</div><div>
 
 ### **Business Operations**
 - **Community management**: $40K/year
 - **Documentation**: $25K/year
 - **Marketing**: $50K/year
 - **Legal compliance**: $15K/year
+</div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Strategic Impact
+<div><div>
 
 ### **National Technology Goals**
 - **Digital sovereignty**: Reduced dependency pada foreign OS
@@ -487,12 +506,14 @@ MerdekaOS Components:
 - **Developer adoption**: Attracts developers ke Ak'sara tools
 - **Government relations**: Demonstrates commitment ke national tech independence
 - **Brand recognition**: Establishes Ak'sara sebagai serious tech initiative
+</div><div>
 
 ### **Long-term Vision**
 - **Mobile OS**: Extension ke Android-based mobile OS
 - **IoT platform**: Embedded systems untuk smart devices
 - **Cloud integration**: Seamless integration dengan Indonesian cloud services
 - **AI acceleration**: Optimized platform untuk local AI development
+</div></div>
 
 ---
 
@@ -519,15 +540,19 @@ MerdekaOS Components:
 </div></div>
 
 ### **Investment Requirements**
+<div><div>
+
 - **Year 1**: $400K (team + infrastructure)
 - **Year 2**: $600K (scaling + marketing)
 - **Year 3**: $800K (expansion + enterprise features)
+</div><div>
 
 **Break-even**: Month 24
 **ROI**: 3x over 5 years
+</div></div>
 
 ---
-
+<!-- class:smallText -->
 ## Conclusion
 
 ### **Strategic Recommendation**
@@ -560,16 +585,16 @@ MerdekaOS Components:
 
 </div>
 
-
 ---
 <!-- class: quote center -->
-<br>
-
 **Contact Information:**
+<br>
 - **Project Lead**: [To be assigned]
 - **Technical Architect**: [To be assigned]
 - **Business Development**: [To be assigned]
-- **Email:** 
+
+**Email:** 
+<br>
 sponsor.aksara@tuta.com
 contribute.aksara@tuta.com
 partner.aksara@tuta.com

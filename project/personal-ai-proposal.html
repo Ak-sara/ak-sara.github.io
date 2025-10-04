@@ -779,6 +779,10 @@ footer { width:100%; }
 .quote {  display: flex; flex-direction: column; justify-content: center;  align-items: center; }
 
 .section-content>div { display:grid; grid-auto-flow: column; gap: .4em; width: 100%; }
+.section-content code{ background:none; 
+    p{ display:inline; }
+}
+
 strong { color: #27ae60; }
 h1,h2,h3,h4,h5,h6{margin-top: .2rem!important;}
 h1 {
@@ -826,7 +830,6 @@ li {
     backdrop-filter: blur(10px);
 }
 .stat-number { font-weight: bold; display: block; color: #27ae60; }
-code p{ margin:0;}
 /* Smaller font class for dense technical content */
 .smallText .section-content {
     font-size: clamp(0.9rem, 2.1vh, 1rem) !important;
@@ -875,7 +878,7 @@ code p{ margin:0;}
     
       <div class="aksara-document" data-size="16:9">
         
-        <section class="document-section" data-section="1">
+        <section class="document-section cover" data-section="1">
           
           
       <header class="document-header">
@@ -1142,7 +1145,7 @@ code p{ margin:0;}
           <div class="section-content">
             <h2>Privacy & Security Features</h2>
 <h3><strong>Offline-First Architecture</strong></h3>
-<div><div class="success">
+<div><div>
 <p style="position: relative; z-index: 2;"><strong>Complete Local Processing:</strong></p>
 <ul><li>AI models run entirely pada user's device</li>
 <li>No data transmission ke external servers</li>
@@ -1309,7 +1312,7 @@ code p{ margin:0;}
         </section>
       
 
-        <section class="document-section" data-section="13">
+        <section class="document-section smallText" data-section="13">
           
           
       <header class="document-header">
@@ -1667,8 +1670,8 @@ code p{ margin:0;}
 <ul><li>20M users, 10% premium conversion</li>
 <li>Platform licensing</li>
 </ul></div></div>
-<div><div>
 <h3><strong>Investment Requirements</strong></h3>
+<div><div>
 <ul><li><strong>Year 1-2</strong>: $2M (team, infrastructure, development)</li>
 <li><strong>Year 3</strong>: $5M (scaling, marketing, enterprise)</li>
 <li><strong>Year 4-5</strong>: $10M (international, platform development)</li>
