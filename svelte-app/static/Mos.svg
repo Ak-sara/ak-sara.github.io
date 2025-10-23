@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+ <rect fill="#396"
+     width="469" height="469" x="19" y="19" rx="101" ry="101" />
+  <g id="layer1">
+    <path d="M 55.690116,399.15984 75.28696,75.590635 l 94.7705,0.210575 -17.91945,303.08095 z"
+       id="path1"
+       fill="#ff0000"/>
+    <path d="M 171.70058,74.290576 74.715466,74.217467 180.43121,324.54364 240.0294,220.87541 Z"
+       id="path2"
+       fill="#999"/>
+    <path d="M 181.16187,323.11082 307.18869,92.477382 434.55569,81.877711 300.85399,301.11025 Z"
+       id="path3"
+       fill="#666"/>
+    <path d="M 306.92356,91.773161 435.28087,80.344452 478.93326,342.37437 363.5986,453.90354 Z"
+       id="path4"
+       fill="#ff5555"/>
+    <path d="m 216.4719,344.11151 -1.45515,110.1525 186.22656,0.31215 75.81537,-110.38591 z"
+       fill="#CCC"/>
+    <text x="214" y="450"
+       fill="#333333"
+       font-size="136px"
+       stroke-width="11"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Rockwell;">OS</text>
+  </g>
+</svg>
