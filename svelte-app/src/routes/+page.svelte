@@ -8,7 +8,7 @@
             description: "Enable Indonesian businesses to create custom applications without coding expertise. Features drag-and-drop builder, Indonesian language interface, and offline capabilities.",
             timeline: "12-18 months to MVP",
             actions: [
-                { text: "Proposal", icon: "file-alt", type: "proposal", link: "/project/aksara-nocode-proposal" },
+                { text: "Proposal", icon: "file-alt", type: "proposal", link: "/project/aksara-nocode-proposal.html" },
                 { text: "Download", icon: "file-pdf", type: "download", link: "/pdf/aksara-nocode-proposal.pdf" }
             ]
         },
@@ -20,7 +20,7 @@
             timeline: "v0.1.2 with VSCode auto-preview and improved styling",
             github: "https://github.com/Ak-sara/aksara-writer",
             actions: [
-                { text: "Proposal", icon: "file-alt", type: "proposal", link: "/project/aksara-writer-proposal" },
+                { text: "Proposal", icon: "file-alt", type: "proposal", link: "/project/aksara-writer-proposal.html" },
                 { text: "Package", icon: "npm", type: "npm", link: "https://www.npmjs.com/package/aksara-writer-core" },
                 { text: "GitHub", icon: "github", type: "github", link: "https://github.com/Ak-sara/aksara-writer" }
             ]
@@ -33,7 +33,7 @@
             timeline: "12-18 months",
             logo: "/Mos.svg",
             actions: [
-                { text: "Proposal", icon: "file-alt", type: "proposal", link: "/project/merdeka-os-proposal" },
+                { text: "Proposal", icon: "file-alt", type: "proposal", link: "/project/merdeka-os-proposal.html" },
                 { text: "Download", icon: "file-pdf", type: "download", link: "/pdf/merdeka-os-proposal.pdf" }
             ]
         },
@@ -44,7 +44,7 @@
             description: "Offline AI assistance in Bahasa Indonesia, reducing dependency on cloud-based foreign services. Complete privacy-focused design with cultural context awareness.",
             timeline: "18-24 months",
             actions: [
-                { text: "Proposal", icon: "file-alt", type: "proposal", link: "/project/personal-ai-proposal" },
+                { text: "Proposal", icon: "file-alt", type: "proposal", link: "/project/personal-ai-proposal.html" },
                 { text: "Download", icon: "file-pdf", type: "download", link: "/pdf/personal-ai-proposal.pdf" }
             ]
         }

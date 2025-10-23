@@ -73,7 +73,7 @@
             </div>
             <p>Lightweight Arch Linux-based distribution optimized for Indonesian offices and developers. Pre-configured with our software ecosystem.</p>
             <div class="action-buttons">
-                <a href="/project/merdeka-os-proposal" target="_blank" class="btn btn-primary">
+                <a href="/project/merdeka-os-proposal.html" target="_blank" class="btn btn-primary">
                     <i class="fas fa-file-alt"></i> View Full Proposal
                 </a>
                 <a href="/pdf/merdeka-os-proposal.pdf" target="_blank" class="btn btn-secondary">

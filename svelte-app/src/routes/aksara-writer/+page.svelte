@@ -69,7 +69,7 @@
                 <a href="https://github.com/ak-sara/aksara-writer" target="_blank" class="btn btn-github">
                     <i class="fab fa-github"></i> GitHub Repo
                 </a>
-                <a href="/project/aksara-writer-proposal" target="_blank" class="btn btn-primary">
+                <a href="/project/aksara-writer-proposal.html" target="_blank" class="btn btn-primary">
                     <i class="fas fa-file-alt"></i> View Proposal
                 </a>
                 <a href="/aksara-writer-llms.txt" target="_blank" class="btn btn-docs">

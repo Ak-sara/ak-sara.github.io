@@ -124,7 +124,7 @@
             <h1>Personal AI Assistant</h1>
             <p>Offline AI assistance in Bahasa Indonesia with complete privacy-focused design and cultural context awareness. Reducing dependency on cloud-based foreign services.</p>
             <div class="action-buttons">
-                <a href="/project/personal-ai-proposal" target="_blank" class="btn btn-primary">
+                <a href="/project/personal-ai-proposal.html" target="_blank" class="btn btn-primary">
                     <i class="fas fa-file-alt"></i> View Full Proposal
                 </a>
                 <a href="/pdf/personal-ai-proposal.pdf" target="_blank" class="btn btn-secondary">

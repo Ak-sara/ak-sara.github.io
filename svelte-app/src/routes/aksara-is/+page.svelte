@@ -63,7 +63,7 @@
             <h1>Aksara IS</h1>
             <p>Advanced Svelte-based no-code platform enabling Indonesian businesses to create custom applications without coding expertise</p>
             <div class="action-buttons">
-                <a href="/project/aksara-nocode-proposal" target="_blank" class="btn btn-primary">
+                <a href="/project/aksara-nocode-proposal.html" target="_blank" class="btn btn-primary">
                     <i class="fas fa-file-alt"></i> View Full Proposal
                 </a>
                 <a href="/pdf/aksara-nocode-proposal.pdf" target="_blank" class="btn btn-secondary">
