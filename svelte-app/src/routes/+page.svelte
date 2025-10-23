@@ -1,4 +1,6 @@
 <script>
+    import SEO from '$lib/components/SEO.svelte';
+
     // Define project data
     const projects = [
         {
@@ -58,6 +60,8 @@
         }
     };
 </script>
+
+<SEO />
 
 <div class="page-wrapper">
     <section class="hero" style="background: linear-gradient(rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5)), url('/karimun-jawa.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">

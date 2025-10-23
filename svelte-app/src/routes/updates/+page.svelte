@@ -1,4 +1,6 @@
 <script>
+    import SEO from '$lib/components/SEO.svelte';
+
     const updates = [
         {
             date: 'October 2025',
@@ -46,6 +48,12 @@
         }
     ];
 </script>
+
+<SEO
+    title="Development Updates - Ak'sara Initiative"
+    description="Building in public: Follow the journey from solo developer to sustainable open-source initiative. Started June 2025."
+    url="https://ak-sara.github.io/updates"
+/>
 
 <div class="page-wrapper">
     <div class="container">
