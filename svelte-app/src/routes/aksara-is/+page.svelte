@@ -2,32 +2,32 @@
     const features = [
         {
             title: "Drag & Drop Builder",
-            icon: "mouse-pointer",
+            icon: "fas fa-mouse-pointer",
             description: "Intuitive visual interface allowing users to build applications by simply dragging and dropping components. No coding knowledge required."
         },
         {
             title: "Indonesian-First Design",
-            icon: "language",
+            icon: "fas fa-language",
             description: "Built specifically for Indonesian businesses with full Bahasa Indonesia support, local compliance features, and cultural context awareness."
         },
         {
             title: "Offline Capabilities",
-            icon: "wifi-slash",
+            icon: "fa fa-wifi-slash",
             description: "Progressive Web App technology enables offline functionality, crucial for Indonesia's varying internet connectivity conditions."
         },
         {
             title: "Smart Data Management",
-            icon: "database",
+            icon: "fas fa-database",
             description: "Integrated data sources supporting MySQL, REST APIs, and local file storage with intelligent data modeling capabilities."
         },
         {
             title: "Responsive Design",
-            icon: "mobile-alt",
+            icon: "fas fa-mobile-alt",
             description: "Applications automatically adapt to different screen sizes and devices, ensuring optimal user experience across platforms."
         },
         {
             title: "Enterprise Security",
-            icon: "shield-alt",
+            icon: "fas fa-shield-alt",
             description: "Built-in security features including user authentication, role-based access control, and data encryption for business-grade applications."
         }
     ];
@@ -35,22 +35,22 @@
     const techStack = [
         {
             title: "SvelteKit",
-            icon: "js-square",
+            icon: "fab fa-js-square",
             description: "Modern framework with runes for reactive applications"
         },
         {
             title: "MySQL Integration",
-            icon: "database",
+            icon: "fa fa-database",
             description: "Robust database connectivity and management"
         },
         {
             title: "TailwindCSS",
-            icon: "paint-brush",
+            icon: "fa fa-paint-brush",
             description: "Utility-first CSS framework for rapid UI development"
         },
         {
             title: "Bun Runtime",
-            icon: "rocket",
+            icon: "fa fa-rocket",
             description: "Fast JavaScript runtime for optimal performance"
         }
     ];
@@ -94,7 +94,7 @@
             <div class="features-grid">
                 {#each features as feature (feature.title)}
                     <div class="feature-card">
-                        <h3><i class="fas fa-{feature.icon}"></i> {feature.title}</h3>
+                        <h3><i class="{feature.icon}"></i> {feature.title}</h3>
                         <p>{feature.description}</p>
                     </div>
                 {/each}
@@ -106,7 +106,7 @@
             <div class="tech-stack">
                 {#each techStack as tech (tech.title)}
                     <div class="tech-item">
-                        <i class="fab fa-{tech.icon}"></i>
+                        <i class="{tech.icon}"></i>
                         <h3>{tech.title}</h3>
                         <p>{tech.description}</p>
                     </div>

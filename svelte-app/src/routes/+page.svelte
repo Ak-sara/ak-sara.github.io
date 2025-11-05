@@ -10,8 +10,8 @@
             description: "Enable Indonesian businesses to create custom applications without coding expertise. Features drag-and-drop builder, Indonesian language interface, and offline capabilities.",
             timeline: "12-18 months to MVP",
             actions: [
-                { text: "Proposal", icon: "file-alt", type: "proposal", link: "/project/aksara-nocode-proposal.html" },
-                { text: "Download", icon: "file-pdf", type: "download", link: "/pdf/aksara-nocode-proposal.pdf" }
+                { text: "Proposal", icon: "fas fa-file-alt", type: "proposal", link: "/project/aksara-nocode-proposal.html" },
+                { text: "Download", icon: "fas fa-file-pdf", type: "download", link: "/pdf/aksara-nocode-proposal.pdf" }
             ]
         },
         {
@@ -22,9 +22,10 @@
             timeline: "v0.1.2 with VSCode auto-preview and improved styling",
             github: "https://github.com/Ak-sara/aksara-writer",
             actions: [
-                { text: "Proposal", icon: "file-alt", type: "proposal", link: "/project/aksara-writer-proposal.html" },
-                { text: "Package", icon: "npm", type: "npm", link: "https://www.npmjs.com/package/aksara-writer-core" },
-                { text: "GitHub", icon: "github", type: "github", link: "https://github.com/Ak-sara/aksara-writer" }
+                { text: "Proposal", icon: "fas fa-file-alt", type: "proposal", link: "/project/aksara-writer-proposal.html" },
+                { text: "Package", icon: "fab fa-npm", type: "npm", link: "https://www.npmjs.com/package/aksara-writer-core" },
+                { text: "GitHub", icon: "fab fa-github", type: "github", link: "https://github.com/Ak-sara/aksara-writer" },
+                { text: "LLMS text", icon: "fas fa-file-alt", type: "text", link: "/aksara-writer-llms.txt" }
             ]
         },
         {
@@ -35,8 +36,8 @@
             timeline: "12-18 months",
             logo: "/Mos.svg",
             actions: [
-                { text: "Proposal", icon: "file-alt", type: "proposal", link: "/project/merdeka-os-proposal.html" },
-                { text: "Download", icon: "file-pdf", type: "download", link: "/pdf/merdeka-os-proposal.pdf" }
+                { text: "Proposal", icon: "fas fa-file-alt", type: "proposal", link: "/project/merdeka-os-proposal.html" },
+                { text: "Download", icon: "fas fa-file-pdf", type: "download", link: "/pdf/merdeka-os-proposal.pdf" }
             ]
         },
         {
@@ -46,8 +47,8 @@
             description: "Offline AI assistance in Bahasa Indonesia, reducing dependency on cloud-based foreign services. Complete privacy-focused design with cultural context awareness.",
             timeline: "18-24 months",
             actions: [
-                { text: "Proposal", icon: "file-alt", type: "proposal", link: "/project/personal-ai-proposal.html" },
-                { text: "Download", icon: "file-pdf", type: "download", link: "/pdf/personal-ai-proposal.pdf" }
+                { text: "Proposal", icon: "fas fa-file-alt", type: "proposal", link: "/project/personal-ai-proposal.html" },
+                { text: "Download", icon: "fas fa-file-pdf", type: "download", link: "/pdf/personal-ai-proposal.pdf" }
             ]
         }
     ];
@@ -131,19 +132,11 @@
                             {/if}
                             <p><strong>{project.description}</strong></p>
                             <p><strong>Timeline:</strong> {project.timeline}</p>
-                            {#if project.github}
-                                <div class="github-badge">
-                                    <a href={project.github} target="_blank" class="github-link">
-                                        <i class="fab fa-github"></i>
-                                        View on GitHub
-                                    </a>
-                                </div>
-                            {/if}
                         </div>
                         <div class="project-actions">
                             {#each project.actions as action}
                                 <a href={action.link} target="_blank" class="action-btn btn-{action.type}">
-                                    <i class="fas fa-{action.icon}"></i> {action.text}
+                                    <i class="{action.icon}"></i> {action.text}
                                 </a>
                             {/each}
                         </div>
@@ -510,36 +503,6 @@
         object-fit: contain;
     }
 
-    .github-badge {
-        margin-top: 1rem;
-        display: flex;
-        align-items: center;
-    }
-
-    .github-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.5rem 1rem;
-        background: #24292e;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-size: 0.9rem;
-        font-weight: 600;
-        transition: all 0.2s ease;
-    }
-
-    .github-link:hover {
-        background: #1a1e22;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .github-link i {
-        font-size: 1.1rem;
-    }
-
     .project-actions {
         display: flex;
         flex-wrap: wrap;
@@ -584,6 +547,7 @@
     }
 
     .btn-proposal { background: #007bff; color: white; }
+    .btn-text { background: #9ec7f3; color: rgb(25, 16, 16); }
     .btn-download { background: #dc3545; color: white; }
     .btn-npm { background: #cb3837; color: white; }
     .btn-github { background: #24292e; color: white; }
