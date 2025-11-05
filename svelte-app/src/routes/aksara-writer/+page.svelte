@@ -63,6 +63,9 @@
             <h1>Aksara Writer</h1>
             <p>Modern markdown-to-document converter with Indonesian business templates. Export to PDF, PPTX, and HTML with professional styling.</p>
             <div class="action-buttons">
+                <a href="/aksara-writer/docs" class="btn btn-success">
+                    <i class="fas fa-book-open"></i> Documentation
+                </a>
                 <a href="https://www.npmjs.com/package/aksara-writer-core" target="_blank" class="btn btn-npm">
                     <i class="fab fa-npm"></i> NPM Package
                 </a>
@@ -72,20 +75,84 @@
                 <a href="/project/aksara-writer-proposal.html" target="_blank" class="btn btn-primary">
                     <i class="fas fa-file-alt"></i> View Proposal
                 </a>
-                <a href="/aksara-writer-llms.txt" target="_blank" class="btn btn-docs">
-                    <i class="fas fa-book"></i> LLM Documentation
-                </a>
             </div>
         </div>
     </section>
 
     <div class="container main-content">
-        <section class="install-section">
-            <h3><i class="fas fa-rocket"></i> Quick Start</h3>
+        <section class="install-section" id="quick-start-guide">
+            <h3><i class="fas fa-rocket"></i> Quick Start Guide</h3>
             <p>Get started with Aksara Writer in seconds:</p>
-            <div class="code-block">
-                npm install -g aksara-writer
+
+            <div class="guide-steps">
+                <div class="guide-step">
+                    <div class="step-header">
+                        <span class="step-num">1</span>
+                        <h4>Install via NPM</h4>
+                    </div>
+                    <div class="code-block">
+npm install -g aksara-writer
+                    </div>
+                    <p class="step-note">Or install the VS Code extension: Search "Aksara Writer" in VS Code marketplace</p>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-header">
+                        <span class="step-num">2</span>
+                        <h4>Create Your First Document</h4>
+                    </div>
+                    <div class="code-block">
+# Create a markdown file
+echo "# My First Document
+
+This is a test document created with Aksara Writer.
+
+## Features
+- Easy to use
+- Professional output
+- Multiple formats" > test.md
+                    </div>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-header">
+                        <span class="step-num">3</span>
+                        <h4>Convert to PDF</h4>
+                    </div>
+                    <div class="code-block">
+aksara-writer convert test.md --format pdf
+                    </div>
+                    <p class="step-note">Output: <code>test.pdf</code> in the same directory</p>
+                </div>
+
+                <div class="guide-step">
+                    <div class="step-header">
+                        <span class="step-num">4</span>
+                        <h4>Try Different Formats</h4>
+                    </div>
+                    <div class="code-block">
+# Convert to HTML presentation
+aksara-writer convert test.md --format html
+
+# Convert to PowerPoint
+aksara-writer convert test.md --format pptx
+
+# Use different themes
+aksara-writer convert test.md --format pdf --theme business
+                    </div>
+                </div>
             </div>
+
+            <div class="quick-links">
+                <h4>Common Use Cases:</h4>
+                <ul>
+                    <li><strong>Monthly Reports:</strong> Write in markdown, export to PDF with professional styling</li>
+                    <li><strong>Presentations:</strong> Create slides in markdown, convert to PPTX or HTML</li>
+                    <li><strong>Proposals:</strong> Generate client proposals with consistent branding</li>
+                    <li><strong>AI + Aksara:</strong> Use AI (ChatGPT, Claude, Gemini) to generate markdown, then convert</li>
+                </ul>
+            </div>
+
             <p class="version-info">
                 <strong>Current Version:</strong> v0.1.2 with 4 themes, VSCode auto-preview, and improved styling
             </p>
@@ -269,12 +336,110 @@ aksara-writer convert presentation.md --format pptx --theme modern</div>
     }
 
     .install-section {
-        background: linear-gradient(135deg, rgba(40, 167, 69, 0.1), rgba(32, 201, 151, 0.1));
+        background: white;
         padding: 2rem;
         border-radius: 15px;
         margin: 2rem 0;
         border-left: 4px solid #28a745;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .install-section h3 {
         text-align: center;
+        color: #28a745;
+        margin-bottom: 1rem;
+    }
+
+    .install-section > p {
+        text-align: center;
+    }
+
+    .guide-steps {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .guide-step {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 10px;
+        border: 1px solid #e2e8f0;
+    }
+
+    .step-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .step-num {
+        background: #28a745;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+    }
+
+    .step-header h4 {
+        color: #2d3748;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .step-note {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        color: #718096;
+        font-style: italic;
+    }
+
+    .step-note code {
+        background: #f7fafc;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', monospace;
+        color: #e53e3e;
+    }
+
+    .quick-links {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+        border: 1px solid #e2e8f0;
+    }
+
+    .quick-links h4 {
+        color: #2d3748;
+        margin-bottom: 1rem;
+    }
+
+    .quick-links ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .quick-links li {
+        padding: 0.5rem 0;
+        padding-left: 1.5rem;
+        position: relative;
+    }
+
+    .quick-links li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: #28a745;
+        font-weight: bold;
     }
 
     .code-block {
@@ -356,6 +521,29 @@ aksara-writer convert presentation.md --format pptx --theme modern</div>
         background: #218838;
         transform: translateY(-2px);
         box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+    }
+
+    .btn-success {
+        background: #28a745;
+        color: white;
+        box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+        animation: pulse 2s infinite;
+    }
+
+    .btn-success:hover {
+        background: #218838;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+        animation: none;
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+        }
+        50% {
+            box-shadow: 0 4px 25px rgba(40, 167, 69, 0.5);
+        }
     }
 
     .templates-grid {

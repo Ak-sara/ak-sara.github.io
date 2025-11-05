@@ -230,6 +230,241 @@ if (result.success) {
 - `contract`: Legal contract template
 - `letter`: Official letter format
 
+## Creating White Papers and Professional Documents
+
+### Using Shared Assets
+
+When creating multiple white papers or professional documents, use a shared assets directory:
+
+```
+project/
+├── white-papers/
+│   ├── assets/
+│   │   ├── style.css           # Shared professional theme
+│   │   ├── aksara-logo.svg     # Organization logo
+│   │   ├── aksara-logo.png     # Organization logo (raster)
+│   │   └── images/             # Shared images
+│   ├── whitepaper-1.md
+│   ├── whitepaper-2.md
+│   └── README.md
+```
+
+### Professional White Paper Template
+
+```markdown
+---
+title: "Your White Paper Title"
+subtitle: "A Professional Document"
+author: "Your Name"
+organization: "Your Organization"
+date: "November 2025"
+version: "1.0"
+status: "Draft"
+keywords: ["keyword1", "keyword2", "keyword3"]
+abstract: "Brief summary of the white paper content"
+---
+
+> **Meta Note**: This document was created using Aksara Writer.
+
+# Executive Summary
+
+Your executive summary content here...
+
+# 1. Introduction
+
+## 1.1 Background
+
+Content with Mermaid diagrams:
+
+\`\`\`mermaid
+graph LR
+    A[Start] --> B[Process]
+    B --> C[End]
+\`\`\`
+
+![Your Logo](./assets/aksara-logo.svg)
+
+# 2. Main Content
+
+Regular content with references to shared CSS...
+```
+
+### Converting with Shared Theme
+
+```bash
+# Convert white paper using shared CSS theme
+aksara-writer convert whitepaper.md \
+  -o whitepaper.pdf \
+  --css ./assets/style.css
+
+# Or reference in YAML frontmatter
+---
+title: "White Paper"
+css: "./assets/style.css"
+---
+```
+
+### Professional Theme Features
+
+The shared `assets/style.css` includes:
+
+1. **Cover Page Styling**
+   - Gradient backgrounds
+   - Logo placement
+   - Professional typography
+
+2. **Mermaid Diagram Support**
+   - Auto-centering
+   - Page-break protection
+   - Proper spacing
+
+3. **Professional Elements**
+   - Header/footer with page numbers
+   - Color-coded callouts (success, warning, danger, info)
+   - Table styling with alternating rows
+   - Code block syntax highlighting
+
+4. **Print Optimization**
+   - A4 page sizing
+   - Proper page breaks
+   - Print-friendly colors
+
+### Mermaid Diagrams in Documents
+
+Aksara Writer supports Mermaid diagrams for flowcharts, sequence diagrams, and more:
+
+```markdown
+\`\`\`mermaid
+flowchart TD
+    A[User Input] --> B{Decision}
+    B -->|Yes| C[Process A]
+    B -->|No| D[Process B]
+    C --> E[Output]
+    D --> E
+
+    style C fill:#50c878
+    style D fill:#ff6b6b
+\`\`\`
+```
+
+**Supported Mermaid diagram types:**
+- `flowchart` / `graph` - Flowcharts and diagrams
+- `sequenceDiagram` - Sequence diagrams
+- `gantt` - Gantt charts for roadmaps (auto-sized for better display)
+- `pie` - Pie charts for data visualization
+- `gitGraph` - Git branching diagrams
+
+**Gantt Chart Sizing:**
+Gantt charts are automatically detected and styled to stretch to full width while maintaining reasonable height. No special configuration needed:
+
+```markdown
+\`\`\`mermaid
+gantt
+    title Project Roadmap
+    dateFormat YYYY-MM-DD
+    section Phase 1
+    Research           :2025-01-01, 30d
+    Design             :2025-01-15, 20d
+    section Phase 2
+    Development        :2025-02-01, 60d
+    Testing            :2025-03-01, 30d
+\`\`\`
+```
+
+The Gantt chart will automatically:
+- Stretch to 100% width of the page
+- Maintain a minimum height of 400px
+- Cap at maximum height of 600px
+- Enable horizontal scrolling if content is too wide
+
+### Color Coding in Diagrams
+
+Use Mermaid's `style` directive for visual hierarchy:
+
+```markdown
+\`\`\`mermaid
+graph LR
+    A[Traditional] --> B[Slow Process]
+    C[New Approach] --> D[Fast Process]
+
+    style B fill:#ff6b6b
+    style D fill:#50c878
+\`\`\`
+```
+
+**Recommended color palette:**
+- Success/Positive: `#50c878` (green)
+- Warning/Caution: `#ffd93d` (yellow)
+- Danger/Negative: `#ff6b6b` (red)
+- Primary: `#667eea` (blue)
+- Secondary: `#764ba2` (purple)
+
+## Metadata Variables
+
+Define custom metadata fields and use them as variables throughout your document.
+
+### Defining Metadata
+
+```markdown
+<!--
+aksara:true
+type: document
+meta:
+    company: "PT. Aksara Digital"
+    from_name: "John Doe"
+    position: "Director"
+    ref_number: "REF/2025/001"
+    custom_field: "Any value you want"
+-->
+```
+
+### Using Metadata Variables
+
+Access metadata anywhere in your content using `${meta.fieldname}`:
+
+```markdown
+**Company**: ${meta.company}
+**From**: ${meta.from_name}, ${meta.position}
+**Ref No**: ${meta.ref_number}
+```
+
+### Metadata in Headers/Footers
+
+```markdown
+header: | ${meta.company} | ${new Date().toLocaleDateString('id-ID')} |
+footer: | ${meta.ref_number} | Page [page] of [total] |
+```
+
+### Error Handling
+
+If a metadata field doesn't exist, it will display: `[meta.fieldname not found]`
+
+```markdown
+${meta.existing_field}    → "Value"
+${meta.nonexistent_field} → "[meta.nonexistent_field not found]"
+```
+
+### Use Cases
+
+**Corporate Letters:**
+```markdown
+| Kepada      | ${meta.to_name}      |
+| Dari        | ${meta.from_name}    |
+| Perihal     | ${meta.subject}      |
+| No. Ref     | ${meta.ref_number}   |
+```
+
+**Forms:**
+```markdown
+Nama Perusahaan: ${meta.company}
+Alamat: ${meta.address}
+Telepon: ${meta.phone}
+Email: ${meta.email}
+```
+
+**Repeated Values:**
+Define once in meta, use multiple times without repetition.
+
 ## Common Patterns
 
 ### Multi-page Document
